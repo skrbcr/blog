@@ -1,4 +1,5 @@
-site_name: Diary of skrbcr
+title: Diary of skrbcr
+description: 物理＋プログラミング＋その他
 
 plugins:  
  - jemoji
