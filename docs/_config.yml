@@ -3,3 +3,7 @@ description: 物理＋プログラミング＋その他
 
 plugins:  
  - jemoji
+
+nav:
+  - ホーム: index.md
+  - テストページ: test/test.md

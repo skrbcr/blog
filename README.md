@@ -1,2 +1,2 @@
 # diary
-物理＋プログラミング＋その他
+Diary of skrbcr
