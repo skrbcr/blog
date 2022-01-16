@@ -1,5 +1,8 @@
 title: Diary of skrbcr
 description: 物理＋プログラミング＋その他
+timezone: Japan
+encodeing: "utf-8"
+default_lang: 'ja'
 
 plugins:  
  - jemoji
