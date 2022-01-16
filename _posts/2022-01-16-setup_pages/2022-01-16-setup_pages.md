@@ -48,7 +48,7 @@ $ jekyll new project_name
 $ cd project_name
 $ jekyll serve
 ```
-`$ jekyll serve` は `$ jekyll s` でも可。ローカルサーバー上にサイトが生成される。エラーが出なければ生成成功。
+`$ jekyll serve` は `$ jekyll s` でも可。ローカルサーバー上にサイトが生成される。エラーが出なければ生成成功。  
 <a href="http://127.0.0.1:4000/" target="_blank">http://127.0.0.1:4000/</a> にアクセス。終了時は、`Ctrl + C` をコマンドプロンプトに入力。
 
 #### サイト生成時にエラーが出る場合
@@ -72,14 +72,14 @@ GitHubにレポジトリを作成する。
 GitHub Pages の設定を行う。<a href="https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site" target="_blank">Configuring a publishing source for your GitHub Pages site - GitHub Docs</a> の通り。
 
 ## プラグインのインストール
-<a href="http://jekyllrb-ja.github.io/docs/plugins/installation/" target="_blank">プラグイン - Jekyll（日本語）</a> に従う。例えば、絵文字を表示するプラグイン `jemoji` をインストールする場合。
+<a href="http://jekyllrb-ja.github.io/docs/plugins/installation/" target="_blank">プラグイン - Jekyll（日本語）</a> に従う。例えば、絵文字を表示するプラグイン `jemoji` をインストールする場合。  
 まず、自身の環境（PC）にインストール：
 ```
 $ gem install jemoji
 ```
 これはプロジェクトごとに行う必要はないはず（要調査！）。
 
-次に、プロジェクトに設定する。
+次に、プロジェクトに設定する。  
 `_config.yml` に以下を追記：
 ```yaml
 plugin:
