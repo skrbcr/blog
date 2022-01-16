@@ -2,7 +2,8 @@
 layout: post
 title: "Jekyll のインストールから GitHub Pages での公開まで"
 date: 2021-01-16
-categories: 管理
+#categories: 管理
+tag: 管理
 ---
 
 Jekyll をインストールし、GitHub Pages で公開する作業のメモ書き
