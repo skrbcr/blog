@@ -10,3 +10,5 @@ plugins:
 nav:
   - ホーム: index.md
   - テストページ: test/test.md
+
+theme: jekyll-theme-minimal
