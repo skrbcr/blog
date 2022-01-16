@@ -11,5 +11,5 @@ github_username:  skrbcr
 # Build settings
 theme: minima
 plugins:
-  #- jemoji
+  - jemoji
   - jekyll-feed
