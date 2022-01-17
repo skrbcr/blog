@@ -7,21 +7,6 @@ permalink: /about/
 （工事中）
 
 ## ライセンス
-使用ツール等のライセンスを掲示しています。  
-明記されていない限り、ライセンスは全て MIT License です。MIT License の全文は <a href="https://opensource.org/licenses/mit-license.php" target="_blank">The MIT License - Open Source Initiative</a> をご覧ください。  
-English:  
-This section shows the license of tools that I use to create this web site. All softwares are released under MIT License without writing specially. See <a href="https://opensource.org/licenses/mit-license.php" target="_blank">The MIT License - Open Source Initiative</a> to show the full text of MIT License.
+サイト作成に使用したソフトウェアについては、<a href="https://github.com/skrbcr/blog#%E3%82%B5%E3%82%A4%E3%83%88%E4%BD%9C%E6%88%90%E3%81%AE%E7%82%BA%E3%81%AB%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%9F%E3%82%BD%E3%83%95%E3%83%88--softwares-to-generate-site" target="_blank">レポジトリのREADME</a> をご覧ください。
 
-### サイト作成 / Generating Web Site
-- Jekyll  
-Copyright (c) 2008-present Tom Preston-Werner and Jekyll contributors
-
-### 使用テーマ / Theme
-- minima  
-Copyright (c) 2016-present Parker Moore and the minima contributors
-
-### プラグイン / Plugins
-- jemoji  
-Copyright (c) 2014-present GitHub, Inc. and jemoji contributors
-- jekyll-feed  
-Copyright (c) 2015-present Ben Balter and jekyll-feed contributors
+See <a href="https://github.com/skrbcr/blog#%E3%82%B5%E3%82%A4%E3%83%88%E4%BD%9C%E6%88%90%E3%81%AE%E7%82%BA%E3%81%AB%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%9F%E3%82%BD%E3%83%95%E3%83%88--softwares-to-generate-site" target="_blank">README of the repository</a> for information on softwares used to generate this site.
