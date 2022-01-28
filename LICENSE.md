@@ -2,13 +2,13 @@
 
 Softwares listed below are used to generate my blog. Unless otherwise stated, all softwares are released under MIT License. 
 
-- Jekyll  
+- [Jekyll](https://github.com/jekyll/jekyll)  
   Copyright (c) 2008-present Tom Preston-Werner and Jekyll contributors
-- minima  
+- [minima](https://github.com/jekyll/minima)  
   Copyright (c) 2016-present Parker Moore and the minima contributors
-- jemoji  
+- [jemoji](https://github.com/jekyll/jemoji)  
   Copyright (c) 2014-present GitHub, Inc. and jemoji contributors
-- jekyll-feed  
+- [jekyll-feed](https://github.com/jekyll/jekyll-feed)  
   Copyright (c) 2015-present Ben Balter and jekyll-feed contributors
 
 The MIT License  
