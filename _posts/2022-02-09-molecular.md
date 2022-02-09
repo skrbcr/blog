@@ -43,7 +43,7 @@ $\omega_1, \omega_2$ は系の2つの固有振動数。$C_1, C_2$ は各固有�
 詳細は下で説明する。
 
 ### シミュレーションのソースコード
-JavaScript で動いています。ソースコードは<a href="" target="_blank">こちら</a>。
+JavaScript で動いています。ソースコードは<a href="https://github.com/skrbcr/blog/blob/main/assets/2022-02-09-molecular/simulate.js" target="_blank">こちら</a>。
 
 ## 説明
 以下の道筋で運動の一般解を導く：
