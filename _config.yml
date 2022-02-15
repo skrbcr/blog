@@ -9,6 +9,8 @@ url: "https://skrbcr.github.io"
 twitter_username: skrbcr
 github_username:  skrbcr
 
+lang: ja
+
 permalink: /:categories/:title
 
 kramdown:
