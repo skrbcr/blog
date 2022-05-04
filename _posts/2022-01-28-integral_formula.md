@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "積分公式"
-date: 2021-01-28
+date: 2022-01-28
 categories: math
 ---
 

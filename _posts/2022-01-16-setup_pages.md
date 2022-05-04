@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Jekyll のインストールから GitHub Pages での公開まで"
-date: 2021-01-16
+date: 2022-01-16
 categories: manage
 #tag: 管理
 ---

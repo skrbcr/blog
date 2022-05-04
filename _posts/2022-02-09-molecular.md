@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "二酸化炭素分子の一次元振動"
-date: 2021-02-09
+date: 2022-02-09
 categories: physics
 ---
 
