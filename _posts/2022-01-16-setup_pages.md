@@ -92,5 +92,5 @@ gem 'jemoji'
 ```
 これで絵文字が使えるようになる :smile:
 
-## メモ書きのメモ
-ページ作成方法も書く
+## 記事の投稿方法のメモ書き
+つづきの記事：[Jekyll を用いて GitHub Pages に記事を投稿する](https://skrbcr.github.io/blog/manage/create_new_post)
