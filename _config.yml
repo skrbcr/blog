@@ -11,6 +11,8 @@ github_username:  skrbcr
 
 lang: ja
 
+destination: docs
+
 permalink: /:categories/:title
 
 kramdown:
