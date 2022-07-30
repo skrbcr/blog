@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" hreflang="ja" /><updated>2022-07-30T15:55:10+09:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">今月の物置</title><subtitle>物理＋プログラミング＋その他</subtitle><author><name>今月の新刊（@skrbcr）</name></author><entry><title type="html">城ヶ島 天体撮影</title><link href="http://localhost:4000/blog/astron/jogasima" rel="alternate" type="text/html" title="城ヶ島 天体撮影" /><published>2022-07-30T00:00:00+09:00</published><updated>2022-07-30T00:00:00+09:00</updated><id>http://localhost:4000/blog/astron/jogasima</id><content type="html" xml:base="http://localhost:4000/blog/astron/jogasima"><![CDATA[<center>
-<img src="/blog/assets%5C2022-08-01-jogasima%5Cmilkyway1s.jpg" alt="天の川とさそり座" style="width: 90%;" />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://skrbcr.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://skrbcr.github.io/blog/" rel="alternate" type="text/html" hreflang="ja" /><updated>2022-07-30T16:45:12+09:00</updated><id>https://skrbcr.github.io/blog/feed.xml</id><title type="html">今月の物置</title><subtitle>物理＋プログラミング＋その他</subtitle><author><name>今月の新刊（@skrbcr）</name></author><entry><title type="html">城ヶ島 天体撮影</title><link href="https://skrbcr.github.io/blog/astron/jogasima" rel="alternate" type="text/html" title="城ヶ島 天体撮影" /><published>2022-07-30T00:00:00+09:00</published><updated>2022-07-30T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/astron/jogasima</id><content type="html" xml:base="https://skrbcr.github.io/blog/astron/jogasima"><![CDATA[<center>
+<img src="/blog/assets%5C2022-08-01-jogasima%5Cmilkyway1.jpg" alt="天の川とさそり座" style="width: 90%;" />
 <p>Nikon Z50; F3.5, 20秒×12枚（240秒）, ISO 1600<br />天の川とさそり座（右）<br />スタックしたら端々が妙に暗くなってしまいました</p>
 <hr style="width: 50%" /><p></p>
 </center>
@@ -43,9 +43,35 @@
 </center>
 
 <h2 id="撮影">撮影</h2>
-<center><img src="/blog/assets%5C2022-08-01-jogasima%5Cmilkyway1s.jpg" alt="天の川とさそり座" style="width: 90%;" />
-<p>Nikon Z50; F3.5, 20秒×12枚（240秒）, ISO 1600</p></center>
-<p>天の川とさそり座。冒頭の写真。右中央のアンタレスもオレンジ色に輝いている。撮影地の節で述べたように、城ヶ島南部は多数の旅客機が飛び交っており、撮影した天の川にも写り込んでいました。調べたところ、スタッキングの方法によってはこのような光を消すことができることが分かったので、実際にやってみたのがこの画像です。</p>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="astron" /><summary type="html"><![CDATA[Nikon Z50; F3.5, 20秒×12枚（240秒）, ISO 1600天の川とさそり座（右）スタックしたら端々が妙に暗くなってしまいました]]></summary></entry><entry><title type="html">円筒まわりの定常流</title><link href="http://localhost:4000/blog/physics/cylinder_flow" rel="alternate" type="text/html" title="円筒まわりの定常流" /><published>2022-07-22T00:00:00+09:00</published><updated>2022-07-22T00:00:00+09:00</updated><id>http://localhost:4000/blog/physics/cylinder_flow</id><content type="html" xml:base="http://localhost:4000/blog/physics/cylinder_flow"><![CDATA[<h2 id="調べること">調べること</h2>
+<center><img src="/blog/assets%5C2022-08-01-jogasima%5Cmilkyway1.jpg" alt="天の川とさそり座" style="width: 90%;" />
+<p>Nikon Z50; 16mm, F3.5, 20秒×12枚（240秒）, ISO 1600</p></center>
+<p>天の川とさそり座。冒頭の写真。右中央のアンタレスもオレンジ色に輝いている。撮影地の節で述べたように、城ヶ島南部は多数の旅客機が飛び交っており、撮影した天の川にも写り込んでいました。調べたところ、スタッキングの方法によってはこのような光を消すことができることが分かったので、実際にやってみたのがこの画像です。</p>
+<center><hr style="width: 50%" /><p></p></center>
+
+<center><img src="/blog/assets%5C2022-08-01-jogasima%5Cmilkyway2.jpg" alt="天の川" style="width: 40%;" />
+<p>Nikon Z50; 16mm, F3.5, 20秒×6枚（120秒）, ISO 1600</p></center>
+<p>こちらはカメラを縦にして撮った天の川。</p>
+<center><hr style="width: 50%" /><p></p></center>
+
+<center><img src="/blog/assets%5C2022-08-01-jogasima%5Candromeda.jpg" alt="アンドロメダ銀河" style="width: 90%;" />
+<p>Nikon Z50; 210mm, F3.5, 10秒×12枚（120秒）, ISO 3200</p></center>
+<p>アンドロメダ銀河・・・なのですが流石にこれが限界でした。中央付近の最も明るいものがアンドロメダ銀河です。明るい中心部とぼやっとした円盤部（円盤のようには見えないけれど）が写っています。</p>
+<center><hr style="width: 50%" /><p></p></center>
+
+<center><img src="/blog/assets%5C2022-08-01-jogasima%5Cdiurnal_motion.jpg" alt="北極星周りの日周運動" style="width: 90%;" />
+<p>Nikon Z50; 50mm, F6.3, 328.7秒（マニュアル）, ISO 100</p></center>
+<p>中央の明るい星が北極星です。5分間露出して日周運動を撮ってみました。本当はもっと長時間露出して軌跡を撮るべきでしたね。あと、特に明るさをいじっていないので、眼を凝らして見てください（笑）</p>
+<center><hr style="width: 50%" /><p></p></center>
+
+<p>執筆メモ</p>
+<ul>
+  <li>夏の大三角：マスト</li>
+  <li>春の方：気が向いたら</li>
+  <li>銀河中心：気が向いたら</li>
+  <li>✓アンドロメダ：マスト</li>
+  <li>木星：マスト。景色と共に</li>
+  <li>✓日周運動：マスト。</li>
+</ul>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="astron" /><summary type="html"><![CDATA[Nikon Z50; F3.5, 20秒×12枚（240秒）, ISO 1600天の川とさそり座（右）スタックしたら端々が妙に暗くなってしまいました]]></summary></entry><entry><title type="html">円筒まわりの定常流</title><link href="https://skrbcr.github.io/blog/physics/cylinder_flow" rel="alternate" type="text/html" title="円筒まわりの定常流" /><published>2022-07-22T00:00:00+09:00</published><updated>2022-07-22T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/physics/cylinder_flow</id><content type="html" xml:base="https://skrbcr.github.io/blog/physics/cylinder_flow"><![CDATA[<h2 id="調べること">調べること</h2>
 <p>流体力学の講義で複素速度ポテンシャルを学習した。具体例として、一様流のなかに円筒を置いた場合の流れを計算した。そこで、コンピュータで流れを計算・描画してみることにした。コード（Python）は<a href="https://github.com/skrbcr/blog/blob/main/assets/2022-07-22-cylinder_flow/cylinder.py">こちら</a>。</p>
 
 <p>内容の薄い記事だが、作りかけで放置状態だったのでとりあえず文章をまとめて公開することにした。</p>
@@ -72,7 +98,7 @@
 
 <h3 id="循環が大きい場合">循環が大きい場合</h3>
 <center><img src="/blog/assets/2022-07-22-cylinder_flow/rot_strong_stream.svg" style="width: 50%" /><img src="/blog/assets/2022-07-22-cylinder_flow/rot_strong_quiver.svg" style="width: 50%" /></center>
-<p>さらに循環の流速を上げると円筒下部の淀み点は円筒から離れた位置に移動する。直感的には分かりずらい流れが発生している。</p>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="physics" /><summary type="html"><![CDATA[調べること 流体力学の講義で複素速度ポテンシャルを学習した。具体例として、一様流のなかに円筒を置いた場合の流れを計算した。そこで、コンピュータで流れを計算・描画してみることにした。コード（Python）はこちら。]]></summary></entry><entry><title type="html">駒場の思ひ出</title><link href="http://localhost:4000/blog/university/komaba" rel="alternate" type="text/html" title="駒場の思ひ出" /><published>2022-07-22T00:00:00+09:00</published><updated>2022-07-22T00:00:00+09:00</updated><id>http://localhost:4000/blog/university/komaba</id><content type="html" xml:base="http://localhost:4000/blog/university/komaba"><![CDATA[<h2 id="はじめに">はじめに</h2>
+<p>さらに循環の流速を上げると円筒下部の淀み点は円筒から離れた位置に移動する。直感的には分かりずらい流れが発生している。</p>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="physics" /><summary type="html"><![CDATA[調べること 流体力学の講義で複素速度ポテンシャルを学習した。具体例として、一様流のなかに円筒を置いた場合の流れを計算した。そこで、コンピュータで流れを計算・描画してみることにした。コード（Python）はこちら。]]></summary></entry><entry><title type="html">駒場の思ひ出</title><link href="https://skrbcr.github.io/blog/university/komaba" rel="alternate" type="text/html" title="駒場の思ひ出" /><published>2022-07-22T00:00:00+09:00</published><updated>2022-07-22T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/university/komaba</id><content type="html" xml:base="https://skrbcr.github.io/blog/university/komaba"><![CDATA[<h2 id="はじめに">はじめに</h2>
 <p>東京大学の駒場生活（前期課程）が終わって半年くらい経ったので、振り返り。オンライン授業が多かったので変則的なことが多かったはずですが。将来の駒場生が読むかは知りませんが、一応参考になりそうな情報も書いています。先に概歴を書くと、理科一類→理学部物理学科 です（身バレしそう・・・）。なので、基本的には理科一類の人向けの内容です。</p>
 
 <h2 id="入学">入学</h2>
@@ -99,7 +125,7 @@
   <li>記号論理学（文系科目）：文系科目だけど文科生向けのクラスと理科生向けのがそれぞれあるので学習しやすいです。</li>
   <li>経済思想史（文系科目）：理系だけど世界史好き！　という人にピッタリ。年によって担当する先生と内容が変わりますが、私が受けたときは世界史みたいな授業でした。真面目に勉強したらメッチャ高得点で嬉しかったです。</li>
   <li>要望科目：進学したい学部学科の要望科目は受けておくべきだと思います。物理学科だとと「アルゴリズム入門」ですが、共に履修して大正解でした。特に「振動・波動論」の内容は進学後当たり前のように使います。</li>
-</ul>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="university" /><summary type="html"><![CDATA[はじめに 東京大学の駒場生活（前期課程）が終わって半年くらい経ったので、振り返り。オンライン授業が多かったので変則的なことが多かったはずですが。将来の駒場生が読むかは知りませんが、一応参考になりそうな情報も書いています。先に概歴を書くと、理科一類→理学部物理学科 です（身バレしそう・・・）。なので、基本的には理科一類の人向けの内容です。]]></summary></entry><entry><title type="html">Jekyll を用いて GitHub Pages に記事を投稿する</title><link href="http://localhost:4000/blog/manage/create_new_post" rel="alternate" type="text/html" title="Jekyll を用いて GitHub Pages に記事を投稿する" /><published>2022-05-05T00:00:00+09:00</published><updated>2022-05-05T00:00:00+09:00</updated><id>http://localhost:4000/blog/manage/create_new_post</id><content type="html" xml:base="http://localhost:4000/blog/manage/create_new_post"><![CDATA[<p><a href="https://skrbcr.github.io/blog/manage/setup_pages">Jekyll のインストールから GitHub Pages での公開まで</a> のつづき。やはりメモ書きなので必要な情報は網羅されていません。</p>
+</ul>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="university" /><summary type="html"><![CDATA[はじめに 東京大学の駒場生活（前期課程）が終わって半年くらい経ったので、振り返り。オンライン授業が多かったので変則的なことが多かったはずですが。将来の駒場生が読むかは知りませんが、一応参考になりそうな情報も書いています。先に概歴を書くと、理科一類→理学部物理学科 です（身バレしそう・・・）。なので、基本的には理科一類の人向けの内容です。]]></summary></entry><entry><title type="html">Jekyll を用いて GitHub Pages に記事を投稿する</title><link href="https://skrbcr.github.io/blog/manage/create_new_post" rel="alternate" type="text/html" title="Jekyll を用いて GitHub Pages に記事を投稿する" /><published>2022-05-05T00:00:00+09:00</published><updated>2022-05-05T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/manage/create_new_post</id><content type="html" xml:base="https://skrbcr.github.io/blog/manage/create_new_post"><![CDATA[<p><a href="https://skrbcr.github.io/blog/manage/setup_pages">Jekyll のインストールから GitHub Pages での公開まで</a> のつづき。やはりメモ書きなので必要な情報は網羅されていません。</p>
 
 <h2 id="実行環境">実行環境</h2>
 
@@ -172,7 +198,7 @@
 
 <p>記事が書けたら commit し、GitHub の Repository に push すれば投稿完了。</p>
 
-<p>暫くすると反映されるので、実際の投稿を確認して終了。</p>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="manage" /><summary type="html"><![CDATA[Jekyll のインストールから GitHub Pages での公開まで のつづき。やはりメモ書きなので必要な情報は網羅されていません。]]></summary></entry><entry><title type="html">熱拡散方程式を数値的に解く</title><link href="http://localhost:4000/blog/physics/heat_equation" rel="alternate" type="text/html" title="熱拡散方程式を数値的に解く" /><published>2022-05-01T00:00:00+09:00</published><updated>2022-05-01T00:00:00+09:00</updated><id>http://localhost:4000/blog/physics/heat_equation</id><content type="html" xml:base="http://localhost:4000/blog/physics/heat_equation"><![CDATA[<h2 id="熱拡散方程式とは">熱拡散方程式とは</h2>
+<p>暫くすると反映されるので、実際の投稿を確認して終了。</p>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="manage" /><summary type="html"><![CDATA[Jekyll のインストールから GitHub Pages での公開まで のつづき。やはりメモ書きなので必要な情報は網羅されていません。]]></summary></entry><entry><title type="html">熱拡散方程式を数値的に解く</title><link href="https://skrbcr.github.io/blog/physics/heat_equation" rel="alternate" type="text/html" title="熱拡散方程式を数値的に解く" /><published>2022-05-01T00:00:00+09:00</published><updated>2022-05-01T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/physics/heat_equation</id><content type="html" xml:base="https://skrbcr.github.io/blog/physics/heat_equation"><![CDATA[<h2 id="熱拡散方程式とは">熱拡散方程式とは</h2>
 <p>（物理数学の授業で習っただけの知識なので、かなり浅いですが……）</p>
 
 <p>熱の拡散の様子を表す微分方程式。熱分布の時間変化が空間的勾配を用いて表現される。あるいは、熱の空間的な分布（勾配）が時間変化によって表現される。そのため、式中に時間と空間の微分が現れる。この微分方程式は解析的に解くことが出来るが、ここでは数値的な解によるシミュレーションを行う。</p>
@@ -339,7 +365,7 @@
     <span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
 
 <span class="n">main</span><span class="p">()</span>
-</code></pre></div></div>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="physics" /><summary type="html"><![CDATA[熱拡散方程式とは （物理数学の授業で習っただけの知識なので、かなり浅いですが……）]]></summary></entry><entry><title type="html">KaTeXの導入・使用</title><link href="http://localhost:4000/blog/manage/introduce_katex" rel="alternate" type="text/html" title="KaTeXの導入・使用" /><published>2022-03-08T00:00:00+09:00</published><updated>2022-03-08T00:00:00+09:00</updated><id>http://localhost:4000/blog/manage/introduce_katex</id><content type="html" xml:base="http://localhost:4000/blog/manage/introduce_katex"><![CDATA[<h2 id="katex-について">$\KaTeX$ について</h2>
+</code></pre></div></div>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="physics" /><summary type="html"><![CDATA[熱拡散方程式とは （物理数学の授業で習っただけの知識なので、かなり浅いですが……）]]></summary></entry><entry><title type="html">KaTeXの導入・使用</title><link href="https://skrbcr.github.io/blog/manage/introduce_katex" rel="alternate" type="text/html" title="KaTeXの導入・使用" /><published>2022-03-08T00:00:00+09:00</published><updated>2022-03-08T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/manage/introduce_katex</id><content type="html" xml:base="https://skrbcr.github.io/blog/manage/introduce_katex"><![CDATA[<h2 id="katex-について">$\KaTeX$ について</h2>
 <p>$\KaTeX$（<a href="https://katex.org/" target="_blank">公式サイト</a>）は、HTML 文書上で（$\approx$ Web ページで）数式を綺麗に高速で表示させるための Java Script ライブラリである。$\LaTeX$ の Web 版のようなもの。</p>
 
 <h2 id="katex-の導入">$\KaTeX$ の導入</h2>
@@ -403,7 +429,7 @@ $$\begin{equation}
 
 \[\begin{equation}
     i\hbar\frac{\partial}{\partial t}\psi(\vec{x}, t) = \hat{H}\psi(\vec{x}, t)
-\end{equation}\]]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="manage" /><summary type="html"><![CDATA[$\KaTeX$ について $\KaTeX$（公式サイト）は、HTML 文書上で（$\approx$ Web ページで）数式を綺麗に高速で表示させるための Java Script ライブラリである。$\LaTeX$ の Web 版のようなもの。]]></summary></entry><entry><title type="html">二酸化炭素分子の一次元振動</title><link href="http://localhost:4000/blog/physics/molecular" rel="alternate" type="text/html" title="二酸化炭素分子の一次元振動" /><published>2022-02-09T00:00:00+09:00</published><updated>2022-02-09T00:00:00+09:00</updated><id>http://localhost:4000/blog/physics/molecular</id><content type="html" xml:base="http://localhost:4000/blog/physics/molecular"><![CDATA[<h2 id="シミュレーション">シミュレーション</h2>
+\end{equation}\]]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="manage" /><summary type="html"><![CDATA[$\KaTeX$ について $\KaTeX$（公式サイト）は、HTML 文書上で（$\approx$ Web ページで）数式を綺麗に高速で表示させるための Java Script ライブラリである。$\LaTeX$ の Web 版のようなもの。]]></summary></entry><entry><title type="html">二酸化炭素分子の一次元振動</title><link href="https://skrbcr.github.io/blog/physics/molecular" rel="alternate" type="text/html" title="二酸化炭素分子の一次元振動" /><published>2022-02-09T00:00:00+09:00</published><updated>2022-02-09T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/physics/molecular</id><content type="html" xml:base="https://skrbcr.github.io/blog/physics/molecular"><![CDATA[<h2 id="シミュレーション">シミュレーション</h2>
 <canvas id="canvas" width="1280" height="600" style="width: 90%; height: auto; background-color: black; display: block; margin: 0 auto;"></canvas>
 <script src="/blog/assets/2022-02-09-molecular/simulate.js"></script>
 
@@ -628,7 +654,7 @@ $$\begin{equation}
     \right.
 \end{align}\]
 
-<p>シミュレーション結果はページ冒頭に掲げた通り。</p>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="physics" /><summary type="html"><![CDATA[シミュレーション $C_1$: $C_2$: 適用！ 赤丸が酸素原子、緑丸が炭素原子白線と黄色線は原子間を結ぶ「バネ」（見やすさのために色を変えている）初期状態は $C_1 = 1, C_2 = 0.2$]]></summary></entry><entry><title type="html">積分公式</title><link href="http://localhost:4000/blog/math/integral_formula" rel="alternate" type="text/html" title="積分公式" /><published>2022-01-28T00:00:00+09:00</published><updated>2022-01-28T00:00:00+09:00</updated><id>http://localhost:4000/blog/math/integral_formula</id><content type="html" xml:base="http://localhost:4000/blog/math/integral_formula"><![CDATA[<h2 id="不定積分">不定積分</h2>
+<p>シミュレーション結果はページ冒頭に掲げた通り。</p>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="physics" /><summary type="html"><![CDATA[シミュレーション $C_1$: $C_2$: 適用！ 赤丸が酸素原子、緑丸が炭素原子白線と黄色線は原子間を結ぶ「バネ」（見やすさのために色を変えている）初期状態は $C_1 = 1, C_2 = 0.2$]]></summary></entry><entry><title type="html">積分公式</title><link href="https://skrbcr.github.io/blog/math/integral_formula" rel="alternate" type="text/html" title="積分公式" /><published>2022-01-28T00:00:00+09:00</published><updated>2022-01-28T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/math/integral_formula</id><content type="html" xml:base="https://skrbcr.github.io/blog/math/integral_formula"><![CDATA[<h2 id="不定積分">不定積分</h2>
 
 \[\begin{equation}
     \int \frac{1}{a^2 + x^2} \dd x = \frac{1}{a}\arctan\frac{x}{a}
@@ -678,7 +704,7 @@ $$\begin{equation}
         \dfrac{(n-1)!!}{n!!}\dfrac{\pi}{2} \\\\
         \dfrac{(n-1)!!}{n!!}
     \end{cases}
-\end{align}\]]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="math" /><summary type="html"><![CDATA[不定積分]]></summary></entry><entry><title type="html">Jekyll のインストールから GitHub Pages での公開まで</title><link href="http://localhost:4000/blog/manage/setup_pages" rel="alternate" type="text/html" title="Jekyll のインストールから GitHub Pages での公開まで" /><published>2022-01-16T00:00:00+09:00</published><updated>2022-01-16T00:00:00+09:00</updated><id>http://localhost:4000/blog/manage/setup_pages</id><content type="html" xml:base="http://localhost:4000/blog/manage/setup_pages"><![CDATA[<p>Jekyll をインストールし、GitHub Pages で公開する作業のメモ書き</p>
+\end{align}\]]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="math" /><summary type="html"><![CDATA[不定積分]]></summary></entry><entry><title type="html">Jekyll のインストールから GitHub Pages での公開まで</title><link href="https://skrbcr.github.io/blog/manage/setup_pages" rel="alternate" type="text/html" title="Jekyll のインストールから GitHub Pages での公開まで" /><published>2022-01-16T00:00:00+09:00</published><updated>2022-01-16T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/manage/setup_pages</id><content type="html" xml:base="https://skrbcr.github.io/blog/manage/setup_pages"><![CDATA[<p>Jekyll をインストールし、GitHub Pages で公開する作業のメモ書き</p>
 
 <h2 id="実行環境">実行環境</h2>
 
