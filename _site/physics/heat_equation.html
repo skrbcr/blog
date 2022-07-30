@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>熱拡散方程式を数値的に解く | 今月の物置</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="熱拡散方程式を数値的に解く" />
+<meta name="author" content="今月の新刊（@skrbcr）" />
+<meta property="og:locale" content="ja" />
+<meta name="description" content="熱拡散方程式とは （物理数学の授業で習っただけの知識なので、かなり浅いですが……）" />
+<meta property="og:description" content="熱拡散方程式とは （物理数学の授業で習っただけの知識なので、かなり浅いですが……）" />
+<link rel="canonical" href="http://localhost:4000/blog/physics/heat_equation" />
+<meta property="og:url" content="http://localhost:4000/blog/physics/heat_equation" />
+<meta property="og:site_name" content="今月の物置" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-05-01T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="熱拡散方程式を数値的に解く" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"今月の新刊（@skrbcr）"},"dateModified":"2022-05-01T00:00:00+09:00","datePublished":"2022-05-01T00:00:00+09:00","description":"熱拡散方程式とは （物理数学の授業で習っただけの知識なので、かなり浅いですが……）","headline":"熱拡散方程式を数値的に解く","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/physics/heat_equation"},"url":"http://localhost:4000/blog/physics/heat_equation"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/blog/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/blog/feed.xml" title="今月の物置" /><!--アイコン-->
+<link rel="shortcut icon" href="/blog/assets/favicon/favicon.png" type="image/x-icon">
+
+<!--CSS-->
+<link rel="stylesheet" href="/blog/assets/css/style.css">
+
+<!--KaTeX-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            // customised options
+            delimiters: [
+                {left: '$$', right: '$$', display: true},
+                {left: '$', right: '$', display: false},
+                {left: '\\(', right: '\\)', display: false},
+                {left: '\\[', right: '\\]', display: true}
+            ],
+            macros: {
+                "\\arsinh": "\\text{ar}\\!\\sinh",
+                "\\arcosh": "\\text{ar}\\!\\cosh",
+                "\\artanh": "\\text{ar}\\!\\tanh",
+                "\\dd": "\\,d",
+                "\\dv": "\\frac{d #1}{d #2}",
+                "\\pdv": "\\frac{\\partial #1}{\\partial #2}",
+                "\\ppdv": "\\frac{\\partial^{#1} #2}{\\partial #3^{#1}}",
+            },
+            throwOnError : false,
+        });
+    });
+</script>
+</head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">今月の物置</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/blog/about/">このサイトについて</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">熱拡散方程式を数値的に解く</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2022-05-01T00:00:00+09:00" itemprop="datePublished">2022年05月01日
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h2 id="熱拡散方程式とは">熱拡散方程式とは</h2>
+<p>（物理数学の授業で習っただけの知識なので、かなり浅いですが……）</p>
+
+<p>熱の拡散の様子を表す微分方程式。熱分布の時間変化が空間的勾配を用いて表現される。あるいは、熱の空間的な分布（勾配）が時間変化によって表現される。そのため、式中に時間と空間の微分が現れる。この微分方程式は解析的に解くことが出来るが、ここでは数値的な解によるシミュレーションを行う。</p>
+
+<h3 id="基本の熱拡散方程式">基本の熱拡散方程式</h3>
+<p>外部からの熱の供給や吸収がなく単純に熱が拡がっていく場合。熱の拡散速度に関する定数 $\kappa$ を用いて以下の式で与えられる：</p>
+
+\[\begin{equation}
+    \pdv{}{t} u(t, x) = \kappa\ppdv{2}{}{x}u(t, x)
+\end{equation}\]
+
+<p>境界条件や初期条件を与えたり $\kappa$ の値を指定したりして解くことで、様々な条件下での熱の拡がりかたを求めることができる。</p>
+
+<h3 id="熱の湧き出しがある場合">熱の湧き出しがある場合</h3>
+<p>ヒーターなどで常に一定の熱が供給されている場合を考える。点 $x$ における熱の供給率を $q(x)$ とおく。このとき</p>
+
+\[\begin{align}
+    \pdv{u}{t} = q(x)
+\end{align}\]
+
+<p>であるから、熱拡散方程式は次になる：</p>
+
+\[\begin{align}
+    \pdv{}{t} u(t, x) = \kappa\ppdv{2}{}{x}u(t, x) + q(x)
+\end{align}\]
+
+<h2 id="微分方程式の数値解">微分方程式の数値解</h2>
+<h3 id="熱の湧き出しなし">熱の湧き出しなし</h3>
+<p>最初に述べた通り、微分方程式を数値的に解く。簡便な方法であるオイラー陽解法を採用する。<br />
+オイラー法の通常の手順に従う。まず、次の近似式が成立することに注目する：</p>
+
+\[\begin{align}
+    \pdv{}{x} u(t, x) \sim \frac{u(t, x + \Delta x) - u(t, x)}{\Delta x}
+\end{align}\]
+
+<p>この近似を式 $(1)$ に適用する：</p>
+
+\[\begin{align}
+    \frac{u(t + \Delta t, x) - u(t, x)}{\Delta t} &amp;\sim \kappa\pdv{}{x}\frac{u'(t, x + \Delta x) - u'(t, x)}{\Delta x} \nonumber\\
+    &amp;\sim \kappa\frac{1}{\Delta x}\left(\frac{u(t, x + 2\Delta x) - u(t, x + \Delta x)}{\Delta x} - \frac{u(t, x + \Delta x) - u(t, x)}{\Delta x}\right) \nonumber\\
+    &amp;= \kappa\frac{u(t, x + 2\Delta x) - 2u(t, x + \Delta x) + u(t, x)}{\left(\Delta x\right)^2}
+\end{align}\]
+
+<p>さらに、変形を行うと、必要な近似式が得られる：</p>
+
+\[\begin{align}
+    u(t + \Delta t, x) = u(t, x) + \frac{\kappa\Delta t}{\left(\Delta x\right)^2}\big[u(t, x + 2\Delta x) - 2u(t, x + \Delta x) + u(t, x)\big]
+\end{align}\]
+
+<p>この式を用いれば現在時刻の熱分布から、$\Delta t$ 経過後の熱分布が求まる。</p>
+
+<h3 id="熱の湧き出しあり">熱の湧き出しあり</h3>
+<p>いまやったのと同じ近似を式 $(3)$ に適用すれば、近似式が得られる：</p>
+
+\[\begin{align}
+    &amp;u(t + \Delta t, x)\nonumber\\ =&amp; u(t, x) + \frac{\kappa\Delta t}{\left(\Delta x\right)^2}\big[u(t, x + 2\Delta x) - 2u(t, x + \Delta x) + u(t, x)\big] + q(x)\Delta t
+\end{align}\]
+
+<h2 id="シミュレーション">シミュレーション</h2>
+<p>Pythonを用いてシミュレーションした。どの計算においても境界条件は、有限の区間を考え、区間の両端では常に熱は $0$ であるとした。結果は、横軸に $x$ 座標、縦軸に $u(t, x)$ をとったグラフで表し、時間変化をアニメーション（動画）で示す。</p>
+
+<h3 id="熱の湧き出しなし-1">熱の湧き出しなし</h3>
+<p>2つの初期条件でシミュレートを行った。</p>
+
+<h4 id="初期条件１">初期条件１</h4>
+<p>初期条件：</p>
+
+\[\begin{align}
+    \begin{cases}
+        u(x) = 4 \quad &amp; for~ -2\le x \le 2 \\
+        u(x) = 0 \quad &amp; for~ x &lt; -2,~2 &lt; x
+    \end{cases}
+\end{align}\]
+
+<p>$4$ や $2$ という数字に意味はない（適当なスケーリングがされているだけ）。この $t = 0$ での状態をグラフで表す。縦軸に熱の量 $u(x)$、横軸に位置座標 $x$ をとる。</p>
+<center><img src="/blog/assets/2022-05-01-heat_equation/湧き出しなし_初期条件1.svg" style="width: 70%;" /></center>
+<p>グラフは、「高い部分＝熱い部分」と見なせばよいと思う。</p>
+
+<p>では、時間を進めると熱がどのように拡散していくかをシミュレートする。式 $(7)$ において $\Delta t = dt = 0.001,~\Delta x = dx = 0.01$ として計算した結果が下の動画：</p>
+<center><video src="/blog/assets/2022-05-01-heat_equation/heat1_slow.mp4" controls="" style="width: 70%;"></video></center>
+<p>$u = 0$ と $u = 4$ の境界辺りから熱がゆっくりと拡がっていくのが分かる。</p>
+
+<p>条件はそのままに、シミュレートの時間間隔を大きくしてする。$\Delta t = dt = 0.01,~\Delta x = dx = 0.05$ として計算した：</p>
+<center><video src="/blog/assets/2022-05-01-heat_equation/heat1.mp4" controls="" style="width: 70%;"></video></center>
+<p>矩形のグラフが丸みを帯びていく様子が見られる。</p>
+
+<h4 id="初期条件2">初期条件2</h4>
+<p>初期条件：</p>
+
+\[\begin{align}
+    \begin{cases}
+        u(x) = x + 4  \quad &amp; for~ -4\le x \le 0 \\
+        u(x) = -x + 4 \quad &amp; for~ 0\le x\le 4 \\
+        u(x) = 0 \quad &amp; for~ x &lt; -4,~4 &lt; x
+    \end{cases}
+\end{align}\]
+
+<center><img src="/blog/assets/2022-05-01-heat_equation/湧き出しなし_初期条件2.svg" style="width: 70%;" /></center>
+
+<p>上でやったのと同じように、$\Delta t = 0.01,~\Delta x = 0.05$ として（以下のシミュレーションでもこの数値を用いる）計算する：</p>
+<center><video src="/blog/assets/2022-05-01-heat_equation/heat2.mp4" controls="" style="width: 70%;"></video></center>
+<p>やはり、時間経過とともにグラフは丸みを帯びてゆく。</p>
+
+<p>また、二つの初期条件において $t = 0$ でのグラフの形は異なるが、どちらも徐々にガウス関数に近い形に変形していくように見える。それには何か理由があるのか、それともただの思い違いなのかは知らない。</p>
+
+<h3 id="熱の湧き出しあり-1">熱の湧き出しあり</h3>
+<p>点または区間から一定の熱が供給され続ける場合のシミュレーション。</p>
+
+<h4 id="条件1">条件1</h4>
+<p>空間全体は最初熱を持たず、一点からの熱供給が絶えず行われている場合を考える。</p>
+<center><video src="/blog/assets/2022-05-01-heat_equation/heat3.mp4" controls="" style="width: 70%;"></video></center>
+<p>一点から鋭いピークが出現する。湧き出しがない時のような丸みを帯びたグラフへは変化しない。</p>
+
+<h4 id="条件2">条件2</h4>
+<p>条件1と同じ設定で、熱の湧き出しを点ではなく区間（$2\le x\le 3$）とした。</p>
+<center><video src="/blog/assets/2022-05-01-heat_equation/heat4.mp4" controls="" style="width: 70%;"></video></center>
+<p>時間経過とともに山のピークがどんどん鋭くなるようだ。延々と続ければ、グラフの形は条件1にに限りなく近づいていくはず。</p>
+
+<h2 id="与太話">与太話</h2>
+<p>色々な初期条件・境界条件で試すと面白いはず。それと、拡散方程式に関して気になっていることもある。が、今回はここまでにしておく。</p>
+
+<p>Python コード：</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">from</span> <span class="nn">matplotlib.animation</span> <span class="kn">import</span> <span class="n">FuncAnimation</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="p">.</span><span class="n">subplots</span><span class="p">()</span>
+
+<span class="n">dx</span> <span class="o">=</span> <span class="mf">0.5</span>    <span class="c1"># 刻み幅（位置）
+</span><span class="n">dt</span> <span class="o">=</span> <span class="mf">0.1</span>    <span class="c1"># 刻み幅（時間）
+</span><span class="n">kappa</span> <span class="o">=</span> <span class="mf">0.05</span>    <span class="c1"># 拡散の定数
+</span><span class="n">cons</span> <span class="o">=</span> <span class="p">(</span><span class="n">dt</span> <span class="o">/</span> <span class="n">dx</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">kappa</span> <span class="o">/</span> <span class="n">dx</span><span class="p">)</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">dx</span><span class="p">)</span>
+<span class="n">u</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">size</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">u</span><span class="p">.</span><span class="n">size</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+            <span class="n">u</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+=</span> <span class="p">(</span><span class="n">u</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">u</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">u</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">*</span> <span class="n">cons</span>
+            <span class="c1"># 湧き出しがある場合
+</span>            <span class="c1">#if 2 &lt;= x[i] &lt;= 3:
+</span>            <span class="c1">#    u[i] += 0.01 * dt
+</span>    
+    <span class="n">ax</span><span class="p">.</span><span class="n">cla</span><span class="p">()</span>
+    <span class="n">ax</span><span class="p">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="n">bottom</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">top</span> <span class="o">=</span> <span class="mi">5</span><span class="p">)</span>
+    <span class="n">ax</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">u</span><span class="p">,</span> <span class="s">'r'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">'$t = '</span> <span class="o">+</span> <span class="s">'{:.2f}'</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">n</span> <span class="o">*</span> <span class="n">dt</span><span class="p">)</span> <span class="o">+</span> <span class="s">'$'</span><span class="p">)</span>
+    <span class="n">ax</span><span class="p">.</span><span class="n">legend</span><span class="p">()</span>
+    <span class="n">ax</span><span class="p">.</span><span class="n">set_title</span><span class="p">(</span><span class="s">'graph title'</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">dt</span> <span class="o">*</span> <span class="n">kappa</span> <span class="o">/</span> <span class="p">(</span><span class="n">dx</span> <span class="o">*</span> <span class="n">dx</span><span class="p">))</span>
+    <span class="c1"># 初期条件を設定
+</span>    <span class="c1">#for i in range(u.size):
+</span>    <span class="c1">#    if -4 &lt;= x[i] &lt;= 0:
+</span>    <span class="c1">#        u[i] = x[i] + 4
+</span>    <span class="c1">#    elif 0 &lt;= x[i] &lt;= 4:
+</span>    <span class="c1">#        u[i] = -x[i] + 4
+</span>
+    <span class="c1"># アニメーション作成
+</span>    <span class="n">ani</span> <span class="o">=</span> <span class="n">FuncAnimation</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">update</span><span class="p">,</span> <span class="n">frames</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">601</span><span class="p">),</span> <span class="n">interval</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">ani</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="sa">R</span><span class="s">"directory\heat_simulations.mp4"</span><span class="p">,</span> <span class="n">writer</span><span class="o">=</span><span class="s">'ffmpeg'</span><span class="p">)</span>
+    <span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="n">main</span><span class="p">()</span>
+</code></pre></div></div>
+
+  </div><a class="u-url" href="/blog/physics/heat_equation" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blog/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">今月の物置</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">今月の新刊（@skrbcr）</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/skrbcr"><svg class="svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg> <span class="username">skrbcr</span></a></li><li><a href="https://www.twitter.com/skrbcr"><svg class="svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">skrbcr</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>物理＋プログラミング＋その他</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

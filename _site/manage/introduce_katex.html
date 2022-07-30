@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>KaTeXの導入・使用 | 今月の物置</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="KaTeXの導入・使用" />
+<meta name="author" content="今月の新刊（@skrbcr）" />
+<meta property="og:locale" content="ja" />
+<meta name="description" content="$\KaTeX$ について $\KaTeX$（公式サイト）は、HTML 文書上で（$\approx$ Web ページで）数式を綺麗に高速で表示させるための Java Script ライブラリである。$\LaTeX$ の Web 版のようなもの。" />
+<meta property="og:description" content="$\KaTeX$ について $\KaTeX$（公式サイト）は、HTML 文書上で（$\approx$ Web ページで）数式を綺麗に高速で表示させるための Java Script ライブラリである。$\LaTeX$ の Web 版のようなもの。" />
+<link rel="canonical" href="http://localhost:4000/blog/manage/introduce_katex" />
+<meta property="og:url" content="http://localhost:4000/blog/manage/introduce_katex" />
+<meta property="og:site_name" content="今月の物置" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-03-08T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="KaTeXの導入・使用" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"今月の新刊（@skrbcr）"},"dateModified":"2022-03-08T00:00:00+09:00","datePublished":"2022-03-08T00:00:00+09:00","description":"$\\KaTeX$ について $\\KaTeX$（公式サイト）は、HTML 文書上で（$\\approx$ Web ページで）数式を綺麗に高速で表示させるための Java Script ライブラリである。$\\LaTeX$ の Web 版のようなもの。","headline":"KaTeXの導入・使用","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/manage/introduce_katex"},"url":"http://localhost:4000/blog/manage/introduce_katex"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/blog/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/blog/feed.xml" title="今月の物置" /><!--アイコン-->
+<link rel="shortcut icon" href="/blog/assets/favicon/favicon.png" type="image/x-icon">
+
+<!--CSS-->
+<link rel="stylesheet" href="/blog/assets/css/style.css">
+
+<!--KaTeX-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            // customised options
+            delimiters: [
+                {left: '$$', right: '$$', display: true},
+                {left: '$', right: '$', display: false},
+                {left: '\\(', right: '\\)', display: false},
+                {left: '\\[', right: '\\]', display: true}
+            ],
+            macros: {
+                "\\arsinh": "\\text{ar}\\!\\sinh",
+                "\\arcosh": "\\text{ar}\\!\\cosh",
+                "\\artanh": "\\text{ar}\\!\\tanh",
+                "\\dd": "\\,d",
+                "\\dv": "\\frac{d #1}{d #2}",
+                "\\pdv": "\\frac{\\partial #1}{\\partial #2}",
+                "\\ppdv": "\\frac{\\partial^{#1} #2}{\\partial #3^{#1}}",
+            },
+            throwOnError : false,
+        });
+    });
+</script>
+</head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">今月の物置</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/blog/about/">このサイトについて</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">KaTeXの導入・使用</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2022-03-08T00:00:00+09:00" itemprop="datePublished">2022年03月08日
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h2 id="katex-について">$\KaTeX$ について</h2>
+<p>$\KaTeX$（<a href="https://katex.org/" target="_blank">公式サイト</a>）は、HTML 文書上で（$\approx$ Web ページで）数式を綺麗に高速で表示させるための Java Script ライブラリである。$\LaTeX$ の Web 版のようなもの。</p>
+
+<h2 id="katex-の導入">$\KaTeX$ の導入</h2>
+<h3 id="基本の導入方法">基本の導入方法</h3>
+<p>まず、ページ上で $\KaTeX$ を使えるようにする。基本的には、公式ドキュメントの <a href="https://katex.org/docs/browser.html" target="_balnk">Installation/Browser</a> に従って作業すればよい。HTML 文書の <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> タグ内に以下を記述する：</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css"</span> <span class="na">integrity=</span><span class="s">"sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;script </span><span class="na">defer</span> <span class="na">src=</span><span class="s">"https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">defer</span> <span class="na">src=</span><span class="s">"https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</code></pre></div></div>
+<p>これにより、$\KaTeX$ の機能を使えるようになる。</p>
+
+<h3 id="jekyll-で使用する場合">Jekyll で使用する場合</h3>
+<p>Jekyll は初期設定で、$'$ を $’$ に変換してしまう。数式では $f'(x)$ のように $'$ を使うので、 <code class="language-plaintext highlighter-rouge">_config.yml</code> に次を記述する：</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">kramdown</span><span class="pi">:</span>
+  <span class="na">smart_quotes</span><span class="pi">:</span> <span class="pi">[</span><span class="s2">"</span><span class="s">apos"</span><span class="pi">,</span> <span class="s2">"</span><span class="s">apos"</span><span class="pi">,</span> <span class="s2">"</span><span class="s">quot"</span><span class="pi">,</span> <span class="s2">"</span><span class="s">quot"</span><span class="pi">]</span>
+</code></pre></div></div>
+<p>詳細やこれで上手くいく理由は <a href="https://stackoverflow.com/questions/25596792/how-do-i-turn-off-smart-quotes-in-jekyll" target="_blank">How do I turn off smart quotes in Jekyll?</a> や <a href="https://github.com/KaTeX/KaTeX/issues/967" target="_blank">Render smart quotes in math as regular quotes</a> を参照。</p>
+
+<h3 id="カスタマイズ">カスタマイズ</h3>
+<p>$\KaTeX$ はマクロなどをカスタマイズできる。<code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> タグ内に続けて次のように書けばよい：</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script&gt;</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">DOMContentLoaded</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">renderMathInElement</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">,</span> <span class="p">{</span>
+            <span class="c1">// 以下、カスタマイズ内容を記述</span>
+
+            <span class="c1">// 「$（数式）$」でインライン表示、などの設定</span>
+            <span class="na">delimiters</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span><span class="na">left</span><span class="p">:</span> <span class="dl">'</span><span class="s1">$$</span><span class="dl">'</span><span class="p">,</span> <span class="na">right</span><span class="p">:</span> <span class="dl">'</span><span class="s1">$$</span><span class="dl">'</span><span class="p">,</span> <span class="na">display</span><span class="p">:</span> <span class="kc">true</span><span class="p">},</span>       <span class="c1">// デイスプレイ表示</span>
+                <span class="p">{</span><span class="na">left</span><span class="p">:</span> <span class="dl">'</span><span class="s1">$</span><span class="dl">'</span><span class="p">,</span> <span class="na">right</span><span class="p">:</span> <span class="dl">'</span><span class="s1">$</span><span class="dl">'</span><span class="p">,</span> <span class="na">display</span><span class="p">:</span> <span class="kc">false</span><span class="p">},</span>        <span class="c1">// インライン表示</span>
+                <span class="p">{</span><span class="na">left</span><span class="p">:</span> <span class="dl">'</span><span class="se">\\</span><span class="s1">(</span><span class="dl">'</span><span class="p">,</span> <span class="na">right</span><span class="p">:</span> <span class="dl">'</span><span class="se">\\</span><span class="s1">)</span><span class="dl">'</span><span class="p">,</span> <span class="na">display</span><span class="p">:</span> <span class="kc">false</span><span class="p">},</span>    <span class="c1">// デイスプレイ表示</span>
+                <span class="p">{</span><span class="na">left</span><span class="p">:</span> <span class="dl">'</span><span class="se">\\</span><span class="s1">[</span><span class="dl">'</span><span class="p">,</span> <span class="na">right</span><span class="p">:</span> <span class="dl">'</span><span class="se">\\</span><span class="s1">]</span><span class="dl">'</span><span class="p">,</span> <span class="na">display</span><span class="p">:</span> <span class="kc">true</span><span class="p">}</span>      <span class="c1">// インライン表示</span>
+            <span class="p">],</span>
+            <span class="c1">// マクロの定義</span>
+            <span class="na">macros</span><span class="p">:</span> <span class="p">{</span>
+                <span class="dl">"</span><span class="se">\\</span><span class="s2">arsinh</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="se">\\</span><span class="s2">text{ar}</span><span class="se">\\</span><span class="s2">!</span><span class="se">\\</span><span class="s2">sinh</span><span class="dl">"</span><span class="p">,</span>      <span class="c1">// \arcsin{#1}</span>
+                <span class="dl">"</span><span class="se">\\</span><span class="s2">dd</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="se">\\</span><span class="s2">,d</span><span class="dl">"</span><span class="p">,</span>                         <span class="c1">// \dd{#1}</span>
+                <span class="dl">"</span><span class="se">\\</span><span class="s2">dv</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="se">\\</span><span class="s2">frac{d #1}{d #2}</span><span class="dl">"</span><span class="p">,</span>           <span class="c1">// \dv{#1}{#2}</span>
+            <span class="p">},</span>
+            <span class="c1">// エラー発生時に Console Window にエラーメッセージを表示するか</span>
+            <span class="na">throwOnError</span> <span class="p">:</span> <span class="kc">false</span><span class="p">,</span>       <span class="c1">// しない</span>
+        <span class="p">});</span>
+    <span class="p">});</span>
+<span class="nt">&lt;/script&gt;</span>
+</code></pre></div></div>
+<p>バックスラッシュ あるいは 円マーク <code class="language-plaintext highlighter-rouge">\</code> は エスケープする（<code class="language-plaintext highlighter-rouge">\\</code> と記述する）ことに注意。</p>
+
+<p>マクロの設定は若干分かりずらいが、例えば <code class="language-plaintext highlighter-rouge">\dv</code> であれば、上の通り設定しておけば <code class="language-plaintext highlighter-rouge">\dv{y}{x}</code> は $\dv{y}{x}$ と表示される。</p>
+
+<h2 id="katex-の使用">$\KaTeX$ の使用</h2>
+<p>$\LaTeX$ のように使用すればよい。ただし、いくつかの相違点はあるので注意が必要。例えば、<code class="language-plaintext highlighter-rouge">$</code> や <code class="language-plaintext highlighter-rouge">$$</code> 記号による数式の括りは上のように自分で設定する必要がある。使用できる関数は、公式ドキュメントの <a href="https://katex.org/docs/supported.html" target="_blank">Supported Function</a> を参照。</p>
+
+<p>また、<code class="language-plaintext highlighter-rouge">equation</code> などの環境が用意されているが、<code class="language-plaintext highlighter-rouge">$$, $$</code> や <code class="language-plaintext highlighter-rouge">\\[, \\]</code> で囲って使用する。そうしないと、数式として認識されない。</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Schrödinger 方程式：
+
+$$\begin{equation}
+    i\hbar\frac{\partial}{\partial t}\psi(\vec{x}, t) = \hat{H}\psi(\vec{x}, t)
+\end{equation}$$
+</code></pre></div></div>
+
+<p>Schrödinger 方程式：</p>
+
+\[\begin{equation}
+    i\hbar\frac{\partial}{\partial t}\psi(\vec{x}, t) = \hat{H}\psi(\vec{x}, t)
+\end{equation}\]
+
+  </div><a class="u-url" href="/blog/manage/introduce_katex" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blog/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">今月の物置</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">今月の新刊（@skrbcr）</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/skrbcr"><svg class="svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg> <span class="username">skrbcr</span></a></li><li><a href="https://www.twitter.com/skrbcr"><svg class="svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">skrbcr</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>物理＋プログラミング＋その他</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

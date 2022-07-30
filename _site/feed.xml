@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" hreflang="ja" /><updated>2022-07-30T15:55:10+09:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">今月の物置</title><subtitle>物理＋プログラミング＋その他</subtitle><author><name>今月の新刊（@skrbcr）</name></author><entry><title type="html">城ヶ島 天体撮影</title><link href="http://localhost:4000/blog/astron/jogasima" rel="alternate" type="text/html" title="城ヶ島 天体撮影" /><published>2022-07-30T00:00:00+09:00</published><updated>2022-07-30T00:00:00+09:00</updated><id>http://localhost:4000/blog/astron/jogasima</id><content type="html" xml:base="http://localhost:4000/blog/astron/jogasima"><![CDATA[<center>
+<img src="/blog/assets%5C2022-08-01-jogasima%5Cmilkyway1s.jpg" alt="天の川とさそり座" style="width: 90%;" />
+<p>Nikon Z50; F3.5, 20秒×12枚（240秒）, ISO 1600<br />天の川とさそり座（右）<br />スタックしたら端々が妙に暗くなってしまいました</p>
+<hr style="width: 50%" /><p></p>
+</center>
+
+<p>週末に城ヶ島（神奈川県三浦市）で家族と天体撮影を行いました。初めての天体撮影（＆天体観測）でしたが、天気が良くトラブルもなく撮影をすることができました。当然ながら撮影・編集はド素人です。</p>
+
+<p>天体写真だけ興味ある人は <a href="#撮影">スキップ</a>。</p>
+
+<h2 id="撮影の概要">撮影の概要</h2>
+<h3 id="行程">行程</h3>
+<p>夕方：自動車にて城ヶ島着。城ヶ島灯台を観光、撮影地の下見。
+日没30分後：撮影道具一式を持って来て撮影開始。
+撮影中：天の川、さそり座、夏の大三角、木星、アンドロメダ銀河などを撮影。
+23時ごろ：撮影終了。帰宅開始。</p>
+
+<h3 id="使用機材">使用機材</h3>
+<ul>
+  <li>カメラ Nikon Z50</li>
+  <li>三脚</li>
+  <li>ポータブル赤道儀（Vixen POLARIE）</li>
+  <li>双眼鏡（星を探すのに便利）</li>
+</ul>
+
+<p>機材が揃っているのは家族のお陰です（ありがとう）。望遠鏡は持参していないです。天の川とか夏の大三角とかが狙いだったので。</p>
+
+<h3 id="撮影地">撮影地</h3>
+<p>神奈川県三浦市の城ヶ島で撮影を行いました。色々なサイトを見たところ、城ヶ島は東京近郊でのアクセスのしやすさと空の暗さを兼ね備えた、数少ない撮影地のようです。城ヶ島は南側が海なので地平線から天頂まで光害が少ないです。ただし、旅客機が飛び交っているため、天の川など低い角度を写すと写り込んできます（後述）。その他、船舶や伊豆諸島（？）の街の光がありますが、私のような入門者にとっては気にならない程度のものです。反対に北側は横浜などによる光害が強く、見られる・撮影できる星の数は減ります。</p>
+
+<h2 id="観光">観光</h2>
+<p>城ヶ島には二か所の灯台があります。そのうちの「城ヶ島灯台」を観光しました。100年以上前からこの場所に灯台があるようですが、今も現役です。灯台からほど近いところで撮影していたため、灯台の光でしっかり照らされていました（光が目に入るとまぶしいです）。</p>
+
+<center><img src="/blog/assets%5C2022-08-01-jogasima%5Clighthouse.jpg" alt="城ヶ島灯台" style="width: 70%;" />
+<p>城ヶ島灯台</p>
+<hr style="width: 50%" /><p></p></center>
+
+<p>撮影地は灯台の南東の海岸でした。灯台のある高台から見下ろしたのが下の写真です。</p>
+
+<center><img src="/blog/assets%5C2022-08-01-jogasima%5Csea.jpg" alt="灯台から見下ろした海岸" style="width: 70%;" />
+<p>灯台から見下ろした海岸<br />南側が開けている</p>
+<!-- <hr style="width: 50%"><p></p> -->
+</center>
+
+<h2 id="撮影">撮影</h2>
+<center><img src="/blog/assets%5C2022-08-01-jogasima%5Cmilkyway1s.jpg" alt="天の川とさそり座" style="width: 90%;" />
+<p>Nikon Z50; F3.5, 20秒×12枚（240秒）, ISO 1600</p></center>
+<p>天の川とさそり座。冒頭の写真。右中央のアンタレスもオレンジ色に輝いている。撮影地の節で述べたように、城ヶ島南部は多数の旅客機が飛び交っており、撮影した天の川にも写り込んでいました。調べたところ、スタッキングの方法によってはこのような光を消すことができることが分かったので、実際にやってみたのがこの画像です。</p>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="astron" /><summary type="html"><![CDATA[Nikon Z50; F3.5, 20秒×12枚（240秒）, ISO 1600天の川とさそり座（右）スタックしたら端々が妙に暗くなってしまいました]]></summary></entry><entry><title type="html">円筒まわりの定常流</title><link href="http://localhost:4000/blog/physics/cylinder_flow" rel="alternate" type="text/html" title="円筒まわりの定常流" /><published>2022-07-22T00:00:00+09:00</published><updated>2022-07-22T00:00:00+09:00</updated><id>http://localhost:4000/blog/physics/cylinder_flow</id><content type="html" xml:base="http://localhost:4000/blog/physics/cylinder_flow"><![CDATA[<h2 id="調べること">調べること</h2>
+<p>流体力学の講義で複素速度ポテンシャルを学習した。具体例として、一様流のなかに円筒を置いた場合の流れを計算した。そこで、コンピュータで流れを計算・描画してみることにした。コード（Python）は<a href="https://github.com/skrbcr/blog/blob/main/assets/2022-07-22-cylinder_flow/cylinder.py">こちら</a>。</p>
+
+<p>内容の薄い記事だが、作りかけで放置状態だったのでとりあえず文章をまとめて公開することにした。</p>
+
+<h2 id="一様流中に置かれた円筒周りの流れ">一様流中に置かれた円筒周りの流れ</h2>
+<p>二次元平面上に一様な流れを考える。流れ（左図）や各点での流体の速度（右図。左図よりも2倍拡大してあることに注意）を図示すると、下図のようになる：</p>
+<center><img src="/blog/assets/2022-07-22-cylinder_flow/uniform_flow_stream.svg" style="width: 50%" /><img src="/blog/assets/2022-07-22-cylinder_flow/uniform_flow_quiver.svg" style="width: 50%" /></center>
+<p>この一様流の中に、中身の詰まった円を入れてみる。あるいは、円筒を置いてみる。流れは直感通り、次のようになる：</p>
+<center><img src="/blog/assets/2022-07-22-cylinder_flow/norm_stream.svg" style="width: 50%" /><img src="/blog/assets/2022-07-22-cylinder_flow/norm_quiver.svg" style="width: 50%" /></center>
+<p>左の図からは、流体が円筒（円）を避けるようにして流れていることがわかる。右の図からは、円筒表面では流速が $0$ になる淀み点 $(-1, 0), (1, 0)$ と一様流の速さ（例えば $(2.0, 2.0)$ あたり）よりも大きくなる点 $(0, -1), (0, 1)$ があることがわかる。</p>
+
+<h2 id="循環を加える">循環を加える</h2>
+<p>前節の流れに下図のような渦糸（循環）を加えてみる。</p>
+<center><img src="/blog/assets/2022-07-22-cylinder_flow/rot_stream.svg" style="width: 50%" /><img src="/blog/assets/2022-07-22-cylinder_flow/rot_quiver.svg" style="width: 50%" /></center>
+<p>このとき、流れの様子は、循環の大きさにより変化する。</p>
+
+<h3 id="循環が小さい場合">循環が小さい場合</h3>
+<center><img src="/blog/assets/2022-07-22-cylinder_flow/rot_weak_stream.svg" style="width: 50%" /><img src="/blog/assets/2022-07-22-cylinder_flow/rot_weak_quiver.svg" style="width: 50%" /></center>
+<p>循環流と一様流の向きが同じとなる上側では流速が速くなり、下側では遅くなる。ここまでは直感的な結果が得られている。</p>
+
+<h3 id="循環が特別な大きさの場合">循環が特別な大きさの場合</h3>
+<center><img src="/blog/assets/2022-07-22-cylinder_flow/rot_med_stream.svg" style="width: 50%" /><img src="/blog/assets/2022-07-22-cylinder_flow/rot_med_quiver.svg" style="width: 50%" /></center>
+<p>循環の流速を上げていくと、やがて円筒下部に特徴的な流れが出現する。左側の流れと右側の流れがぶつかり合う点ができる。具体的な循環の大きさは、流速を $U$、円筒の半径を $a$ とすると $\Gamma = 4\pi Ua$。</p>
+
+<h3 id="循環が大きい場合">循環が大きい場合</h3>
+<center><img src="/blog/assets/2022-07-22-cylinder_flow/rot_strong_stream.svg" style="width: 50%" /><img src="/blog/assets/2022-07-22-cylinder_flow/rot_strong_quiver.svg" style="width: 50%" /></center>
+<p>さらに循環の流速を上げると円筒下部の淀み点は円筒から離れた位置に移動する。直感的には分かりずらい流れが発生している。</p>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="physics" /><summary type="html"><![CDATA[調べること 流体力学の講義で複素速度ポテンシャルを学習した。具体例として、一様流のなかに円筒を置いた場合の流れを計算した。そこで、コンピュータで流れを計算・描画してみることにした。コード（Python）はこちら。]]></summary></entry><entry><title type="html">駒場の思ひ出</title><link href="http://localhost:4000/blog/university/komaba" rel="alternate" type="text/html" title="駒場の思ひ出" /><published>2022-07-22T00:00:00+09:00</published><updated>2022-07-22T00:00:00+09:00</updated><id>http://localhost:4000/blog/university/komaba</id><content type="html" xml:base="http://localhost:4000/blog/university/komaba"><![CDATA[<h2 id="はじめに">はじめに</h2>
+<p>東京大学の駒場生活（前期課程）が終わって半年くらい経ったので、振り返り。オンライン授業が多かったので変則的なことが多かったはずですが。将来の駒場生が読むかは知りませんが、一応参考になりそうな情報も書いています。先に概歴を書くと、理科一類→理学部物理学科 です（身バレしそう・・・）。なので、基本的には理科一類の人向けの内容です。</p>
+
+<h2 id="入学">入学</h2>
+<p>入学しました。入学生はまず全員駒場に収容されます。カナシイネ（？）。本郷に通えるのは3年生から。進振り後の学科は（少なくとも物理学科は）似た雰囲気の人が多いですが、駒場のクラスには色々な人がいます。積極的に交流を持つと良いのかも知れません。</p>
+
+<p>東大には当然「強い人（＝メッチャ勉強できる人）」がいるので、当時の私のように気構える人もいると思います。しかし、意外とどうにかなるので怯える必要はないです。私は入試では下位1/3～1/4の成績でしたが、それでも物理学科に第一段階で入れました。なので、多くの人の場合は、落ち着いて勉強すれば問題ないと思います。</p>
+
+<h2 id="1年生">1年生</h2>
+<p>忙しかったです。必修授業の数が多いし、課題が多い授業も少なくない。なので、選択科目を沢山受けない方が良いと思います。2Sはかなり楽（必修は物性化学、生命科学、基礎実験）なので、そこで沢山受けるべきでしょう。（色々な意味で）印象に残った科目たち：</p>
+
+<ul>
+  <li>ALESS（文科各類ではALESA）：英語で論文を書く授業。毎週決められたセクションを書いて提出するので、英語が得意な人でも地味に面倒だと思います。得意じゃなかったら・・・？？（これ以上はいけない）　毎週の提出をサボってた人は最後大変だったと思います。</li>
+  <li>初年次ゼミナール：20人ほどの少人数授業。内容は振り分けられた先生による。高校では習うことができないような大学ならではの様々な面白いクラスがあり。私は、人工衛星の軌道を計算して目的の天体まで飛ばそう！　という授業でした。面白かったけど結構大変だった。。</li>
+  <li>基礎実験：物理と化学の両方の実験が必修。設備が整っているので高校の実験から比べるとレベルの高い実験ができます（地味だけど）。レポート提出がきつかった。考察をいっぱい書いたら点数がいっぱい来ました。</li>
+  <li>力学：微積物理を知らない私にとって初めての大学物理！　楽しみだね・・・だったのですが試験の点数は54点（100点満点。ぎりぎり落単回避）の大事故。。授業が全然理解できてなかったよ。なのに今は物理学科生です。</li>
+  <li>第二外国語：フランス語選択でした。コツコツ勉強すれば問題ないし、しなければヤバいことになります。初修の語学は大人しく勉強するのが吉。</li>
+</ul>
+
+<h2 id="2年生">2年生</h2>
+<p>Sセメスターは急に楽になります！　やったー！！　先に書いた通り、必修科目は物性化学、生命科学、基礎実験だけ。私は文系の選択科目全6単位をこの期間（2S）でとりました。オススメ選択科目（100%主観）：</p>
+<ul>
+  <li>「相対論」や「量子論」（共に理系科目）：みんなの憧れ（？）の2科目。「相対論」は特殊相対論の基礎、「量子論」は量子力学の基礎を学べます。</li>
+  <li>アルゴリズム入門（理系科目）：プログラミング（特にPython）を既に習得している人は楽に高得点が取れるし楽しい（実体験）。科目名通り、授業はプログラミングよりもアルゴリズムの勉強が主体。</li>
+  <li>記号論理学（文系科目）：文系科目だけど文科生向けのクラスと理科生向けのがそれぞれあるので学習しやすいです。</li>
+  <li>経済思想史（文系科目）：理系だけど世界史好き！　という人にピッタリ。年によって担当する先生と内容が変わりますが、私が受けたときは世界史みたいな授業でした。真面目に勉強したらメッチャ高得点で嬉しかったです。</li>
+  <li>要望科目：進学したい学部学科の要望科目は受けておくべきだと思います。物理学科だとと「アルゴリズム入門」ですが、共に履修して大正解でした。特に「振動・波動論」の内容は進学後当たり前のように使います。</li>
+</ul>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="university" /><summary type="html"><![CDATA[はじめに 東京大学の駒場生活（前期課程）が終わって半年くらい経ったので、振り返り。オンライン授業が多かったので変則的なことが多かったはずですが。将来の駒場生が読むかは知りませんが、一応参考になりそうな情報も書いています。先に概歴を書くと、理科一類→理学部物理学科 です（身バレしそう・・・）。なので、基本的には理科一類の人向けの内容です。]]></summary></entry><entry><title type="html">Jekyll を用いて GitHub Pages に記事を投稿する</title><link href="http://localhost:4000/blog/manage/create_new_post" rel="alternate" type="text/html" title="Jekyll を用いて GitHub Pages に記事を投稿する" /><published>2022-05-05T00:00:00+09:00</published><updated>2022-05-05T00:00:00+09:00</updated><id>http://localhost:4000/blog/manage/create_new_post</id><content type="html" xml:base="http://localhost:4000/blog/manage/create_new_post"><![CDATA[<p><a href="https://skrbcr.github.io/blog/manage/setup_pages">Jekyll のインストールから GitHub Pages での公開まで</a> のつづき。やはりメモ書きなので必要な情報は網羅されていません。</p>
+
+<h2 id="実行環境">実行環境</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">ソフト</th>
+      <th style="text-align: center">バージョン</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">OS</td>
+      <td style="text-align: center">Windows 11 Home</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Ruby</td>
+      <td style="text-align: center">3.1.0p0</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Jekyll</td>
+      <td style="text-align: center">4.2.1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">GitHub Desktop</td>
+      <td style="text-align: center">3.0.0</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Visual Studio Code</td>
+      <td style="text-align: center">1.66.2</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Visual Studio Code を使って記事を作成しています。なお、Ruby がアップデートされていないです。</p>
+
+<h2 id="作業の流れ">作業の流れ</h2>
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">_posts</code> フォルダ内にファイル作成</li>
+  <li>記事の中身を書く</li>
+  <li>変更を commit して push</li>
+  <li>投稿完了</li>
+</ol>
+
+<p>結局は <a href="https://jekyllrb.com/docs/posts/">Posts - Jekyll</a> に従えばよい。</p>
+
+<h2 id="作業過程">作業過程</h2>
+<p>まず、プロジェクト内の <code class="language-plaintext highlighter-rouge">_posts</code> フォルダに Markdown や HTML のファイルを作成する。ファイル名は <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-title.md</code> つまり <code class="language-plaintext highlighter-rouge">2022-05-05-physics.md</code> のような形式にする。</p>
+
+<p>記事の中身を書いていく。冒頭部には次のように書く。これにより、Jekyll がタイトルや投稿日などを自動的に設定してくれる：</p>
+
+<div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">アヒルの観察"</span>
+<span class="na">date</span><span class="pi">:</span> <span class="s">2022-05-05</span>
+<span class="na">categories</span><span class="pi">:</span> <span class="s">physics</span>
+<span class="nn">---</span>
+
+（ここから記事の中身を書く）みなさんはアヒルが好きですか？　私は好きでも嫌いでもないです。
+・・・・・・
+・・・
+</code></pre></div></div>
+
+<p>ところで、記事中に画像などを挿入したい場合は、それらを <code class="language-plaintext highlighter-rouge">assets</code> フォルダ内に入れておくことで使えるようになる（こちらはファイル名の指定はない）。例として、このサイト <code class="language-plaintext highlighter-rouge">https://skrbcr.github.io/blog/</code> で記事を作成していて、画像 <code class="language-plaintext highlighter-rouge">awsome_photo.jpg</code> を使いたい場合。<code class="language-plaintext highlighter-rouge">assets</code> フォルダに <code class="language-plaintext highlighter-rouge">awsome_photo.jpg</code> を入れておけば、<code class="language-plaintext highlighter-rouge">https://skrbcr.github.io/blog/assets/awsome_photo.jpg/</code> で画像が利用できるようになる。つまり</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://skrbcr.github.io/blog/assets/awsome_photo.jpg/"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<p>と書けば、そこに画像が表示される。</p>
+
+<p>記事が書けたら commit し、GitHub の Repository に push すれば投稿完了。</p>
+
+<p>暫くすると反映されるので、実際の投稿を確認して終了。</p>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="manage" /><summary type="html"><![CDATA[Jekyll のインストールから GitHub Pages での公開まで のつづき。やはりメモ書きなので必要な情報は網羅されていません。]]></summary></entry><entry><title type="html">熱拡散方程式を数値的に解く</title><link href="http://localhost:4000/blog/physics/heat_equation" rel="alternate" type="text/html" title="熱拡散方程式を数値的に解く" /><published>2022-05-01T00:00:00+09:00</published><updated>2022-05-01T00:00:00+09:00</updated><id>http://localhost:4000/blog/physics/heat_equation</id><content type="html" xml:base="http://localhost:4000/blog/physics/heat_equation"><![CDATA[<h2 id="熱拡散方程式とは">熱拡散方程式とは</h2>
+<p>（物理数学の授業で習っただけの知識なので、かなり浅いですが……）</p>
+
+<p>熱の拡散の様子を表す微分方程式。熱分布の時間変化が空間的勾配を用いて表現される。あるいは、熱の空間的な分布（勾配）が時間変化によって表現される。そのため、式中に時間と空間の微分が現れる。この微分方程式は解析的に解くことが出来るが、ここでは数値的な解によるシミュレーションを行う。</p>
+
+<h3 id="基本の熱拡散方程式">基本の熱拡散方程式</h3>
+<p>外部からの熱の供給や吸収がなく単純に熱が拡がっていく場合。熱の拡散速度に関する定数 $\kappa$ を用いて以下の式で与えられる：</p>
+
+\[\begin{equation}
+    \pdv{}{t} u(t, x) = \kappa\ppdv{2}{}{x}u(t, x)
+\end{equation}\]
+
+<p>境界条件や初期条件を与えたり $\kappa$ の値を指定したりして解くことで、様々な条件下での熱の拡がりかたを求めることができる。</p>
+
+<h3 id="熱の湧き出しがある場合">熱の湧き出しがある場合</h3>
+<p>ヒーターなどで常に一定の熱が供給されている場合を考える。点 $x$ における熱の供給率を $q(x)$ とおく。このとき</p>
+
+\[\begin{align}
+    \pdv{u}{t} = q(x)
+\end{align}\]
+
+<p>であるから、熱拡散方程式は次になる：</p>
+
+\[\begin{align}
+    \pdv{}{t} u(t, x) = \kappa\ppdv{2}{}{x}u(t, x) + q(x)
+\end{align}\]
+
+<h2 id="微分方程式の数値解">微分方程式の数値解</h2>
+<h3 id="熱の湧き出しなし">熱の湧き出しなし</h3>
+<p>最初に述べた通り、微分方程式を数値的に解く。簡便な方法であるオイラー陽解法を採用する。<br />
+オイラー法の通常の手順に従う。まず、次の近似式が成立することに注目する：</p>
+
+\[\begin{align}
+    \pdv{}{x} u(t, x) \sim \frac{u(t, x + \Delta x) - u(t, x)}{\Delta x}
+\end{align}\]
+
+<p>この近似を式 $(1)$ に適用する：</p>
+
+\[\begin{align}
+    \frac{u(t + \Delta t, x) - u(t, x)}{\Delta t} &amp;\sim \kappa\pdv{}{x}\frac{u'(t, x + \Delta x) - u'(t, x)}{\Delta x} \nonumber\\
+    &amp;\sim \kappa\frac{1}{\Delta x}\left(\frac{u(t, x + 2\Delta x) - u(t, x + \Delta x)}{\Delta x} - \frac{u(t, x + \Delta x) - u(t, x)}{\Delta x}\right) \nonumber\\
+    &amp;= \kappa\frac{u(t, x + 2\Delta x) - 2u(t, x + \Delta x) + u(t, x)}{\left(\Delta x\right)^2}
+\end{align}\]
+
+<p>さらに、変形を行うと、必要な近似式が得られる：</p>
+
+\[\begin{align}
+    u(t + \Delta t, x) = u(t, x) + \frac{\kappa\Delta t}{\left(\Delta x\right)^2}\big[u(t, x + 2\Delta x) - 2u(t, x + \Delta x) + u(t, x)\big]
+\end{align}\]
+
+<p>この式を用いれば現在時刻の熱分布から、$\Delta t$ 経過後の熱分布が求まる。</p>
+
+<h3 id="熱の湧き出しあり">熱の湧き出しあり</h3>
+<p>いまやったのと同じ近似を式 $(3)$ に適用すれば、近似式が得られる：</p>
+
+\[\begin{align}
+    &amp;u(t + \Delta t, x)\nonumber\\ =&amp; u(t, x) + \frac{\kappa\Delta t}{\left(\Delta x\right)^2}\big[u(t, x + 2\Delta x) - 2u(t, x + \Delta x) + u(t, x)\big] + q(x)\Delta t
+\end{align}\]
+
+<h2 id="シミュレーション">シミュレーション</h2>
+<p>Pythonを用いてシミュレーションした。どの計算においても境界条件は、有限の区間を考え、区間の両端では常に熱は $0$ であるとした。結果は、横軸に $x$ 座標、縦軸に $u(t, x)$ をとったグラフで表し、時間変化をアニメーション（動画）で示す。</p>
+
+<h3 id="熱の湧き出しなし-1">熱の湧き出しなし</h3>
+<p>2つの初期条件でシミュレートを行った。</p>
+
+<h4 id="初期条件１">初期条件１</h4>
+<p>初期条件：</p>
+
+\[\begin{align}
+    \begin{cases}
+        u(x) = 4 \quad &amp; for~ -2\le x \le 2 \\
+        u(x) = 0 \quad &amp; for~ x &lt; -2,~2 &lt; x
+    \end{cases}
+\end{align}\]
+
+<p>$4$ や $2$ という数字に意味はない（適当なスケーリングがされているだけ）。この $t = 0$ での状態をグラフで表す。縦軸に熱の量 $u(x)$、横軸に位置座標 $x$ をとる。</p>
+<center><img src="/blog/assets/2022-05-01-heat_equation/湧き出しなし_初期条件1.svg" style="width: 70%;" /></center>
+<p>グラフは、「高い部分＝熱い部分」と見なせばよいと思う。</p>
+
+<p>では、時間を進めると熱がどのように拡散していくかをシミュレートする。式 $(7)$ において $\Delta t = dt = 0.001,~\Delta x = dx = 0.01$ として計算した結果が下の動画：</p>
+<center><video src="/blog/assets/2022-05-01-heat_equation/heat1_slow.mp4" controls="" style="width: 70%;"></video></center>
+<p>$u = 0$ と $u = 4$ の境界辺りから熱がゆっくりと拡がっていくのが分かる。</p>
+
+<p>条件はそのままに、シミュレートの時間間隔を大きくしてする。$\Delta t = dt = 0.01,~\Delta x = dx = 0.05$ として計算した：</p>
+<center><video src="/blog/assets/2022-05-01-heat_equation/heat1.mp4" controls="" style="width: 70%;"></video></center>
+<p>矩形のグラフが丸みを帯びていく様子が見られる。</p>
+
+<h4 id="初期条件2">初期条件2</h4>
+<p>初期条件：</p>
+
+\[\begin{align}
+    \begin{cases}
+        u(x) = x + 4  \quad &amp; for~ -4\le x \le 0 \\
+        u(x) = -x + 4 \quad &amp; for~ 0\le x\le 4 \\
+        u(x) = 0 \quad &amp; for~ x &lt; -4,~4 &lt; x
+    \end{cases}
+\end{align}\]
+
+<center><img src="/blog/assets/2022-05-01-heat_equation/湧き出しなし_初期条件2.svg" style="width: 70%;" /></center>
+
+<p>上でやったのと同じように、$\Delta t = 0.01,~\Delta x = 0.05$ として（以下のシミュレーションでもこの数値を用いる）計算する：</p>
+<center><video src="/blog/assets/2022-05-01-heat_equation/heat2.mp4" controls="" style="width: 70%;"></video></center>
+<p>やはり、時間経過とともにグラフは丸みを帯びてゆく。</p>
+
+<p>また、二つの初期条件において $t = 0$ でのグラフの形は異なるが、どちらも徐々にガウス関数に近い形に変形していくように見える。それには何か理由があるのか、それともただの思い違いなのかは知らない。</p>
+
+<h3 id="熱の湧き出しあり-1">熱の湧き出しあり</h3>
+<p>点または区間から一定の熱が供給され続ける場合のシミュレーション。</p>
+
+<h4 id="条件1">条件1</h4>
+<p>空間全体は最初熱を持たず、一点からの熱供給が絶えず行われている場合を考える。</p>
+<center><video src="/blog/assets/2022-05-01-heat_equation/heat3.mp4" controls="" style="width: 70%;"></video></center>
+<p>一点から鋭いピークが出現する。湧き出しがない時のような丸みを帯びたグラフへは変化しない。</p>
+
+<h4 id="条件2">条件2</h4>
+<p>条件1と同じ設定で、熱の湧き出しを点ではなく区間（$2\le x\le 3$）とした。</p>
+<center><video src="/blog/assets/2022-05-01-heat_equation/heat4.mp4" controls="" style="width: 70%;"></video></center>
+<p>時間経過とともに山のピークがどんどん鋭くなるようだ。延々と続ければ、グラフの形は条件1にに限りなく近づいていくはず。</p>
+
+<h2 id="与太話">与太話</h2>
+<p>色々な初期条件・境界条件で試すと面白いはず。それと、拡散方程式に関して気になっていることもある。が、今回はここまでにしておく。</p>
+
+<p>Python コード：</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">from</span> <span class="nn">matplotlib.animation</span> <span class="kn">import</span> <span class="n">FuncAnimation</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="p">.</span><span class="n">subplots</span><span class="p">()</span>
+
+<span class="n">dx</span> <span class="o">=</span> <span class="mf">0.5</span>    <span class="c1"># 刻み幅（位置）
+</span><span class="n">dt</span> <span class="o">=</span> <span class="mf">0.1</span>    <span class="c1"># 刻み幅（時間）
+</span><span class="n">kappa</span> <span class="o">=</span> <span class="mf">0.05</span>    <span class="c1"># 拡散の定数
+</span><span class="n">cons</span> <span class="o">=</span> <span class="p">(</span><span class="n">dt</span> <span class="o">/</span> <span class="n">dx</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">kappa</span> <span class="o">/</span> <span class="n">dx</span><span class="p">)</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">dx</span><span class="p">)</span>
+<span class="n">u</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">size</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">u</span><span class="p">.</span><span class="n">size</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+            <span class="n">u</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+=</span> <span class="p">(</span><span class="n">u</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">u</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">u</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">*</span> <span class="n">cons</span>
+            <span class="c1"># 湧き出しがある場合
+</span>            <span class="c1">#if 2 &lt;= x[i] &lt;= 3:
+</span>            <span class="c1">#    u[i] += 0.01 * dt
+</span>    
+    <span class="n">ax</span><span class="p">.</span><span class="n">cla</span><span class="p">()</span>
+    <span class="n">ax</span><span class="p">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="n">bottom</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">top</span> <span class="o">=</span> <span class="mi">5</span><span class="p">)</span>
+    <span class="n">ax</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">u</span><span class="p">,</span> <span class="s">'r'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">'$t = '</span> <span class="o">+</span> <span class="s">'{:.2f}'</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">n</span> <span class="o">*</span> <span class="n">dt</span><span class="p">)</span> <span class="o">+</span> <span class="s">'$'</span><span class="p">)</span>
+    <span class="n">ax</span><span class="p">.</span><span class="n">legend</span><span class="p">()</span>
+    <span class="n">ax</span><span class="p">.</span><span class="n">set_title</span><span class="p">(</span><span class="s">'graph title'</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">dt</span> <span class="o">*</span> <span class="n">kappa</span> <span class="o">/</span> <span class="p">(</span><span class="n">dx</span> <span class="o">*</span> <span class="n">dx</span><span class="p">))</span>
+    <span class="c1"># 初期条件を設定
+</span>    <span class="c1">#for i in range(u.size):
+</span>    <span class="c1">#    if -4 &lt;= x[i] &lt;= 0:
+</span>    <span class="c1">#        u[i] = x[i] + 4
+</span>    <span class="c1">#    elif 0 &lt;= x[i] &lt;= 4:
+</span>    <span class="c1">#        u[i] = -x[i] + 4
+</span>
+    <span class="c1"># アニメーション作成
+</span>    <span class="n">ani</span> <span class="o">=</span> <span class="n">FuncAnimation</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">update</span><span class="p">,</span> <span class="n">frames</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">601</span><span class="p">),</span> <span class="n">interval</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">ani</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="sa">R</span><span class="s">"directory\heat_simulations.mp4"</span><span class="p">,</span> <span class="n">writer</span><span class="o">=</span><span class="s">'ffmpeg'</span><span class="p">)</span>
+    <span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="n">main</span><span class="p">()</span>
+</code></pre></div></div>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="physics" /><summary type="html"><![CDATA[熱拡散方程式とは （物理数学の授業で習っただけの知識なので、かなり浅いですが……）]]></summary></entry><entry><title type="html">KaTeXの導入・使用</title><link href="http://localhost:4000/blog/manage/introduce_katex" rel="alternate" type="text/html" title="KaTeXの導入・使用" /><published>2022-03-08T00:00:00+09:00</published><updated>2022-03-08T00:00:00+09:00</updated><id>http://localhost:4000/blog/manage/introduce_katex</id><content type="html" xml:base="http://localhost:4000/blog/manage/introduce_katex"><![CDATA[<h2 id="katex-について">$\KaTeX$ について</h2>
+<p>$\KaTeX$（<a href="https://katex.org/" target="_blank">公式サイト</a>）は、HTML 文書上で（$\approx$ Web ページで）数式を綺麗に高速で表示させるための Java Script ライブラリである。$\LaTeX$ の Web 版のようなもの。</p>
+
+<h2 id="katex-の導入">$\KaTeX$ の導入</h2>
+<h3 id="基本の導入方法">基本の導入方法</h3>
+<p>まず、ページ上で $\KaTeX$ を使えるようにする。基本的には、公式ドキュメントの <a href="https://katex.org/docs/browser.html" target="_balnk">Installation/Browser</a> に従って作業すればよい。HTML 文書の <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> タグ内に以下を記述する：</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css"</span> <span class="na">integrity=</span><span class="s">"sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;script </span><span class="na">defer</span> <span class="na">src=</span><span class="s">"https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">defer</span> <span class="na">src=</span><span class="s">"https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</code></pre></div></div>
+<p>これにより、$\KaTeX$ の機能を使えるようになる。</p>
+
+<h3 id="jekyll-で使用する場合">Jekyll で使用する場合</h3>
+<p>Jekyll は初期設定で、$'$ を $’$ に変換してしまう。数式では $f'(x)$ のように $'$ を使うので、 <code class="language-plaintext highlighter-rouge">_config.yml</code> に次を記述する：</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">kramdown</span><span class="pi">:</span>
+  <span class="na">smart_quotes</span><span class="pi">:</span> <span class="pi">[</span><span class="s2">"</span><span class="s">apos"</span><span class="pi">,</span> <span class="s2">"</span><span class="s">apos"</span><span class="pi">,</span> <span class="s2">"</span><span class="s">quot"</span><span class="pi">,</span> <span class="s2">"</span><span class="s">quot"</span><span class="pi">]</span>
+</code></pre></div></div>
+<p>詳細やこれで上手くいく理由は <a href="https://stackoverflow.com/questions/25596792/how-do-i-turn-off-smart-quotes-in-jekyll" target="_blank">How do I turn off smart quotes in Jekyll?</a> や <a href="https://github.com/KaTeX/KaTeX/issues/967" target="_blank">Render smart quotes in math as regular quotes</a> を参照。</p>
+
+<h3 id="カスタマイズ">カスタマイズ</h3>
+<p>$\KaTeX$ はマクロなどをカスタマイズできる。<code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> タグ内に続けて次のように書けばよい：</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script&gt;</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">DOMContentLoaded</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">renderMathInElement</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">,</span> <span class="p">{</span>
+            <span class="c1">// 以下、カスタマイズ内容を記述</span>
+
+            <span class="c1">// 「$（数式）$」でインライン表示、などの設定</span>
+            <span class="na">delimiters</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span><span class="na">left</span><span class="p">:</span> <span class="dl">'</span><span class="s1">$$</span><span class="dl">'</span><span class="p">,</span> <span class="na">right</span><span class="p">:</span> <span class="dl">'</span><span class="s1">$$</span><span class="dl">'</span><span class="p">,</span> <span class="na">display</span><span class="p">:</span> <span class="kc">true</span><span class="p">},</span>       <span class="c1">// デイスプレイ表示</span>
+                <span class="p">{</span><span class="na">left</span><span class="p">:</span> <span class="dl">'</span><span class="s1">$</span><span class="dl">'</span><span class="p">,</span> <span class="na">right</span><span class="p">:</span> <span class="dl">'</span><span class="s1">$</span><span class="dl">'</span><span class="p">,</span> <span class="na">display</span><span class="p">:</span> <span class="kc">false</span><span class="p">},</span>        <span class="c1">// インライン表示</span>
+                <span class="p">{</span><span class="na">left</span><span class="p">:</span> <span class="dl">'</span><span class="se">\\</span><span class="s1">(</span><span class="dl">'</span><span class="p">,</span> <span class="na">right</span><span class="p">:</span> <span class="dl">'</span><span class="se">\\</span><span class="s1">)</span><span class="dl">'</span><span class="p">,</span> <span class="na">display</span><span class="p">:</span> <span class="kc">false</span><span class="p">},</span>    <span class="c1">// デイスプレイ表示</span>
+                <span class="p">{</span><span class="na">left</span><span class="p">:</span> <span class="dl">'</span><span class="se">\\</span><span class="s1">[</span><span class="dl">'</span><span class="p">,</span> <span class="na">right</span><span class="p">:</span> <span class="dl">'</span><span class="se">\\</span><span class="s1">]</span><span class="dl">'</span><span class="p">,</span> <span class="na">display</span><span class="p">:</span> <span class="kc">true</span><span class="p">}</span>      <span class="c1">// インライン表示</span>
+            <span class="p">],</span>
+            <span class="c1">// マクロの定義</span>
+            <span class="na">macros</span><span class="p">:</span> <span class="p">{</span>
+                <span class="dl">"</span><span class="se">\\</span><span class="s2">arsinh</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="se">\\</span><span class="s2">text{ar}</span><span class="se">\\</span><span class="s2">!</span><span class="se">\\</span><span class="s2">sinh</span><span class="dl">"</span><span class="p">,</span>      <span class="c1">// \arcsin{#1}</span>
+                <span class="dl">"</span><span class="se">\\</span><span class="s2">dd</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="se">\\</span><span class="s2">,d</span><span class="dl">"</span><span class="p">,</span>                         <span class="c1">// \dd{#1}</span>
+                <span class="dl">"</span><span class="se">\\</span><span class="s2">dv</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="se">\\</span><span class="s2">frac{d #1}{d #2}</span><span class="dl">"</span><span class="p">,</span>           <span class="c1">// \dv{#1}{#2}</span>
+            <span class="p">},</span>
+            <span class="c1">// エラー発生時に Console Window にエラーメッセージを表示するか</span>
+            <span class="na">throwOnError</span> <span class="p">:</span> <span class="kc">false</span><span class="p">,</span>       <span class="c1">// しない</span>
+        <span class="p">});</span>
+    <span class="p">});</span>
+<span class="nt">&lt;/script&gt;</span>
+</code></pre></div></div>
+<p>バックスラッシュ あるいは 円マーク <code class="language-plaintext highlighter-rouge">\</code> は エスケープする（<code class="language-plaintext highlighter-rouge">\\</code> と記述する）ことに注意。</p>
+
+<p>マクロの設定は若干分かりずらいが、例えば <code class="language-plaintext highlighter-rouge">\dv</code> であれば、上の通り設定しておけば <code class="language-plaintext highlighter-rouge">\dv{y}{x}</code> は $\dv{y}{x}$ と表示される。</p>
+
+<h2 id="katex-の使用">$\KaTeX$ の使用</h2>
+<p>$\LaTeX$ のように使用すればよい。ただし、いくつかの相違点はあるので注意が必要。例えば、<code class="language-plaintext highlighter-rouge">$</code> や <code class="language-plaintext highlighter-rouge">$$</code> 記号による数式の括りは上のように自分で設定する必要がある。使用できる関数は、公式ドキュメントの <a href="https://katex.org/docs/supported.html" target="_blank">Supported Function</a> を参照。</p>
+
+<p>また、<code class="language-plaintext highlighter-rouge">equation</code> などの環境が用意されているが、<code class="language-plaintext highlighter-rouge">$$, $$</code> や <code class="language-plaintext highlighter-rouge">\\[, \\]</code> で囲って使用する。そうしないと、数式として認識されない。</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Schrödinger 方程式：
+
+$$\begin{equation}
+    i\hbar\frac{\partial}{\partial t}\psi(\vec{x}, t) = \hat{H}\psi(\vec{x}, t)
+\end{equation}$$
+</code></pre></div></div>
+
+<p>Schrödinger 方程式：</p>
+
+\[\begin{equation}
+    i\hbar\frac{\partial}{\partial t}\psi(\vec{x}, t) = \hat{H}\psi(\vec{x}, t)
+\end{equation}\]]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="manage" /><summary type="html"><![CDATA[$\KaTeX$ について $\KaTeX$（公式サイト）は、HTML 文書上で（$\approx$ Web ページで）数式を綺麗に高速で表示させるための Java Script ライブラリである。$\LaTeX$ の Web 版のようなもの。]]></summary></entry><entry><title type="html">二酸化炭素分子の一次元振動</title><link href="http://localhost:4000/blog/physics/molecular" rel="alternate" type="text/html" title="二酸化炭素分子の一次元振動" /><published>2022-02-09T00:00:00+09:00</published><updated>2022-02-09T00:00:00+09:00</updated><id>http://localhost:4000/blog/physics/molecular</id><content type="html" xml:base="http://localhost:4000/blog/physics/molecular"><![CDATA[<h2 id="シミュレーション">シミュレーション</h2>
+<canvas id="canvas" width="1280" height="600" style="width: 90%; height: auto; background-color: black; display: block; margin: 0 auto;"></canvas>
+<script src="/blog/assets/2022-02-09-molecular/simulate.js"></script>
+
+<center>
+    <div style="margin: 1em;">$C_1$: <input type="text" id="c1" /></div>
+    <div style="margin: 1em;">$C_2$: <input type="text" id="c2" /></div>
+    <div style="margin: 1em;"><button onclick="changeVars()">適用！</button></div>
+    <hr width="50%" />
+    <p>赤丸が酸素原子、緑丸が炭素原子<br />白線と黄色線は原子間を結ぶ「バネ」（見やすさのために色を変えている）<br />初期状態は $C_1 = 1, C_2 = 0.2$</p>
+</center>
+
+<h3 id="シミュレートしているもの">シミュレートしているもの</h3>
+<p>このシミュレーションでは、二酸化炭素分子の古典的な一次元振動をシミュレートしている。簡単に言えば、次のような問題を考えている：</p>
+<blockquote>
+  <p>質量 $12m, 16m, 12m$ の3質点が、ばね定数 $k$ の2本のばねで直線状につながれている。
+このような系の一次元方運動はどのようになっているか？</p>
+</blockquote>
+
+<center><img src="/blog/assets/2022-02-09-molecular/settings.svg" style="width: 70%;" /></center>
+
+<p>結論として、上のシミュレーションでは、以下の一般解に基づいて描画を行っている：</p>
+
+\[\begin{align}
+    \left\{
+        \begin{array}{l}
+            x_1(t) = C_1\cos(\omega_1 t) + C_2\cos(\omega_2 t) \\
+            x_2(t) = -\frac{8}{3}C_2\cos(\omega_2 t) \\
+            x_3(t) = - C_1\cos(\omega_1 t) + C_2\cos(\omega_2 t)
+        \end{array}
+    \right. \\
+    with \quad \omega_1 = \frac{1}{4}\sqrt{\frac{k}{m}}, \quad \omega_2 = \frac{1}{4}\sqrt{\frac{11}{3}\frac{k}{m}} \nonumber
+\end{align}\]
+
+<p>$\omega_1, \omega_2$ は系の2つの固有振動数。$C_1, C_2$ は各固有振動の振幅（定数）で、シミュレーションでは変更することができる。</p>
+
+<p>詳細は下で説明する。</p>
+
+<h3 id="シミュレーションのソースコード">シミュレーションのソースコード</h3>
+<p>JavaScript で動いています。ソースコードは<a href="https://github.com/skrbcr/blog/blob/main/assets/2022-02-09-molecular/simulate.js" target="_blank">こちら</a>。</p>
+
+<h2 id="説明">説明</h2>
+<p>以下の道筋で運動の一般解を導く：</p>
+<ol>
+  <li>運動方程式を立てる</li>
+  <li>運動方程式を整理する</li>
+  <li>基準振動を求める</li>
+  <li>基準振動の重ね合わせが一般解</li>
+</ol>
+
+<p>※すべての事柄は説明しきれません。そのため、振動や関する基礎知識があり行列の簡単な計算ができる、という前提での説明となっております。</p>
+
+<h3 id="運動方程式の導出">運動方程式の導出</h3>
+<p>まず、運動方程式を導く。2通りの方法でやってみる：</p>
+<ul>
+  <li>高校物理だけを使う</li>
+  <li>ラグランジアンを使う</li>
+</ul>
+
+<h4 id="高校物理で運動方程式を導出">高校物理で運動方程式を導出</h4>
+<p>各質点の受ける力（弾性力）を考えれば、運動方程式を立てられる：</p>
+
+\[\begin{align}
+    \begin{cases}
+        16m\ddot{x_1} &amp;= k(x_2 - x_1) = -kx_1 + kx_2 \\
+        12m\ddot{x_2} &amp;= k(x_3 - x_2) - k(x_2 - x_1) = kx_1 - 2kx_2 + kx_3 \\
+        16m\ddot{x_3} &amp;= - k(x_3 - x_2) = kx_2 - kx_3
+    \end{cases}
+\end{align}\]
+
+<h4 id="ラグランジアンから運動方程式を導出">ラグランジアンから運動方程式を導出</h4>
+<p>ラグランジアン $L$ は</p>
+
+\[\begin{align}
+    &amp;L \nonumber \\
+    =&amp; \frac{1}{2}\cdot 16m\cdot\dot{x_1}^2 + \frac{1}{2}\cdot 12m\cdot\dot{x_2}^2 + \frac{1}{2}\cdot 16m\cdot\dot{x_3}^2 -\frac{1}{2}k(x_2-x_1)^2 - \frac{1}{2}k(x_3-x_2)^2 \nonumber \\
+    =&amp; m(8\dot{x_1}^2 + 6\dot{x_2}^2 + 8\dot{x_3}^2) - \frac{1}{2}k(x_1^2+2x_2^2+x_3^2-2x_1x_2-2x_2x_3)
+\end{align}\]
+
+<p>よって、各質点に対する運動方程式は</p>
+
+\[\begin{align}
+    \begin{cases}
+        \dv{}{t}\left(\pdv{L}{\dot{x_1}}\right) - \pdv{L}{x_1} &amp;= 16m\ddot{x_1} + kx_1- kx_2 = 0 \\
+        \dv{}{t}\left(\pdv{L}{\dot{x_2}}\right) - \pdv{L}{x_2} &amp;= 12m\ddot{x_2} +2kx_2 - kx_1 - kx_3 = 0 \\
+        \dv{}{t}\left(\pdv{L}{\dot{x_3}}\right) - \pdv{L}{x_3} &amp;= 16m\ddot{x_3} + kx_3- kx_2 = 0
+    \end{cases}
+\end{align}\]
+
+<h3 id="運動方程式の整理">運動方程式の整理</h3>
+<p>運動方程式が導かれたので、これを解けば良い。しかし、$x_1, x_2, x_3$ の3変数が混在するまま解くのは面倒。そこで、重心の情報を使うことで式を簡単にしてから解くことにする。</p>
+
+<h4 id="重心の情報">重心の情報</h4>
+<p>系の重心は、外力を受けない限り等速直線運動または静止する。そこで、系の重心は静止してて、その座標は一定であるとする。更にその値は任意にとって構わないから、重心座標は $0$ であるとする：</p>
+
+\[\begin{align}
+    \frac{16mx_1 + 12mx_2 + 16x_3}{16m+12m+16m} = 0
+\end{align}\]
+
+<p>この式より、次の関係が得られる：</p>
+
+\[\begin{align}
+    x_2 = - \frac{4}{3}\left(x_1 + x_3\right)
+\end{align}\]
+
+<h4 id="式の整理">式の整理</h4>
+<p>直前で得られた関係式を運動方程式に代入する。すると、独立な方程式として次の2本が得られる：</p>
+
+\[\begin{align}
+    \begin{cases}
+        16m\ddot{x_1} + kx_1 + \frac{4}{3}k\left(x_1 + x_3\right) = 16m\ddot{x_1} + \frac{7}{3}kx_1 + \frac{4}{3}kx_3 = 0 \\
+        16m\ddot{x_3} + kx_3 + \frac{4}{3}k\left(x_1 + x_3\right) = 16m\ddot{x_3} + \frac{4}{3}kx_1 + \frac{7}{3}kx_3 = 0
+    \end{cases}
+\end{align}\]
+
+<p>$x_2$ についての運動方程式を変形したものは $x_1, x_3$ についての式の和になっている（＝独立な式ではない）ことに注意。</p>
+
+<h3 id="基準振動">基準振動</h3>
+<p>新たに求まった連立方程式を使って、基準振動（モード）を求める。系の基準振動とは、系の運動が単振動のみで表される状態のこと。系の基準振動の振動数を $\omega$ とおき、$C, \phi$ を定数とすれば、$x_1, x_3$ に関する基準振動の運動は以下で記述される：</p>
+
+\[\begin{align}
+    \begin{cases}
+        x_1 = C\cos\left(\omega t + \phi\right)\\
+        x_3 = C\cos\left(\omega t + \phi\right)
+    \end{cases}
+\end{align}\]
+
+<p>$C$ は振幅であり、$\phi$ は位相に対応する。これらを、式 $(7)$ に代入し、整理する：</p>
+
+\[\begin{align}
+    \begin{cases}
+        \left(-16m\omega^2 + \dfrac{7}{3}k\right)A_1 + \dfrac{4}{3}kA_3 = 0 \\\\
+        \dfrac{4}{3}kA_1 + \left(-16m\omega^2 + \dfrac{7}{3}k\right)A_3 = 0
+    \end{cases}
+\end{align}\]
+
+<p>整理の際は、$\ddot{x_1} = -\omega^2 A_1\cos\left(\omega t + \phi\right) = -\omega^2 x_1$ などと計算すれば微分が消える。</p>
+
+<p>$(A_1, A_2) = (0, 0)$ では全質点が静止する解しか求まらないから、そうではない $\omega$ を求める。ここでは、連立方程式を行列に直して解くことにする。</p>
+
+\[\begin{align}
+    \begin{bmatrix}
+        -16m\omega^2 + \dfrac{7}{3}k &amp; \dfrac{4}{3}k \\
+        \dfrac{4}{3}k &amp; -16m\omega^2 + \dfrac{7}{3}k
+    \end{bmatrix}
+    \begin{bmatrix}
+        A_1 \\ A_2
+    \end{bmatrix}
+    = 
+    \begin{bmatrix}
+        0 \\ 0
+    \end{bmatrix}
+\end{align}\]
+
+<p>行列が逆行列を持たなければ、$(A_1, A_2) \neq (0, 0)$ 以外の解が出てくので、次のように計算できる：</p>
+
+\[\begin{gather}
+    \det \begin{bmatrix}
+        -16m\omega^2 + \dfrac{7}{3}k &amp; \dfrac{4}{3}k \\
+        \dfrac{4}{3}k &amp; -16m\omega^2 + \dfrac{7}{3}k
+    \end{bmatrix} = 0 \\\nonumber\\
+    \therefore~ \left(-16m\omega^2 + \frac{7}{3}k\right)\left(-16m\omega^2 + \frac{7}{3}k\right) - \frac{4}{3}k\cdot\frac{4}{3}k = 0 \\\nonumber\\
+    \therefore~ \boxed{\omega = \frac{1}{4}\sqrt{\frac{k}{m}}, \frac{1}{4}\sqrt{\frac{11}{3}\frac{k}{m}}}
+\end{gather}\]
+
+<p>求まった $\omega$ を式 $(8)$ に代入すれば、$x_1, x_3$ の基準振動が得られるし、式 $(6)$ を利用すれば $x_2$ の基準振動も得られる。</p>
+
+<h4 id="基準振動1">基準振動1</h4>
+<p>一つ目の基準振動（$\omega = \omega_1 = \frac{1}{4}\sqrt{\frac{k}{m}}$）は、$C_1, \phi_1$ を定数として次の通りに表される：</p>
+
+\[\begin{align}
+    \begin{cases}
+        x_1 = C_1\cos(\omega_1 t + \phi_1) \\
+        x_2 = 0 \\
+        x_3 = -C_1\cos(\omega_1 t + \phi_1)
+    \end{cases}
+\end{align}\]
+
+<p>これは、下のような振動。</p>
+
+<center><img src="/blog/assets/2022-02-09-molecular/mode1.gif" style="width: 60%;" /></center>
+
+<h4 id="基準振動2">基準振動2</h4>
+<p>二つ目の基準振動（$\omega = \omega_2 = \frac{1}{4}\sqrt{\frac{11}{3}\frac{k}{m}}$）は、$C_2, \phi_2$ を定数として次の通りに表される：</p>
+
+\[\begin{align}
+    \begin{cases}
+        x_1 = C_2\cos(\omega_2 t + \phi_2) \\
+        x_2 = -\frac{8}{3}C_2\cos(\omega_2 t + \phi_2) \\
+        x_3 = C_2\cos(\omega_2 t + \phi_2)
+    \end{cases}
+\end{align}\]
+
+<p>これは、下のような振動。</p>
+
+<center><img src="/blog/assets/2022-02-09-molecular/mode2.gif" style="width: 60%;" /></center>
+
+<h3 id="運動の一般解">運動の一般解</h3>
+
+<p>運動の一般解は、基準振動の重ね合わせである。よって、$\omega_1, \omega_2$ を系の固有振動数、$C_1, C_2$ を振幅（定数）、$\phi_1, \phi_2$ を位相（定数）として、運動の一般解は次のようになる：</p>
+
+\[\begin{align}
+    \left\{
+        \begin{array}{l}
+            x_1(t) = C_1\cos(\omega_1 t + \phi_1) + C_2\cos(\omega_2 t + \phi_2) \\
+            x_2(t) = -\frac{8}{3}C_2\cos(\omega_2 t + \phi_2) \\
+            x_3(t) = - C_1\cos(\omega_1 t + \phi_1) + C_2\cos(\omega_2 t + \phi_2)
+        \end{array}
+    \right. \\
+    with \quad \omega_1 = \frac{1}{4}\sqrt{\frac{k}{m}}, \quad \omega_2 = \frac{1}{4}\sqrt{\frac{11}{3}\frac{k}{m}} \nonumber
+\end{align}\]
+
+<h4 id="本シミュレーションの場合">本シミュレーションの場合</h4>
+<p>本シミュレーションでは、$\phi_1 = \phi_2 = 0$ としている。すなわち、次の運動をシミュレートしている：</p>
+
+\[\begin{align}
+    \left\{
+        \begin{array}{l}
+            x_1(t) = C_1\cos(\omega_1 t) + C_2\cos(\omega_2 t) \\
+            x_2(t) = -\frac{8}{3}C_2\cos(\omega_2 t) \\
+            x_3(t) = - C_1\cos(\omega_1 t) + C_2\cos(\omega_2 t)
+        \end{array}
+    \right.
+\end{align}\]
+
+<p>シミュレーション結果はページ冒頭に掲げた通り。</p>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="physics" /><summary type="html"><![CDATA[シミュレーション $C_1$: $C_2$: 適用！ 赤丸が酸素原子、緑丸が炭素原子白線と黄色線は原子間を結ぶ「バネ」（見やすさのために色を変えている）初期状態は $C_1 = 1, C_2 = 0.2$]]></summary></entry><entry><title type="html">積分公式</title><link href="http://localhost:4000/blog/math/integral_formula" rel="alternate" type="text/html" title="積分公式" /><published>2022-01-28T00:00:00+09:00</published><updated>2022-01-28T00:00:00+09:00</updated><id>http://localhost:4000/blog/math/integral_formula</id><content type="html" xml:base="http://localhost:4000/blog/math/integral_formula"><![CDATA[<h2 id="不定積分">不定積分</h2>
+
+\[\begin{equation}
+    \int \frac{1}{a^2 + x^2} \dd x = \frac{1}{a}\arctan\frac{x}{a}
+\end{equation}\]
+
+\[\begin{equation}
+    \int \frac{1}{a^2 - x^2} \dd x = \frac{1}{a}\artanh\frac{x}{a}
+\end{equation}\]
+
+\[\begin{equation}
+    \int \frac{1}{\sqrt{a^2 - x^2}} \dd x = \arcsin\frac{x}{a}
+\end{equation}\]
+
+\[\begin{equation}
+    \int \frac{1}{\sqrt{x^2 + a}} \dd x = \log\left| x + \sqrt{x^2 + a}\right|
+\end{equation}\]
+
+<h3 id="tanfracx2--t-の置換積分">$\tan{\frac{x}{2}} = t$ の置換積分</h3>
+<p>$x$ から $t$ へ $\tan{\frac{x}{2}} = t$ の置換。次のように変換される：</p>
+
+\[\begin{align}
+    \dd x = \frac{2}{1 + t^2} \dd t
+\end{align}\]
+
+\[\begin{align}
+    \sin x = \frac{2t}{1 + t^2}, \quad\cos x = \frac{1 - t^2}{1 + t^2}, \quad\tan x = \frac{2t}{1 - t^2}
+\end{align}\]
+
+<h2 id="定積分">定積分</h2>
+<h3 id="gauss関数">Gauss関数</h3>
+
+\[\begin{align}
+    \int_{-\infty}^{\infty} e^{-ax^2} \dd x = \sqrt{\frac{\pi}{a}}
+\end{align}\]
+
+<p>Gauss積分は、複素平面上で積分経路を虚軸方向にずらしても同じ値になる：</p>
+
+\[\begin{align}
+    \int_{-\infty}^{\infty} e^{-a(x + ib)^2} \dd x = \sqrt{\frac{\pi}{a}}
+\end{align}\]
+
+<h3 id="三角関数">三角関数</h3>
+
+\[\begin{align}
+    \int_{0}^{\frac{\pi}{2}} \sin^{n}x\dd x = \int_{0}^{\frac{\pi}{2}} \cos^{n}x\dd x =
+    \begin{cases}
+        \dfrac{(n-1)!!}{n!!}\dfrac{\pi}{2} \\\\
+        \dfrac{(n-1)!!}{n!!}
+    \end{cases}
+\end{align}\]]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="math" /><summary type="html"><![CDATA[不定積分]]></summary></entry><entry><title type="html">Jekyll のインストールから GitHub Pages での公開まで</title><link href="http://localhost:4000/blog/manage/setup_pages" rel="alternate" type="text/html" title="Jekyll のインストールから GitHub Pages での公開まで" /><published>2022-01-16T00:00:00+09:00</published><updated>2022-01-16T00:00:00+09:00</updated><id>http://localhost:4000/blog/manage/setup_pages</id><content type="html" xml:base="http://localhost:4000/blog/manage/setup_pages"><![CDATA[<p>Jekyll をインストールし、GitHub Pages で公開する作業のメモ書き</p>
+
+<h2 id="実行環境">実行環境</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">ソフト</th>
+      <th style="text-align: center">バージョン</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">OS</td>
+      <td style="text-align: center">Windows 11 Home</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Ruby</td>
+      <td style="text-align: center">3.1.0p0</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Jekyll</td>
+      <td style="text-align: center">4.2.1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="作業の流れ">作業の流れ</h2>
+<ol>
+  <li>Ruby をインストール</li>
+  <li>Jekyll と Bundler のインストール</li>
+  <li>Jekyll で新しいプロジェクトの作成、設定</li>
+  <li>GitHub でレポジトリを作成、設定</li>
+  <li>プラグインのインストール</li>
+</ol>
+
+<h2 id="ruby-をインストール">Ruby をインストール</h2>
+<p><a href="https://jekyllrb.com/docs/installation/windows/" target="_blank">Jekyll on Windows - Jekyll</a> や <a href="http://jekyllrb-ja.github.io/docs/installation/windows/" target="_blank">Jekyll on Windows - Jekyll（日本語）</a> などに従って、作業を進める：</p>
+<ul>
+  <li><a href="https://rubyinstaller.org/downloads/" target="_blank">RubyInstaller のダウンロードページ</a> より <strong>WITH DEVKIT</strong> のインストーラをダウンロード</li>
+  <li>インストーラを起動し、既定の設定のままでインストールを実行</li>
+  <li>終了後 <code class="language-plaintext highlighter-rouge">ridk install</code> のチェックを入れたままウィザードを閉じる</li>
+  <li>起動したプロンプトで指示に従い作業を完了させる</li>
+  <li><code class="language-plaintext highlighter-rouge">$ ruby -v</code> でバージョン情報が表示されること（＝インストール済）を確認</li>
+</ul>
+
+<h2 id="jekyll-と-bundler-のインストール">Jekyll と Bundler のインストール</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gem install jekyll bundler
+</code></pre></div></div>
+<p>完了後、インストール済みを確認：</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ jekyll -v
+$ bundler -v
+</code></pre></div></div>
+
+<h2 id="jekyll-で新しいプロジェクトの作成設定">Jekyll で新しいプロジェクトの作成、設定</h2>
+<h3 id="プロジェクトの作成とりあえずビルド">プロジェクトの作成・とりあえずビルド</h3>
+<p><code class="language-plaintext highlighter-rouge">project_name</code> という名前のプロジェクトを作る例：</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ jekyll new project_name
+$ cd project_name
+$ jekyll serve
+</code></pre></div></div>
+<p><code class="language-plaintext highlighter-rouge">$ jekyll serve</code> は <code class="language-plaintext highlighter-rouge">$ jekyll s</code> でも可。ローカルサーバー上にサイトが生成される。エラーが出なければ生成成功。<br />
+<a href="http://127.0.0.1:4000/" target="_blank">http://127.0.0.1:4000/</a> にアクセス。終了時は、<code class="language-plaintext highlighter-rouge">Ctrl + C</code> をコマンドプロンプトに入力。</p>
+
+<h4 id="サイト生成時にエラーが出る場合">サイト生成時にエラーが出る場合</h4>
+<p>まだ何も変なことをしていないにも拘わらず、<code class="language-plaintext highlighter-rouge">$ jekyll serve</code> で以下のようなエラーが出ることがある：</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>                    ------------------------------------------------
+      Jekyll 4.2.1   Please append `--trace` to the `serve` command
+                     for any additional information or backtrace.
+                    ------------------------------------------------
+</code></pre></div></div>
+<p>解決策は、<a href="https://github.com/jekyll/jekyll/issues/8523" target="_blank">Jekyll serve fails on Ruby 3.0</a> にあるように</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ bundle add webrick
+</code></pre></div></div>
+<p>を実行すればよい。これは、プロジェクト毎に一度実行すればOK。</p>
+
+<p>また、ページ編集後にこのようなエラーが出る場合は、記述ミスも疑う。エラーの内容を読んで対応する。</p>
+
+<h2 id="github-でレポジトリを作成設定">GitHub でレポジトリを作成、設定</h2>
+<p>GitHubにレポジトリを作成する。
+GitHub Pages の設定を行う。<a href="https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site" target="_blank">Configuring a publishing source for your GitHub Pages site - GitHub Docs</a> の通り。</p>
+
+<h2 id="プラグインのインストール">プラグインのインストール</h2>
+<p><a href="http://jekyllrb-ja.github.io/docs/plugins/installation/" target="_blank">プラグイン - Jekyll（日本語）</a> に従う。例えば、絵文字を表示するプラグイン <code class="language-plaintext highlighter-rouge">jemoji</code> をインストールする場合。<br />
+まず、自身の環境（PC）にインストール：</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gem install jemoji
+</code></pre></div></div>
+<p>これはプロジェクトごとに行う必要はないはず（要調査！）。</p>
+
+<p>次に、プロジェクトに設定する。<br />
+<code class="language-plaintext highlighter-rouge">_config.yml</code> に以下を追記：</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">plugin</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">jemoji</span>
+</code></pre></div></div>
+<p>そして <code class="language-plaintext highlighter-rouge">Gemfile</code> に以下を追記：</p>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">gem</span> <span class="s1">'jemoji'</span>
+</code></pre></div></div>
+<p>これで絵文字が使えるようになる :smile:</p>
+
+<h2 id="記事の投稿方法のメモ書き">記事の投稿方法のメモ書き</h2>
+<p>つづきの記事：<a href="https://skrbcr.github.io/blog/manage/create_new_post">Jekyll を用いて GitHub Pages に記事を投稿する</a></p>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="manage" /><summary type="html"><![CDATA[Jekyll をインストールし、GitHub Pages で公開する作業のメモ書き]]></summary></entry></feed>

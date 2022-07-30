@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"style.scss"
+	],
+	"sourcesContent": [
+		".post-content {\n  \n  h2 {\n    padding: 0.2rem 1rem;\n    border-left: 8px solid #000000;\n    border-bottom: 2px solid #000000;\n  }\n\n  h3 {\n    padding: 0.2rem 1rem;\n    border-bottom: 2px solid #000000;\n  }\n}\n\n.pagination {\n  margin-left: 25%;\n  margin-right: 25%;\n  text-align: center;\n}"
+	],
+	"names": [],
+	"mappings": "AAAA,AAEE,aAFW,CAEX,EAAE,CAAC,EACD,OAAO,EAAE,WAAW,EACpB,WAAW,EAAE,iBAAiB,EAC9B,aAAa,EAAE,iBAAiB,GACjC;;AANH,AAQE,aARW,CAQX,EAAE,CAAC,EACD,OAAO,EAAE,WAAW,EACpB,aAAa,EAAE,iBAAiB,GACjC;;AAGH,AAAA,WAAW,CAAC,EACV,WAAW,EAAE,GAAG,EAChB,YAAY,EAAE,GAAG,EACjB,UAAU,EAAE,MAAM,GACnB"
+}

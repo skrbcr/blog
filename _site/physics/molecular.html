@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>二酸化炭素分子の一次元振動 | 今月の物置</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="二酸化炭素分子の一次元振動" />
+<meta name="author" content="今月の新刊（@skrbcr）" />
+<meta property="og:locale" content="ja" />
+<meta name="description" content="シミュレーション $C_1$: $C_2$: 適用！ 赤丸が酸素原子、緑丸が炭素原子白線と黄色線は原子間を結ぶ「バネ」（見やすさのために色を変えている）初期状態は $C_1 = 1, C_2 = 0.2$" />
+<meta property="og:description" content="シミュレーション $C_1$: $C_2$: 適用！ 赤丸が酸素原子、緑丸が炭素原子白線と黄色線は原子間を結ぶ「バネ」（見やすさのために色を変えている）初期状態は $C_1 = 1, C_2 = 0.2$" />
+<link rel="canonical" href="http://localhost:4000/blog/physics/molecular" />
+<meta property="og:url" content="http://localhost:4000/blog/physics/molecular" />
+<meta property="og:site_name" content="今月の物置" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-02-09T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="二酸化炭素分子の一次元振動" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"今月の新刊（@skrbcr）"},"dateModified":"2022-02-09T00:00:00+09:00","datePublished":"2022-02-09T00:00:00+09:00","description":"シミュレーション $C_1$: $C_2$: 適用！ 赤丸が酸素原子、緑丸が炭素原子白線と黄色線は原子間を結ぶ「バネ」（見やすさのために色を変えている）初期状態は $C_1 = 1, C_2 = 0.2$","headline":"二酸化炭素分子の一次元振動","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/physics/molecular"},"url":"http://localhost:4000/blog/physics/molecular"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/blog/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/blog/feed.xml" title="今月の物置" /><!--アイコン-->
+<link rel="shortcut icon" href="/blog/assets/favicon/favicon.png" type="image/x-icon">
+
+<!--CSS-->
+<link rel="stylesheet" href="/blog/assets/css/style.css">
+
+<!--KaTeX-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            // customised options
+            delimiters: [
+                {left: '$$', right: '$$', display: true},
+                {left: '$', right: '$', display: false},
+                {left: '\\(', right: '\\)', display: false},
+                {left: '\\[', right: '\\]', display: true}
+            ],
+            macros: {
+                "\\arsinh": "\\text{ar}\\!\\sinh",
+                "\\arcosh": "\\text{ar}\\!\\cosh",
+                "\\artanh": "\\text{ar}\\!\\tanh",
+                "\\dd": "\\,d",
+                "\\dv": "\\frac{d #1}{d #2}",
+                "\\pdv": "\\frac{\\partial #1}{\\partial #2}",
+                "\\ppdv": "\\frac{\\partial^{#1} #2}{\\partial #3^{#1}}",
+            },
+            throwOnError : false,
+        });
+    });
+</script>
+</head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">今月の物置</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/blog/about/">このサイトについて</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">二酸化炭素分子の一次元振動</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2022-02-09T00:00:00+09:00" itemprop="datePublished">2022年02月09日
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h2 id="シミュレーション">シミュレーション</h2>
+<canvas id="canvas" width="1280" height="600" style="width: 90%; height: auto; background-color: black; display: block; margin: 0 auto;"></canvas>
+<script src="/blog/assets/2022-02-09-molecular/simulate.js"></script>
+
+<center>
+    <div style="margin: 1em;">$C_1$: <input type="text" id="c1" /></div>
+    <div style="margin: 1em;">$C_2$: <input type="text" id="c2" /></div>
+    <div style="margin: 1em;"><button onclick="changeVars()">適用！</button></div>
+    <hr width="50%" />
+    <p>赤丸が酸素原子、緑丸が炭素原子<br />白線と黄色線は原子間を結ぶ「バネ」（見やすさのために色を変えている）<br />初期状態は $C_1 = 1, C_2 = 0.2$</p>
+</center>
+
+<h3 id="シミュレートしているもの">シミュレートしているもの</h3>
+<p>このシミュレーションでは、二酸化炭素分子の古典的な一次元振動をシミュレートしている。簡単に言えば、次のような問題を考えている：</p>
+<blockquote>
+  <p>質量 $12m, 16m, 12m$ の3質点が、ばね定数 $k$ の2本のばねで直線状につながれている。
+このような系の一次元方運動はどのようになっているか？</p>
+</blockquote>
+
+<center><img src="/blog/assets/2022-02-09-molecular/settings.svg" style="width: 70%;" /></center>
+
+<p>結論として、上のシミュレーションでは、以下の一般解に基づいて描画を行っている：</p>
+
+\[\begin{align}
+    \left\{
+        \begin{array}{l}
+            x_1(t) = C_1\cos(\omega_1 t) + C_2\cos(\omega_2 t) \\
+            x_2(t) = -\frac{8}{3}C_2\cos(\omega_2 t) \\
+            x_3(t) = - C_1\cos(\omega_1 t) + C_2\cos(\omega_2 t)
+        \end{array}
+    \right. \\
+    with \quad \omega_1 = \frac{1}{4}\sqrt{\frac{k}{m}}, \quad \omega_2 = \frac{1}{4}\sqrt{\frac{11}{3}\frac{k}{m}} \nonumber
+\end{align}\]
+
+<p>$\omega_1, \omega_2$ は系の2つの固有振動数。$C_1, C_2$ は各固有振動の振幅（定数）で、シミュレーションでは変更することができる。</p>
+
+<p>詳細は下で説明する。</p>
+
+<h3 id="シミュレーションのソースコード">シミュレーションのソースコード</h3>
+<p>JavaScript で動いています。ソースコードは<a href="https://github.com/skrbcr/blog/blob/main/assets/2022-02-09-molecular/simulate.js" target="_blank">こちら</a>。</p>
+
+<h2 id="説明">説明</h2>
+<p>以下の道筋で運動の一般解を導く：</p>
+<ol>
+  <li>運動方程式を立てる</li>
+  <li>運動方程式を整理する</li>
+  <li>基準振動を求める</li>
+  <li>基準振動の重ね合わせが一般解</li>
+</ol>
+
+<p>※すべての事柄は説明しきれません。そのため、振動や関する基礎知識があり行列の簡単な計算ができる、という前提での説明となっております。</p>
+
+<h3 id="運動方程式の導出">運動方程式の導出</h3>
+<p>まず、運動方程式を導く。2通りの方法でやってみる：</p>
+<ul>
+  <li>高校物理だけを使う</li>
+  <li>ラグランジアンを使う</li>
+</ul>
+
+<h4 id="高校物理で運動方程式を導出">高校物理で運動方程式を導出</h4>
+<p>各質点の受ける力（弾性力）を考えれば、運動方程式を立てられる：</p>
+
+\[\begin{align}
+    \begin{cases}
+        16m\ddot{x_1} &amp;= k(x_2 - x_1) = -kx_1 + kx_2 \\
+        12m\ddot{x_2} &amp;= k(x_3 - x_2) - k(x_2 - x_1) = kx_1 - 2kx_2 + kx_3 \\
+        16m\ddot{x_3} &amp;= - k(x_3 - x_2) = kx_2 - kx_3
+    \end{cases}
+\end{align}\]
+
+<h4 id="ラグランジアンから運動方程式を導出">ラグランジアンから運動方程式を導出</h4>
+<p>ラグランジアン $L$ は</p>
+
+\[\begin{align}
+    &amp;L \nonumber \\
+    =&amp; \frac{1}{2}\cdot 16m\cdot\dot{x_1}^2 + \frac{1}{2}\cdot 12m\cdot\dot{x_2}^2 + \frac{1}{2}\cdot 16m\cdot\dot{x_3}^2 -\frac{1}{2}k(x_2-x_1)^2 - \frac{1}{2}k(x_3-x_2)^2 \nonumber \\
+    =&amp; m(8\dot{x_1}^2 + 6\dot{x_2}^2 + 8\dot{x_3}^2) - \frac{1}{2}k(x_1^2+2x_2^2+x_3^2-2x_1x_2-2x_2x_3)
+\end{align}\]
+
+<p>よって、各質点に対する運動方程式は</p>
+
+\[\begin{align}
+    \begin{cases}
+        \dv{}{t}\left(\pdv{L}{\dot{x_1}}\right) - \pdv{L}{x_1} &amp;= 16m\ddot{x_1} + kx_1- kx_2 = 0 \\
+        \dv{}{t}\left(\pdv{L}{\dot{x_2}}\right) - \pdv{L}{x_2} &amp;= 12m\ddot{x_2} +2kx_2 - kx_1 - kx_3 = 0 \\
+        \dv{}{t}\left(\pdv{L}{\dot{x_3}}\right) - \pdv{L}{x_3} &amp;= 16m\ddot{x_3} + kx_3- kx_2 = 0
+    \end{cases}
+\end{align}\]
+
+<h3 id="運動方程式の整理">運動方程式の整理</h3>
+<p>運動方程式が導かれたので、これを解けば良い。しかし、$x_1, x_2, x_3$ の3変数が混在するまま解くのは面倒。そこで、重心の情報を使うことで式を簡単にしてから解くことにする。</p>
+
+<h4 id="重心の情報">重心の情報</h4>
+<p>系の重心は、外力を受けない限り等速直線運動または静止する。そこで、系の重心は静止してて、その座標は一定であるとする。更にその値は任意にとって構わないから、重心座標は $0$ であるとする：</p>
+
+\[\begin{align}
+    \frac{16mx_1 + 12mx_2 + 16x_3}{16m+12m+16m} = 0
+\end{align}\]
+
+<p>この式より、次の関係が得られる：</p>
+
+\[\begin{align}
+    x_2 = - \frac{4}{3}\left(x_1 + x_3\right)
+\end{align}\]
+
+<h4 id="式の整理">式の整理</h4>
+<p>直前で得られた関係式を運動方程式に代入する。すると、独立な方程式として次の2本が得られる：</p>
+
+\[\begin{align}
+    \begin{cases}
+        16m\ddot{x_1} + kx_1 + \frac{4}{3}k\left(x_1 + x_3\right) = 16m\ddot{x_1} + \frac{7}{3}kx_1 + \frac{4}{3}kx_3 = 0 \\
+        16m\ddot{x_3} + kx_3 + \frac{4}{3}k\left(x_1 + x_3\right) = 16m\ddot{x_3} + \frac{4}{3}kx_1 + \frac{7}{3}kx_3 = 0
+    \end{cases}
+\end{align}\]
+
+<p>$x_2$ についての運動方程式を変形したものは $x_1, x_3$ についての式の和になっている（＝独立な式ではない）ことに注意。</p>
+
+<h3 id="基準振動">基準振動</h3>
+<p>新たに求まった連立方程式を使って、基準振動（モード）を求める。系の基準振動とは、系の運動が単振動のみで表される状態のこと。系の基準振動の振動数を $\omega$ とおき、$C, \phi$ を定数とすれば、$x_1, x_3$ に関する基準振動の運動は以下で記述される：</p>
+
+\[\begin{align}
+    \begin{cases}
+        x_1 = C\cos\left(\omega t + \phi\right)\\
+        x_3 = C\cos\left(\omega t + \phi\right)
+    \end{cases}
+\end{align}\]
+
+<p>$C$ は振幅であり、$\phi$ は位相に対応する。これらを、式 $(7)$ に代入し、整理する：</p>
+
+\[\begin{align}
+    \begin{cases}
+        \left(-16m\omega^2 + \dfrac{7}{3}k\right)A_1 + \dfrac{4}{3}kA_3 = 0 \\\\
+        \dfrac{4}{3}kA_1 + \left(-16m\omega^2 + \dfrac{7}{3}k\right)A_3 = 0
+    \end{cases}
+\end{align}\]
+
+<p>整理の際は、$\ddot{x_1} = -\omega^2 A_1\cos\left(\omega t + \phi\right) = -\omega^2 x_1$ などと計算すれば微分が消える。</p>
+
+<p>$(A_1, A_2) = (0, 0)$ では全質点が静止する解しか求まらないから、そうではない $\omega$ を求める。ここでは、連立方程式を行列に直して解くことにする。</p>
+
+\[\begin{align}
+    \begin{bmatrix}
+        -16m\omega^2 + \dfrac{7}{3}k &amp; \dfrac{4}{3}k \\
+        \dfrac{4}{3}k &amp; -16m\omega^2 + \dfrac{7}{3}k
+    \end{bmatrix}
+    \begin{bmatrix}
+        A_1 \\ A_2
+    \end{bmatrix}
+    = 
+    \begin{bmatrix}
+        0 \\ 0
+    \end{bmatrix}
+\end{align}\]
+
+<p>行列が逆行列を持たなければ、$(A_1, A_2) \neq (0, 0)$ 以外の解が出てくので、次のように計算できる：</p>
+
+\[\begin{gather}
+    \det \begin{bmatrix}
+        -16m\omega^2 + \dfrac{7}{3}k &amp; \dfrac{4}{3}k \\
+        \dfrac{4}{3}k &amp; -16m\omega^2 + \dfrac{7}{3}k
+    \end{bmatrix} = 0 \\\nonumber\\
+    \therefore~ \left(-16m\omega^2 + \frac{7}{3}k\right)\left(-16m\omega^2 + \frac{7}{3}k\right) - \frac{4}{3}k\cdot\frac{4}{3}k = 0 \\\nonumber\\
+    \therefore~ \boxed{\omega = \frac{1}{4}\sqrt{\frac{k}{m}}, \frac{1}{4}\sqrt{\frac{11}{3}\frac{k}{m}}}
+\end{gather}\]
+
+<p>求まった $\omega$ を式 $(8)$ に代入すれば、$x_1, x_3$ の基準振動が得られるし、式 $(6)$ を利用すれば $x_2$ の基準振動も得られる。</p>
+
+<h4 id="基準振動1">基準振動1</h4>
+<p>一つ目の基準振動（$\omega = \omega_1 = \frac{1}{4}\sqrt{\frac{k}{m}}$）は、$C_1, \phi_1$ を定数として次の通りに表される：</p>
+
+\[\begin{align}
+    \begin{cases}
+        x_1 = C_1\cos(\omega_1 t + \phi_1) \\
+        x_2 = 0 \\
+        x_3 = -C_1\cos(\omega_1 t + \phi_1)
+    \end{cases}
+\end{align}\]
+
+<p>これは、下のような振動。</p>
+
+<center><img src="/blog/assets/2022-02-09-molecular/mode1.gif" style="width: 60%;" /></center>
+
+<h4 id="基準振動2">基準振動2</h4>
+<p>二つ目の基準振動（$\omega = \omega_2 = \frac{1}{4}\sqrt{\frac{11}{3}\frac{k}{m}}$）は、$C_2, \phi_2$ を定数として次の通りに表される：</p>
+
+\[\begin{align}
+    \begin{cases}
+        x_1 = C_2\cos(\omega_2 t + \phi_2) \\
+        x_2 = -\frac{8}{3}C_2\cos(\omega_2 t + \phi_2) \\
+        x_3 = C_2\cos(\omega_2 t + \phi_2)
+    \end{cases}
+\end{align}\]
+
+<p>これは、下のような振動。</p>
+
+<center><img src="/blog/assets/2022-02-09-molecular/mode2.gif" style="width: 60%;" /></center>
+
+<h3 id="運動の一般解">運動の一般解</h3>
+
+<p>運動の一般解は、基準振動の重ね合わせである。よって、$\omega_1, \omega_2$ を系の固有振動数、$C_1, C_2$ を振幅（定数）、$\phi_1, \phi_2$ を位相（定数）として、運動の一般解は次のようになる：</p>
+
+\[\begin{align}
+    \left\{
+        \begin{array}{l}
+            x_1(t) = C_1\cos(\omega_1 t + \phi_1) + C_2\cos(\omega_2 t + \phi_2) \\
+            x_2(t) = -\frac{8}{3}C_2\cos(\omega_2 t + \phi_2) \\
+            x_3(t) = - C_1\cos(\omega_1 t + \phi_1) + C_2\cos(\omega_2 t + \phi_2)
+        \end{array}
+    \right. \\
+    with \quad \omega_1 = \frac{1}{4}\sqrt{\frac{k}{m}}, \quad \omega_2 = \frac{1}{4}\sqrt{\frac{11}{3}\frac{k}{m}} \nonumber
+\end{align}\]
+
+<h4 id="本シミュレーションの場合">本シミュレーションの場合</h4>
+<p>本シミュレーションでは、$\phi_1 = \phi_2 = 0$ としている。すなわち、次の運動をシミュレートしている：</p>
+
+\[\begin{align}
+    \left\{
+        \begin{array}{l}
+            x_1(t) = C_1\cos(\omega_1 t) + C_2\cos(\omega_2 t) \\
+            x_2(t) = -\frac{8}{3}C_2\cos(\omega_2 t) \\
+            x_3(t) = - C_1\cos(\omega_1 t) + C_2\cos(\omega_2 t)
+        \end{array}
+    \right.
+\end{align}\]
+
+<p>シミュレーション結果はページ冒頭に掲げた通り。</p>
+
+  </div><a class="u-url" href="/blog/physics/molecular" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blog/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">今月の物置</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">今月の新刊（@skrbcr）</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/skrbcr"><svg class="svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg> <span class="username">skrbcr</span></a></li><li><a href="https://www.twitter.com/skrbcr"><svg class="svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">skrbcr</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>物理＋プログラミング＋その他</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
