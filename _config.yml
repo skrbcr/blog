@@ -11,7 +11,7 @@ github_username:  skrbcr
 
 lang: ja
 
-destination: docs
+# destination: docs
 
 permalink: /:categories/:title
 
