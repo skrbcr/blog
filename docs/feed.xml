@@ -1,19 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://skrbcr.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://skrbcr.github.io/blog/" rel="alternate" type="text/html" hreflang="ja" /><updated>2022-07-31T16:43:12+09:00</updated><id>https://skrbcr.github.io/blog/feed.xml</id><title type="html">今月の物置</title><subtitle>物理＋プログラミング＋その他</subtitle><author><name>今月の新刊（@skrbcr）</name></author><entry><title type="html">城ヶ島 天体撮影</title><link href="https://skrbcr.github.io/blog/astron/jogasima" rel="alternate" type="text/html" title="城ヶ島 天体撮影" /><published>2022-07-31T00:00:00+09:00</published><updated>2022-07-31T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/astron/jogasima</id><content type="html" xml:base="https://skrbcr.github.io/blog/astron/jogasima"><![CDATA[<center>
-<img src="/blog/assets%5C2022-08-01-jogasima%5Cmilkyway1.jpg" alt="天の川とさそり座" style="width: 90%;" />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://skrbcr.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://skrbcr.github.io/blog/" rel="alternate" type="text/html" hreflang="ja" /><updated>2022-07-31T17:59:42+09:00</updated><id>https://skrbcr.github.io/blog/feed.xml</id><title type="html">今月の物置</title><subtitle>物理＋プログラミング＋その他</subtitle><author><name>今月の新刊（@skrbcr）</name></author><entry><title type="html">城ヶ島 天体撮影 2022夏</title><link href="https://skrbcr.github.io/blog/astron/jogasima" rel="alternate" type="text/html" title="城ヶ島 天体撮影 2022夏" /><published>2022-07-31T00:00:00+09:00</published><updated>2022-07-31T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/astron/jogasima</id><content type="html" xml:base="https://skrbcr.github.io/blog/astron/jogasima"><![CDATA[<center>
+<img src="/blog/assets%5C2022-07-31-jogasima%5Cmilkyway1.jpg" alt="天の川とさそり座" style="width: 90%;" />
 <p>Nikon Z50; F3.5, 20秒×12枚（240秒）, ISO 1600<br />天の川とさそり座（右）<br />スタックしたら四隅が妙に暗くなってしまいました</p>
 <hr style="width: 50%" /><p></p>
 </center>
 
-<p>週末に城ヶ島（神奈川県三浦市）で家族と天体撮影を行いました。初めての天体撮影（＆天体観測）でしたが、天気が良くトラブルもなく撮影をすることができました。当然ながら撮影・編集はド素人です。</p>
+<p>週末に城ヶ島（神奈川県三浦市）で家族と天体撮影を行いました。初めての天体撮影（＆天体観測）でしたが、天気が良くトラブルなく撮影できました。</p>
 
 <p>天体写真だけ興味ある人は <a href="#撮影">スキップ</a>。</p>
 
 <h2 id="撮影の概要">撮影の概要</h2>
 <h3 id="行程">行程</h3>
-<p>夕方：自動車にて城ヶ島着。城ヶ島灯台を観光、撮影地の下見。
-日没30分後：撮影道具一式を持って来て撮影開始。
-撮影中：天の川、さそり座、夏の大三角、木星、アンドロメダ銀河などを撮影。
-23時ごろ：撮影終了。帰宅開始。</p>
+<ul>
+  <li>夕方：自動車にて城ヶ島着。城ヶ島灯台を観光、撮影地の下見。</li>
+  <li>日没30分後：撮影道具一式を持って来て撮影開始。</li>
+  <li>撮影中：天の川、さそり座、夏の大三角、木星、アンドロメダ銀河などを撮影。</li>
+  <li>23時ごろ：撮影終了。帰宅開始。</li>
+</ul>
 
 <h3 id="使用機材">使用機材</h3>
 <ul>
@@ -26,66 +28,71 @@
 <p>機材が揃っているのは家族のお陰です（ありがとう）。望遠鏡は持参していないです。天の川とか夏の大三角とかが狙いだったので。</p>
 
 <h3 id="撮影地">撮影地</h3>
-<p>神奈川県三浦市の城ヶ島で撮影を行いました。色々なサイトを見たところ、城ヶ島は東京近郊でのアクセスのしやすさと空の暗さを兼ね備えた、数少ない撮影地のようです。城ヶ島は南側が海なので地平線から天頂まで光害が少ないです。ただし、旅客機が飛び交っているため、天の川など低い角度を写すと写り込んできます（後述）。その他、船舶や伊豆諸島（？）の街の光がありますが、私のような入門者にとっては気にならない程度のものです。反対に北側は横浜などによる光害が強く、見られる・撮影できる星の数は減ります。</p>
+<p>神奈川県三浦市の城ヶ島で撮影を行いました。色々なサイトを見たところ、城ヶ島は東京近郊でのアクセスのしやすさと空の暗さを兼ね備えた、数少ない撮影地のようです。城ヶ島は南側が海なので地平線から天頂まで光害が少ないです。ただし、旅客機が飛び交っているため、天の川など低い角度を写すと写り込んできます（後述）。その他、船舶や伊豆大島（？）の街の光がありますが、私のような入門者にとっては気にならない程度のものです。反対に北側は横浜などによる光害が強く、見られる・撮影できる星の数は減ります。</p>
 
 <h2 id="観光">観光</h2>
-<p>城ヶ島には二か所の灯台があります。そのうちの「城ヶ島灯台」を観光しました。100年以上前からこの場所に灯台があるようですが、今も現役です。灯台からほど近いところで撮影していたため、灯台の光でしっかり照らされていました（光が目に入るとまぶしいです）。</p>
+<p>到着後すぐに「城ヶ島灯台」を観光しました。100年以上前からこの場所に灯台があるようですが、今も現役です。夕暮れ時の灯台は情緒を感じさせるものがありますし、灯台から眺める海岸は佳景です。ちなみに、灯台からほど近いところで撮影していたため、灯台の光でしっかり照らされていました（当たり前ですが光が目に入るとまぶしいです）。</p>
 
-<center><img src="/blog/assets%5C2022-08-01-jogasima%5Clighthouse.jpg" alt="城ヶ島灯台" style="width: 70%;" />
+<center><img src="/blog/assets%5C2022-07-31-jogasima%5Clighthouse.jpg" alt="城ヶ島灯台" style="width: 70%;" />
 <p>城ヶ島灯台</p>
 <hr style="width: 50%" /><p></p></center>
 
 <p>撮影地は灯台の南東の海岸でした。灯台のある高台から見下ろしたのが下の写真です。</p>
 
-<center><img src="/blog/assets%5C2022-08-01-jogasima%5Csea.jpg" alt="灯台から見下ろした海岸" style="width: 70%;" />
-<p>灯台から見下ろした海岸<br />南側が開けている</p>
+<center><img src="/blog/assets%5C2022-07-31-jogasima%5Csea.jpg" alt="灯台から見下ろした海岸" style="width: 70%;" />
+<p>灯台から見下ろした岩場の海岸<br />南側が開けている</p>
 <!-- <hr style="width: 50%"><p></p> -->
 </center>
 
 <h2 id="撮影">撮影</h2>
-<center><img src="/blog/assets%5C2022-08-01-jogasima%5Cmilkyway1.jpg" alt="天の川とさそり座" style="width: 90%;" />
+<center><img src="/blog/assets%5C2022-07-31-jogasima%5Cmilkyway1.jpg" alt="天の川とさそり座" style="width: 90%;" />
 <p>Nikon Z50; 16mm, F3.5, 20秒×12枚（240秒）, ISO 1600</p></center>
-<p>天の川とさそり座。冒頭の写真。右中央のアンタレスもオレンジ色に輝いている。撮影地の節で述べたように、城ヶ島南部は多数の旅客機が飛び交っており、撮影した天の川にも写り込んでいました。調べたところ、スタッキングの方法によってはこのような光を消すことができることが分かったので、実際にやってみたのがこの画像です。</p>
+<p>天の川とさそり座。冒頭の写真。右中央のアンタレスもオレンジ色に輝いています。幾つかの星雲・星団も写っているようですね。撮影地の節で述べたように、城ヶ島南部は多数の旅客機が飛び交っており、撮影した天の川にも写り込んでいました。調べたところ、スタック<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>の方法によってはこのような光を消すことができることが分かったので、実際にやってみたのがこの画像です。</p>
 <center><hr style="width: 50%" /><p></p></center>
 
-<center><img src="/blog/assets%5C2022-08-01-jogasima%5Cmilkyway2.jpg" alt="天の川" style="width: 40%;" />
+<center><img src="/blog/assets%5C2022-07-31-jogasima%5Cmilkyway2.jpg" alt="天の川" style="width: 40%;" />
 <p>Nikon Z50; 16mm, F3.5, 20秒×6枚（120秒）, ISO 1600</p></center>
-<p>こちらはカメラを縦にして撮った天の川。左下に地面が写っています。</p>
+<p>こちらはカメラを縦にして撮った天の川。左下にちょこっと地面が写っています。</p>
 <center><hr style="width: 50%" /><p></p></center>
 
-<center><img src="/blog/assets%5C2022-08-01-jogasima%5Cmilkyway_center.jpg" alt="天の川" style="width: 90%;" />
+<center><img src="/blog/assets%5C2022-07-31-jogasima%5Cmilkyway_center.jpg" alt="天の川中心部" style="width: 90%;" />
 <p>Nikon Z50; 50mm, F6.3, 20秒×4枚（80秒）, ISO 1600</p></center>
-<p>銀河中心部。ノイズが多いです。露出不足のため？　編集でかなり明るくしています。次はISOを上げるなりしてみます。ちなみに、これは編集で赤を少し強くしてみたものです。</p>
+<p>天の川銀河の中心部。ノイズが多いです。露出不足のため？　編集でかなり明るくしています。ISOを上げるべきかもですね。ちなみに、これは編集で赤を少し強くしてみたものです。</p>
 <center><hr style="width: 50%" /><p></p></center>
 
-<center><img src="/blog/assets%5C2022-08-01-jogasima%5Cdaisankaku.jpg" alt="天の川" style="width: 90%;" />
+<center><img src="/blog/assets%5C2022-07-31-jogasima%5Cdaisankaku.jpg" alt="夏の大三角（ベガ・アルタイル・デネブ）と天の川" style="width: 90%;" />
 <p>Nikon Z50; 16mm, F3.5, 20秒×6枚（120秒）, ISO 1600</p></center>
 <p>夏の大三角。ひときわ明るいベガ・アルタイル・デネブと天の川が写っていますね。</p>
 <center><hr style="width: 50%" /><p></p></center>
 
-<center><img src="/blog/assets%5C2022-08-01-jogasima%5Candromeda.jpg" alt="アンドロメダ銀河" style="width: 90%;" />
+<center><img src="/blog/assets%5C2022-07-31-jogasima%5Candromeda.jpg" alt="アンドロメダ銀河" style="width: 90%;" />
 <p>Nikon Z50; 210mm, F3.5, 10秒×12枚（120秒）, ISO 3200</p></center>
 <p>アンドロメダ銀河・・・なのですが流石にこれが限界でした。中央付近の最も明るいものがアンドロメダ銀河です。明るい中心部とぼやっとした円盤部（円盤のようには見えないけれど）が写っています。双眼鏡を使えば目でも見ることができました。</p>
 <center><hr style="width: 50%" /><p></p></center>
 
-<center><img src="/blog/assets%5C2022-08-01-jogasima%5Cdiurnal_motion.jpg" alt="北極星周りの日周運動" style="width: 90%;" />
-<p>Nikon Z50; 50mm, F6.3, 328.7秒（マニュアル）, ISO 100</p></center>
-<p>中央の明るい星が北極星です。5分間露出して日周運動を撮ってみました。本当はもっと長時間露出して軌跡を撮るべきでしたね。あと、特に明るさをいじっていないので、眼を凝らして見てください（笑）</p>
+<center><img src="/blog/assets%5C2022-07-31-jogasima%5Cjupyter.jpg" alt="出現する木星" style="width: 90%;" />
+<p>Nikon Z50; 50mm, F6.3, 20秒×3枚（60秒）, ISO 1600</p></center>
+<p>東の丘から昇ってくる木星。非常に明るく肉眼でも存在感があります。さらに瞬かないのですぐに惑星だと分かります。具体的に木星だとは、スマホのアプリで調べて分かりました。便利です。</p>
 <center><hr style="width: 50%" /><p></p></center>
 
-<p>執筆メモ</p>
-<ul>
-  <li>夏の大三角：マスト</li>
-  <li>春の方：気が向いたら</li>
-  <li>✓銀河中心：気が向いたら</li>
-  <li>✓アンドロメダ：マスト</li>
-  <li>木星：マスト。景色と共に</li>
-  <li>✓日周運動：マスト。</li>
-</ul>
+<center><img src="/blog/assets%5C2022-07-31-jogasima%5Cdiurnal_motion.jpg" alt="北極星周りの日周運動" style="width: 90%;" />
+<p>Nikon Z50; 50mm, F6.3, 328.7秒（マニュアル）, ISO 100</p></center>
+<p>星々の日周運動。中央の明るい点が北極星です。ポータブル赤道儀を外し、カメラを三脚に固定したまま5分間露出して撮りました。本当はもっと長時間露出して軌跡を撮るべきでしたね。あと、特に明るさをいじっていないので、眼を凝らして見てください（笑）</p>
 
 <h2 id="編集について">編集について</h2>
+<p>画像編集は、スタックを<a href="http://deepskystacker.free.fr/english/index.html" target="_blank">Deep Sky Stacker</a>、その後の編集を<a href="http://gimp.org/" target="_blank">Gimp</a>で行いました。どちらも無料です。星空写真の編集は始めてだったので、ネットの情報を見ながら適当にやった感じです。少しずつ知識を付けたいですね。</p>
 
-<h2 id="感想">感想</h2>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="astron" /><summary type="html"><![CDATA[Nikon Z50; F3.5, 20秒×12枚（240秒）, ISO 1600天の川とさそり座（右）スタックしたら四隅が妙に暗くなってしまいました]]></summary></entry><entry><title type="html">円筒まわりの定常流</title><link href="https://skrbcr.github.io/blog/physics/cylinder_flow" rel="alternate" type="text/html" title="円筒まわりの定常流" /><published>2022-07-22T00:00:00+09:00</published><updated>2022-07-22T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/physics/cylinder_flow</id><content type="html" xml:base="https://skrbcr.github.io/blog/physics/cylinder_flow"><![CDATA[<h2 id="調べること">調べること</h2>
+<h2 id="感想">感想</h2>
+<p>普段見る星空は、空自体が光って見えるほど光害を受けたものだったので、たくさんの星がきらめく夜空を見ることができて大満足です。特に天の川を肉眼で見たのは生まれて初めてのことだったので嬉しかったです。光量の不足のような反省点を踏まえて、また星空を撮りに行こうと思います。</p>
+
+<p>あと、画像の四隅が暗くなるのは補正できるようなので、暇なときに再編集してみます。ｍた、思いついたときに写真や文章を追加するかもしれません。追加しないかもしれません。</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>同じ画像を複数枚撮って重ね合わせることで、ノイズの低減を行う編集手法。物理実験での複数回の測定みたいなものだと思っています。 <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="astron" /><summary type="html"><![CDATA[Nikon Z50; F3.5, 20秒×12枚（240秒）, ISO 1600天の川とさそり座（右）スタックしたら四隅が妙に暗くなってしまいました]]></summary></entry><entry><title type="html">円筒まわりの定常流</title><link href="https://skrbcr.github.io/blog/physics/cylinder_flow" rel="alternate" type="text/html" title="円筒まわりの定常流" /><published>2022-07-22T00:00:00+09:00</published><updated>2022-07-22T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/physics/cylinder_flow</id><content type="html" xml:base="https://skrbcr.github.io/blog/physics/cylinder_flow"><![CDATA[<h2 id="調べること">調べること</h2>
 <p>流体力学の講義で複素速度ポテンシャルを学習した。具体例として、一様流のなかに円筒を置いた場合の流れを計算した。そこで、コンピュータで流れを計算・描画してみることにした。コード（Python）は<a href="https://github.com/skrbcr/blog/blob/main/assets/2022-07-22-cylinder_flow/cylinder.py">こちら</a>。</p>
 
 <p>内容の薄い記事だが、作りかけで放置状態だったのでとりあえず文章をまとめて公開することにした。</p>
