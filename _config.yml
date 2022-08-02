@@ -24,6 +24,7 @@ plugins:
   - jekyll-feed
   # - jekyll-paginate
   - jekyll-paginate-v2
+  - jekyll-sitemap
 
 minima:
   date_format: "%Y年%m月%d日"
