@@ -5,8 +5,8 @@
 		"style.scss"
 	],
 	"sourcesContent": [
-		".post-content {\n  \n  h2 {\n    padding: 0.2rem 1rem;\n    border-left: 8px solid #000000;\n    border-bottom: 2px solid #000000;\n  }\n\n  h3 {\n    padding: 0.2rem 1rem;\n    border-bottom: 2px solid #000000;\n  }\n}\ntime.dt-published {\n  margin-right: 1em;\n}\n.pagination {\n  margin-left: 25%;\n  margin-right: 25%;\n  text-align: center;\n}"
+		".post-content {\n  h2 {\n    padding-left: 1rem;\n    border-left: 8px solid #000000;\n    // border-bottom: 2px solid #000000;\n  }\n  h3 {\n    padding-left: 1rem;\n    border-bottom: 1px dashed #999999;\n  }\n}\ntime.dt-published {\n  margin-right: 1em;\n}\n.pagination {\n  margin-left: 25%;\n  margin-right: 25%;\n  text-align: center;\n}\n.katex-display {\n  overflow: auto hidden;\n  padding: 0em 0.2em;\n  .katex>.katex-html{\n    display: table;\n    width: 100%;\n    border-collapse: separate;\n    border-spacing: 1em 0;\n    .base {\n      display: table-cell;\n      text-align: center;\n    }\n    .tag {\n      display: table-cell;\n      text-align: right;\n    }\n  }\n}"
 	],
 	"names": [],
-	"mappings": "AAAA,AAEE,aAFW,CAEX,EAAE,CAAC,EACD,OAAO,EAAE,WAAW,EACpB,WAAW,EAAE,iBAAiB,EAC9B,aAAa,EAAE,iBAAiB,GACjC;;AANH,AAQE,aARW,CAQX,EAAE,CAAC,EACD,OAAO,EAAE,WAAW,EACpB,aAAa,EAAE,iBAAiB,GACjC;;AAEH,AAAA,IAAI,AAAA,aAAa,CAAC,EAChB,YAAY,EAAE,GAAG,GAClB;;AACD,AAAA,WAAW,CAAC,EACV,WAAW,EAAE,GAAG,EAChB,YAAY,EAAE,GAAG,EACjB,UAAU,EAAE,MAAM,GACnB"
+	"mappings": "AAAA,AACE,aADW,CACX,EAAE,CAAC,EACD,YAAY,EAAE,IAAI,EAClB,WAAW,EAAE,iBAAiB,GAE/B;;AALH,AAME,aANW,CAMX,EAAE,CAAC,EACD,YAAY,EAAE,IAAI,EAClB,aAAa,EAAE,kBAAkB,GAClC;;AAEH,AAAA,IAAI,AAAA,aAAa,CAAC,EAChB,YAAY,EAAE,GAAG,GAClB;;AACD,AAAA,WAAW,CAAC,EACV,WAAW,EAAE,GAAG,EAChB,YAAY,EAAE,GAAG,EACjB,UAAU,EAAE,MAAM,GACnB;;AACD,AAAA,cAAc,CAAC,EACb,QAAQ,EAAE,WAAW,EACrB,OAAO,EAAE,SAAS,GAenB;;AAjBD,AAGE,cAHY,CAGZ,MAAM,GAAC,WAAW,CAAA,EAChB,OAAO,EAAE,KAAK,EACd,KAAK,EAAE,IAAI,EACX,eAAe,EAAE,QAAQ,EACzB,cAAc,EAAE,KAAK,GAStB;;AAhBH,AAQI,cARU,CAGZ,MAAM,GAAC,WAAW,CAKhB,KAAK,CAAC,EACJ,OAAO,EAAE,UAAU,EACnB,UAAU,EAAE,MAAM,GACnB;;AAXL,AAYI,cAZU,CAGZ,MAAM,GAAC,WAAW,CAShB,IAAI,CAAC,EACH,OAAO,EAAE,UAAU,EACnB,UAAU,EAAE,KAAK,GAClB"
 }
