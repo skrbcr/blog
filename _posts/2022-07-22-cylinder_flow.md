@@ -6,7 +6,7 @@ categories: physics
 ---
 
 ## 調べること
-流体力学の講義で複素速度ポテンシャルを学習した。具体例として、一様流のなかに円筒を置いた場合の流れを計算した。そこで、コンピュータで流れを計算・描画してみることにした。コード（Python）は[こちら](https://github.com/skrbcr/blog/blob/main/assets/2022-07-22-cylinder_flow/cylinder.py)。
+流体力学の講義で複素速度ポテンシャルを学習した。具体例として、一様流のなかに円筒を置いた場合の流れを計算した。そこで、コンピュータで流れを計算・描画してみることにした。コード（Python）は[こちら](https://github.com/skrbcr/blog/blob/main/docs/assets/2022-07-22-cylinder_flow/cylinder.py)。
 
 内容の薄い記事だが、作りかけで放置状態だったのでとりあえず文章をまとめて公開することにした。
 
