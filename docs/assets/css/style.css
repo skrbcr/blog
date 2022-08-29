@@ -2,6 +2,8 @@
 
 .post-content h3 { padding-left: 1rem; border-bottom: 1px dashed #999999; }
 
+hr.separator { width: 50%; }
+
 time.dt-published { margin-right: 1em; }
 
 .pagination { margin-left: 25%; margin-right: 25%; text-align: center; }
