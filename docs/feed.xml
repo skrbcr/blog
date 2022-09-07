@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://skrbcr.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://skrbcr.github.io/blog/" rel="alternate" type="text/html" hreflang="ja" /><updated>2022-08-29T15:50:29+09:00</updated><id>https://skrbcr.github.io/blog/feed.xml</id><title type="html">今月の物置</title><subtitle>物理＋プログラミング＋その他</subtitle><author><name>今月の新刊（@skrbcr）</name></author><entry><title type="html">月の軌道</title><link href="https://skrbcr.github.io/blog/physics/moon_orbit" rel="alternate" type="text/html" title="月の軌道" /><published>2022-08-29T00:00:00+09:00</published><updated>2022-08-29T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/physics/moon_orbit</id><content type="html" xml:base="https://skrbcr.github.io/blog/physics/moon_orbit"><![CDATA[<h2 id="調べること">調べること</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://skrbcr.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://skrbcr.github.io/blog/" rel="alternate" type="text/html" hreflang="ja" /><updated>2022-09-07T16:57:08+09:00</updated><id>https://skrbcr.github.io/blog/feed.xml</id><title type="html">今月の物置</title><subtitle>物理＋プログラミング＋その他</subtitle><author><name>今月の新刊（@skrbcr）</name></author><entry><title type="html">城ヶ島 天体撮影 2022夏 その2</title><link href="https://skrbcr.github.io/blog/astron/jogashima2" rel="alternate" type="text/html" title="城ヶ島 天体撮影 2022夏 その2" /><published>2022-09-07T00:00:00+09:00</published><updated>2022-09-07T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/astron/jogashima2</id><content type="html" xml:base="https://skrbcr.github.io/blog/astron/jogashima2"><![CDATA[<h2 id="まえがき">まえがき</h2>
+<p>8月下旬に <a href="jogasima">前回</a> と同じ城ヶ島の撮影地点にて天体撮影を行いました。今回は前回と違い、ポータブルでない赤道儀（Vixen MD-6SP）を使用しました。この赤道儀は随分古く、父が学生時代に使っていて長らく物置に眠っていたものです。そういう訳で上手く動作しないのではないかと心配でしたが、全くの杞憂でまだまだ現役で使えました。</p>
+
+<p>また、前回の撮影では圧倒的に露出不足だったので、今回は露出に気を配って撮影しました。</p>
+
+<h2 id="撮影">撮影</h2>
+
+<p>今回は天候の兼ね合いもあり、二つの星雲 M8・M20 と、アンドロメダ銀河の二枚です。</p>
+
+<center><img src="/blog/assets/2022-09-07-jogashima2/m8_m20.jpg" alt="二つの星雲 M8・M20" style="width: 50%;" />
+<p>Nikon Z50; 250 mm（フルサイズ換算: 350 mm）, F6.3, 180 秒 × 5 枚（900 秒）, ISO 3200</p>
+<p>M8（干潟星雲）・M20（三裂星雲）<br />
+天の川銀河の中心部に位置する二つの星雲。左下がM8、右上がM20。</p><hr style="width: 50%" /></center>
+
+<p></p>
+
+<center><img src="/blog/assets/2022-09-07-jogashima2/andromeda.jpg" alt="アンドロメダ銀河" style="width: 90%;" />
+<p>Nikon Z50; 250 mm（フルサイズ換算: 350 mm）, F6.3, 180 秒 × 4 枚（720 秒）, ISO 3200</p>
+<p>アンドロメダ銀河（M31）<br />
+中央に鎮座。円盤のガスも僅かに写っている箇所がある。<br />
+周囲には伴銀河の M110（アンドロメダの北）と、M32 思われるもの（アンドロメダの南東すぐ）が写っている。</p>
+<hr style="width: 50%" /></center>
+
+<h2 id="あとがき">あとがき</h2>
+<p>適正露出についての知識を得て、前回よりも綺麗な画像を得ることができました（ただし、アップした画像はいずれもサイズを落とすために縮小しています・・・）。M8・M20はよく撮れたと勝手に思っています。アンドロメダ銀河については総露出時間を更に伸ばして枚数を重ねることで、より鮮明な画像が得られるのではないかと期待しています。とはいえ、基本的な技術で向上できる部分は沢山あるので、引き続きそういった知識の習得をしたいと思います。</p>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="astron" /><summary type="html"><![CDATA[まえがき 8月下旬に 前回 と同じ城ヶ島の撮影地点にて天体撮影を行いました。今回は前回と違い、ポータブルでない赤道儀（Vixen MD-6SP）を使用しました。この赤道儀は随分古く、父が学生時代に使っていて長らく物置に眠っていたものです。そういう訳で上手く動作しないのではないかと心配でしたが、全くの杞憂でまだまだ現役で使えました。]]></summary></entry><entry><title type="html">月の軌道</title><link href="https://skrbcr.github.io/blog/physics/moon_orbit" rel="alternate" type="text/html" title="月の軌道" /><published>2022-08-29T00:00:00+09:00</published><updated>2022-08-29T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/physics/moon_orbit</id><content type="html" xml:base="https://skrbcr.github.io/blog/physics/moon_orbit"><![CDATA[<h2 id="調べること">調べること</h2>
 <p>月の軌道を、地球や太陽との万有引力を考えて計算する。以下、煩雑な記号が乱れ飛びます。<a href="#result">結果までジャンプ</a>。</p>
 
 <h3 id="問題設定">問題設定</h3>
