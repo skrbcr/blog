@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://skrbcr.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://skrbcr.github.io/blog/" rel="alternate" type="text/html" hreflang="ja" /><updated>2022-09-07T16:57:08+09:00</updated><id>https://skrbcr.github.io/blog/feed.xml</id><title type="html">今月の物置</title><subtitle>物理＋プログラミング＋その他</subtitle><author><name>今月の新刊（@skrbcr）</name></author><entry><title type="html">城ヶ島 天体撮影 2022夏 その2</title><link href="https://skrbcr.github.io/blog/astron/jogashima2" rel="alternate" type="text/html" title="城ヶ島 天体撮影 2022夏 その2" /><published>2022-09-07T00:00:00+09:00</published><updated>2022-09-07T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/astron/jogashima2</id><content type="html" xml:base="https://skrbcr.github.io/blog/astron/jogashima2"><![CDATA[<h2 id="まえがき">まえがき</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://skrbcr.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://skrbcr.github.io/blog/" rel="alternate" type="text/html" hreflang="ja" /><updated>2022-10-30T17:00:15+09:00</updated><id>https://skrbcr.github.io/blog/feed.xml</id><title type="html">今月の物置</title><subtitle>物理＋プログラミング＋その他</subtitle><author><name>今月の新刊（@skrbcr）</name></author><entry><title type="html">伊豆（亀石） 天体撮影 2022夏</title><link href="https://skrbcr.github.io/blog/astron/izu_kameishi" rel="alternate" type="text/html" title="伊豆（亀石） 天体撮影 2022夏" /><published>2022-10-30T00:00:00+09:00</published><updated>2022-10-30T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/astron/izu_kameishi</id><content type="html" xml:base="https://skrbcr.github.io/blog/astron/izu_kameishi"><![CDATA[<center><img src="/blog/assets/2022-10-30-izu_kameishi/andromeda.jpg" alt="アンドロメダ銀河" style="width: 90%;" />
+<p>Nikon Z50; Vixen FL55SS鏡筒使用, 180 秒 × 9 枚（1620 秒）, ISO 3200</p>
+<p>アンドロメダ銀河（M31）<br />
+中央のバルジのみならず、円盤も写っている。とはいえ円盤はぼんやり程度<br />
+二つの伴銀河（M32, M110）はばっちり</p><hr style="width: 50%" /></center>
+
+<h2 id="まえがき">まえがき</h2>
+<p>9月下旬に伊豆半島で天体撮影を行いました。具合的な場所は伊豆スカイラインの亀石パーキングエリアです。家族がいつの間にか天体望遠鏡を導入していたので、その初陣も兼ねてアンドロメダ銀河の撮影に挑戦しました。</p>
+
+<p>この日は曇りがちの天気で、何度も雲や霧に邪魔されました。日没後数時間たって、ようやくアンドロメダ銀河を写せる状態になりました。待っている間はひたすら車の中なのですが、まあ暇なこと笑　天体撮影にはこういうのもつきものなのでしょうね。</p>
+
+<h2 id="撮影地について">撮影地について</h2>
+<p>伊豆スカイラインは伊豆半島の北東部を縦に走る有料道路です。そのパーキングエリアの一つ、亀石PA にて撮影を行いました。伊豆スカイラインのパーキングエリアは数台分の駐車スペースのみあるところも多いようですが、この亀石PA はトイレや自動販売機が完備され、駐車台数も多いです。</p>
+
+<p>撮影環境自体はかなり良好でした。空の暗さでいうと、現地の光害はパーキングエリアのトイレと時々走っている自動車のライトくらいです。これらを上手く避ければ現地の光は問題にならないです。遠くの街の光はというと、さすがに熱海（東）や沼津（西）が近いために、地平線付近はばっちり白ばんでいます。この辺りの天体を狙う場合は要注意だと思います。とはいえ、トイレ・自動販売機・駐車スペースというパーキングエリアの恩恵を受けながら暗い夜空にカメラを向けられる好立地です。</p>
+
+<h2 id="撮影">撮影</h2>
+<p>いつのまにか撮影機材がアップグレードしていました。これまでは望遠レンズを用いて撮影していたのですが、今回は望遠鏡が導入されました。Vixen の FL55SS です。家族によると、300 mm 以上の望遠レンズを用いるつもりなら、それよりも望遠鏡を使う方がよい、ので導入したそうです。</p>
+
+<p>今回は上記の通り雲が邪魔する時間が長く、まともに撮影できたのはアンドロメダ銀河のみでした。その写真が冒頭に載せたものです。<a href="jogashima2">前回</a>と比べて、星の数、円盤の写り、周辺減光の少なさ、そのどれもが改善しています。これは主に望遠鏡の使用が理由として大きいのでしょうね。ちなみに、前回のアンドロメダ銀河↓</p>
+
+<center><img src="/blog/assets/2022-09-07-jogashima2/andromeda.jpg" alt="アンドロメダ銀河（前回）" style="width: 70%;" />
+<p>Nikon Z50; 250 mm（フルサイズ換算: 350 mm）, F6.3, 180 秒 × 4 枚（720 秒）, ISO 3200</p>
+<p>前回撮影した アンドロメダ銀河（M31）　城ヶ島にて<br />
+天体写真というよりも双眼鏡で覗いた感じ。スタックしてもこの程度でした</p>
+<hr style="width: 50%" /></center>
+
+<p>撮影技術・加工技術は何ら進歩していないのにこの違い！　露光時間をもっと増やせばもっと良い写真が撮れそうです（多分）。</p>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="astron" /><summary type="html"><![CDATA[Nikon Z50; Vixen FL55SS鏡筒使用, 180 秒 × 9 枚（1620 秒）, ISO 3200 アンドロメダ銀河（M31） 中央のバルジのみならず、円盤も写っている。とはいえ円盤はぼんやり程度 二つの伴銀河（M32, M110）はばっちり]]></summary></entry><entry><title type="html">城ヶ島 天体撮影 2022夏 その2</title><link href="https://skrbcr.github.io/blog/astron/jogashima2" rel="alternate" type="text/html" title="城ヶ島 天体撮影 2022夏 その2" /><published>2022-09-07T00:00:00+09:00</published><updated>2022-09-07T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/astron/jogashima2</id><content type="html" xml:base="https://skrbcr.github.io/blog/astron/jogashima2"><![CDATA[<h2 id="まえがき">まえがき</h2>
 <p>8月下旬に <a href="jogasima">前回</a> と同じ城ヶ島の撮影地点にて天体撮影を行いました。今回は前回と違い、ポータブルでない赤道儀（Vixen MD-6SP）を使用しました。この赤道儀は随分古く、父が学生時代に使っていて長らく物置に眠っていたものです。そういう訳で上手く動作しないのではないかと心配でしたが、全くの杞憂でまだまだ現役で使えました。</p>
 
 <p>また、前回の撮影では圧倒的に露出不足だったので、今回は露出に気を配って撮影しました。</p>
@@ -876,104 +903,4 @@ $$\begin{equation}
         \dfrac{(n-1)!!}{n!!}\dfrac{\pi}{2} \\\\
         \dfrac{(n-1)!!}{n!!}
     \end{cases}
-\end{align}\]]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="math" /><summary type="html"><![CDATA[不定積分]]></summary></entry><entry><title type="html">Jekyll のインストールから GitHub Pages での公開まで</title><link href="https://skrbcr.github.io/blog/manage/setup_pages" rel="alternate" type="text/html" title="Jekyll のインストールから GitHub Pages での公開まで" /><published>2022-01-16T00:00:00+09:00</published><updated>2022-01-16T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/manage/setup_pages</id><content type="html" xml:base="https://skrbcr.github.io/blog/manage/setup_pages"><![CDATA[<p>Jekyll をインストールし、GitHub Pages で公開する作業のメモ書き</p>
-
-<h2 id="実行環境">実行環境</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">ソフト</th>
-      <th style="text-align: center">バージョン</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">OS</td>
-      <td style="text-align: center">Windows 11 Home</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Ruby</td>
-      <td style="text-align: center">3.1.0p0</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Jekyll</td>
-      <td style="text-align: center">4.2.1</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="作業の流れ">作業の流れ</h2>
-<ol>
-  <li>Ruby をインストール</li>
-  <li>Jekyll と Bundler のインストール</li>
-  <li>Jekyll で新しいプロジェクトの作成、設定</li>
-  <li>GitHub でレポジトリを作成、設定</li>
-  <li>プラグインのインストール</li>
-</ol>
-
-<h2 id="ruby-をインストール">Ruby をインストール</h2>
-<p><a href="https://jekyllrb.com/docs/installation/windows/" target="_blank">Jekyll on Windows - Jekyll</a> や <a href="http://jekyllrb-ja.github.io/docs/installation/windows/" target="_blank">Jekyll on Windows - Jekyll（日本語）</a> などに従って、作業を進める：</p>
-<ul>
-  <li><a href="https://rubyinstaller.org/downloads/" target="_blank">RubyInstaller のダウンロードページ</a> より <strong>WITH DEVKIT</strong> のインストーラをダウンロード</li>
-  <li>インストーラを起動し、既定の設定のままでインストールを実行</li>
-  <li>終了後 <code class="language-plaintext highlighter-rouge">ridk install</code> のチェックを入れたままウィザードを閉じる</li>
-  <li>起動したプロンプトで指示に従い作業を完了させる</li>
-  <li><code class="language-plaintext highlighter-rouge">$ ruby -v</code> でバージョン情報が表示されること（＝インストール済）を確認</li>
-</ul>
-
-<h2 id="jekyll-と-bundler-のインストール">Jekyll と Bundler のインストール</h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gem install jekyll bundler
-</code></pre></div></div>
-<p>完了後、インストール済みを確認：</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ jekyll -v
-$ bundler -v
-</code></pre></div></div>
-
-<h2 id="jekyll-で新しいプロジェクトの作成設定">Jekyll で新しいプロジェクトの作成、設定</h2>
-<h3 id="プロジェクトの作成とりあえずビルド">プロジェクトの作成・とりあえずビルド</h3>
-<p><code class="language-plaintext highlighter-rouge">project_name</code> という名前のプロジェクトを作る例：</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ jekyll new project_name
-$ cd project_name
-$ jekyll serve
-</code></pre></div></div>
-<p><code class="language-plaintext highlighter-rouge">$ jekyll serve</code> は <code class="language-plaintext highlighter-rouge">$ jekyll s</code> でも可。ローカルサーバー上にサイトが生成される。エラーが出なければ生成成功。<br />
-<a href="http://127.0.0.1:4000/" target="_blank">http://127.0.0.1:4000/</a> にアクセス。終了時は、<code class="language-plaintext highlighter-rouge">Ctrl + C</code> をコマンドプロンプトに入力。</p>
-
-<h4 id="サイト生成時にエラーが出る場合">サイト生成時にエラーが出る場合</h4>
-<p>まだ何も変なことをしていないにも拘わらず、<code class="language-plaintext highlighter-rouge">$ jekyll serve</code> で以下のようなエラーが出ることがある：</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>                    ------------------------------------------------
-      Jekyll 4.2.1   Please append `--trace` to the `serve` command
-                     for any additional information or backtrace.
-                    ------------------------------------------------
-</code></pre></div></div>
-<p>解決策は、<a href="https://github.com/jekyll/jekyll/issues/8523" target="_blank">Jekyll serve fails on Ruby 3.0</a> にあるように</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ bundle add webrick
-</code></pre></div></div>
-<p>を実行すればよい。これは、プロジェクト毎に一度実行すればOK。</p>
-
-<p>また、ページ編集後にこのようなエラーが出る場合は、記述ミスも疑う。エラーの内容を読んで対応する。</p>
-
-<h2 id="github-でレポジトリを作成設定">GitHub でレポジトリを作成、設定</h2>
-<p>GitHubにレポジトリを作成する。
-GitHub Pages の設定を行う。<a href="https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site" target="_blank">Configuring a publishing source for your GitHub Pages site - GitHub Docs</a> の通り。</p>
-
-<h2 id="プラグインのインストール">プラグインのインストール</h2>
-<p><a href="http://jekyllrb-ja.github.io/docs/plugins/installation/" target="_blank">プラグイン - Jekyll（日本語）</a> に従う。例えば、絵文字を表示するプラグイン <code class="language-plaintext highlighter-rouge">jemoji</code> をインストールする場合。<br />
-まず、自身の環境（PC）にインストール：</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gem install jemoji
-</code></pre></div></div>
-<p>これはプロジェクトごとに行う必要はないはず（要調査！）。</p>
-
-<p>次に、プロジェクトに設定する。<br />
-<code class="language-plaintext highlighter-rouge">_config.yml</code> に以下を追記：</p>
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">plugin</span><span class="pi">:</span>
-  <span class="pi">-</span> <span class="s">jemoji</span>
-</code></pre></div></div>
-<p>そして <code class="language-plaintext highlighter-rouge">Gemfile</code> に以下を追記：</p>
-<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">gem</span> <span class="s1">'jemoji'</span>
-</code></pre></div></div>
-<p>これで絵文字が使えるようになる :smile:</p>
-
-<h2 id="記事の投稿方法のメモ書き">記事の投稿方法のメモ書き</h2>
-<p>つづきの記事：<a href="https://skrbcr.github.io/blog/manage/create_new_post">Jekyll を用いて GitHub Pages に記事を投稿する</a></p>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="manage" /><summary type="html"><![CDATA[Jekyll をインストールし、GitHub Pages で公開する作業のメモ書き]]></summary></entry></feed>
+\end{align}\]]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="math" /><summary type="html"><![CDATA[不定積分]]></summary></entry></feed>
