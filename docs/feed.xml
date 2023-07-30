@@ -1,4 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://skrbcr.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://skrbcr.github.io/blog/" rel="alternate" type="text/html" hreflang="ja" /><updated>2022-10-30T17:00:15+09:00</updated><id>https://skrbcr.github.io/blog/feed.xml</id><title type="html">今月の物置</title><subtitle>物理＋プログラミング＋その他</subtitle><author><name>今月の新刊（@skrbcr）</name></author><entry><title type="html">伊豆（亀石） 天体撮影 2022夏</title><link href="https://skrbcr.github.io/blog/astron/izu_kameishi" rel="alternate" type="text/html" title="伊豆（亀石） 天体撮影 2022夏" /><published>2022-10-30T00:00:00+09:00</published><updated>2022-10-30T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/astron/izu_kameishi</id><content type="html" xml:base="https://skrbcr.github.io/blog/astron/izu_kameishi"><![CDATA[<center><img src="/blog/assets/2022-10-30-izu_kameishi/andromeda.jpg" alt="アンドロメダ銀河" style="width: 90%;" />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://skrbcr.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://skrbcr.github.io/blog/" rel="alternate" type="text/html" hreflang="ja" /><updated>2023-07-30T15:10:01+09:00</updated><id>https://skrbcr.github.io/blog/feed.xml</id><title type="html">今月の物置</title><subtitle>物理＋プログラミング＋その他</subtitle><author><name>今月の新刊（@skrbcr）</name></author><entry><title type="html">AtCoder はじめました</title><link href="https://skrbcr.github.io/blog/programing/begin_atcoder" rel="alternate" type="text/html" title="AtCoder はじめました" /><published>2023-07-30T00:00:00+09:00</published><updated>2023-07-30T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/programing/begin_atcoder</id><content type="html" xml:base="https://skrbcr.github.io/blog/programing/begin_atcoder"><![CDATA[<h2 id="atcoder-はじめました">AtCoder はじめました</h2>
+<p>AtCoder に<a href="https://atcoder.jp/users/skrbcr">アカウント</a>を作ってコンテストに参加してみました。</p>
+
+<h3 id="はじめた経緯">はじめた経緯</h3>
+<p>プログラミングを知って2年半近く場当たり的に独学でやってきたのですが、最近実力が頭打ちになっているのを実感していました。またプログラミングに飽きてきたこともあり、趣向が異なり、勉強も兼ねるようなものに挑んでみたいと考えていました。友人がだいぶ前に AtCoder を始めたと言っていたのを思い出し、自分もやってみようと登録しました。</p>
+
+<h3 id="はじめる前のスペック現在のスペック">はじめる前のスペック≒現在のスペック</h3>
+<p>後で見返したときに上達を測れるように、始める前の私のスペックを書いておきます。総じて初心者です：</p>
+
+<ul>
+  <li>プログラムに対する理解：変数や if, for, while みたいなのは問題なし</li>
+  <li>習得したアルゴリズム：for ループいっぱい書いてとにかく全探索。計算量の概念は知ってるけど面倒なので考えない</li>
+  <li>学部学科：非情報系</li>
+  <li>言語：C++ は少し, Python はレポートに貼るグラフを作るソフトだと思っている</li>
+  <li>作ってきたもの：GitHub やこのブログにあります。真面目に取り組んでいる人から見たら、初心者が頑張って作った感じじゃないかな</li>
+</ul>
+
+<h2 id="実際にコンテストに出た感想">実際にコンテストに出た感想</h2>
+<p>主に<a href="https://qiita.com/drken/items/fd4e5e3630d0f5859067">AtCoder に登録したら次にやること ～ これだけ解けば十分闘える！過去問精選 10 問 ～ | Qiita</a>、<a href="https://qiita.com/e869120/items/f1c6f98364d1443148b3">レッドコーダーが教える、競プロ・AtCoder上達のガイドライン【初級編：競プロを始めよう】 | Qiita</a>を参考にしました。</p>
+
+<h4 id="出場前">出場前</h4>
+<p>登録後、初めてのコンテストまでに AtCoder Beginners Selection を解き、こんな感じかーと雰囲気をチラ見しました。</p>
+
+<h4 id="初arc">初ARC</h4>
+<p>ちょうど登録した日に AtCoder Regular Contest 164 が開催されたので参加してみました。A問題から解けず、提出しても WA か TLE と、散々な結果でした。当面の間は ABC だけ出ようと思いました。</p>
+
+<h4 id="abc-までにやったこと">ABC までにやったこと</h4>
+<p>AIZU ONLINE JUDGE (AOJ) に登録し、Introduction to Programing I の1~10 の40問を解きました。プログラミングの基礎は知っているつもりでしたが、知らないことがあり勉強になりました。復習にもなりました。</p>
+
+<h4 id="初abc">初ABC</h4>
+<p>AtCoder Beginners Contest 310 に出ました。30分でB問題まで解けましたが、C問題がどうしても TLE。解説を読んで「そんなすごいものがあるのか！」と感動し、アルゴリズムや C++ の勉強を（人生で初めて）真面目にしようと思いました。</p>
+
+<h3 id="目標">目標</h3>
+<p>目標はレッドコーダーですが、現実的でないので茶色を目指します。あとは、ABC を本番で4完してみたいですね。夏休みの後半は暇なはずなので、この2つの夏休み中の達成を目標にします！</p>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="programing" /><summary type="html"><![CDATA[AtCoder はじめました AtCoder にアカウントを作ってコンテストに参加してみました。]]></summary></entry><entry><title type="html">伊豆（亀石） 天体撮影 2022夏</title><link href="https://skrbcr.github.io/blog/astron/izu_kameishi" rel="alternate" type="text/html" title="伊豆（亀石） 天体撮影 2022夏" /><published>2022-10-30T00:00:00+09:00</published><updated>2022-10-30T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/astron/izu_kameishi</id><content type="html" xml:base="https://skrbcr.github.io/blog/astron/izu_kameishi"><![CDATA[<center><img src="/blog/assets/2022-10-30-izu_kameishi/andromeda.jpg" alt="アンドロメダ銀河" style="width: 90%;" />
 <p>Nikon Z50; Vixen FL55SS鏡筒使用, 180 秒 × 9 枚（1620 秒）, ISO 3200</p>
 <p>アンドロメダ銀河（M31）<br />
 中央のバルジのみならず、円盤も写っている。とはいえ円盤はぼんやり程度<br />
@@ -853,54 +886,4 @@ $$\begin{equation}
     \right.
 \end{align}\]
 
-<p>シミュレーション結果はページ冒頭に掲げた通り。</p>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="physics" /><summary type="html"><![CDATA[シミュレーション $C_1$: $C_2$: 適用！ 赤丸が酸素原子、緑丸が炭素原子白線と黄色線は原子間を結ぶ「バネ」（見やすさのために色を変えている）初期状態は $C_1 = 1, C_2 = 0.2$]]></summary></entry><entry><title type="html">積分公式</title><link href="https://skrbcr.github.io/blog/math/integral_formula" rel="alternate" type="text/html" title="積分公式" /><published>2022-01-28T00:00:00+09:00</published><updated>2022-01-28T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/math/integral_formula</id><content type="html" xml:base="https://skrbcr.github.io/blog/math/integral_formula"><![CDATA[<h2 id="不定積分">不定積分</h2>
-
-\[\begin{equation}
-    \int \frac{1}{a^2 + x^2} \dd x = \frac{1}{a}\arctan\frac{x}{a}
-\end{equation}\]
-
-\[\begin{equation}
-    \int \frac{1}{a^2 - x^2} \dd x = \frac{1}{a}\artanh\frac{x}{a}
-\end{equation}\]
-
-\[\begin{equation}
-    \int \frac{1}{\sqrt{a^2 - x^2}} \dd x = \arcsin\frac{x}{a}
-\end{equation}\]
-
-\[\begin{equation}
-    \int \frac{1}{\sqrt{x^2 + a}} \dd x = \log\left| x + \sqrt{x^2 + a}\right|
-\end{equation}\]
-
-<h3 id="tanfracx2--t-の置換積分">$\tan{\frac{x}{2}} = t$ の置換積分</h3>
-<p>$x$ から $t$ へ $\tan{\frac{x}{2}} = t$ の置換。次のように変換される：</p>
-
-\[\begin{align}
-    \dd x = \frac{2}{1 + t^2} \dd t
-\end{align}\]
-
-\[\begin{align}
-    \sin x = \frac{2t}{1 + t^2}, \quad\cos x = \frac{1 - t^2}{1 + t^2}, \quad\tan x = \frac{2t}{1 - t^2}
-\end{align}\]
-
-<h2 id="定積分">定積分</h2>
-<h3 id="gauss関数">Gauss関数</h3>
-
-\[\begin{align}
-    \int_{-\infty}^{\infty} e^{-ax^2} \dd x = \sqrt{\frac{\pi}{a}}
-\end{align}\]
-
-<p>Gauss積分は、複素平面上で積分経路を虚軸方向にずらしても同じ値になる：</p>
-
-\[\begin{align}
-    \int_{-\infty}^{\infty} e^{-a(x + ib)^2} \dd x = \sqrt{\frac{\pi}{a}}
-\end{align}\]
-
-<h3 id="三角関数">三角関数</h3>
-
-\[\begin{align}
-    \int_{0}^{\frac{\pi}{2}} \sin^{n}x\dd x = \int_{0}^{\frac{\pi}{2}} \cos^{n}x\dd x =
-    \begin{cases}
-        \dfrac{(n-1)!!}{n!!}\dfrac{\pi}{2} \\\\
-        \dfrac{(n-1)!!}{n!!}
-    \end{cases}
-\end{align}\]]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="math" /><summary type="html"><![CDATA[不定積分]]></summary></entry></feed>
+<p>シミュレーション結果はページ冒頭に掲げた通り。</p>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="physics" /><summary type="html"><![CDATA[シミュレーション $C_1$: $C_2$: 適用！ 赤丸が酸素原子、緑丸が炭素原子白線と黄色線は原子間を結ぶ「バネ」（見やすさのために色を変えている）初期状態は $C_1 = 1, C_2 = 0.2$]]></summary></entry></feed>
