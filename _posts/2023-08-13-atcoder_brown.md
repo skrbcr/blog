@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AtCoder 茶色になりました"
-date: 2023-08-15
+date: 2023-08-16
 categories: programming
 ---
 
