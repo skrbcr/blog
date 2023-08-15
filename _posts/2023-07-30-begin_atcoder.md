@@ -2,7 +2,7 @@
 layout: post
 title: "AtCoder はじめました"
 date: 2023-07-30
-categories: programing
+categories: programming
 ---
 
 ## AtCoder はじめました
