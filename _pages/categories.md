@@ -1,6 +1,7 @@
 ---
 layout: page
 title: カテゴリー
+permalink: /categoris/
 ---
 
 <ul>
