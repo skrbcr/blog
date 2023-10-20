@@ -78,7 +78,9 @@
     <p class="post-meta">
       投稿日:
       <time class="dt-published" datetime="2022-01-28T00:00:00+09:00" itemprop="datePublished">2022年01月28日
-      </time></p>
+      </time>最終更新日:
+        <time class="dt-published" datetime="2022-01-28T00:00:00+09:00" itemprop="datePublished">2023年10月20日
+        </time></p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
@@ -114,11 +116,13 @@
 <h2 id="定積分">定積分</h2>
 <h3 id="gauss関数">Gauss関数</h3>
 
-\[\begin{align}
-    \int_{-\infty}^{\infty} e^{-ax^2} \dd x = \sqrt{\frac{\pi}{a}}
-\end{align}\]
+\[\begin{gather}
+    \int_{-\infty}^{\infty} e^{-ax^2} \dd x = \sqrt{\frac{\pi}{a}} \\
+    \int_{-\infty}^{\infty} x^2 e^{-ax^2} \dd x = \frac{1}{2}\sqrt{\frac{\pi}{a^3}} \\
+    \int_{-\infty}^{\infty} x^4 e^{-ax^2} \dd x = \frac{3}{4}\sqrt{\frac{\pi}{a^5}}
+\end{gather}\]
 
-<p>Gauss積分は、複素平面上で積分経路を虚軸方向にずらしても同じ値になる：</p>
+<p>複素平面上で積分経路を虚軸方向にずらした場合：</p>
 
 \[\begin{align}
     \int_{-\infty}^{\infty} e^{-a(x + ib)^2} \dd x = \sqrt{\frac{\pi}{a}}
