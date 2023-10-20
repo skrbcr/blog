@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AtCoder 緑色になりました"
-date: 2023-09-10
+date: 2023-10-20
 categories: programming
 ---
 
