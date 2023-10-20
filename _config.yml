@@ -15,6 +15,10 @@ minima:
 
 destination: docs
 
+include:
+  - _categories
+  - _pages
+
 permalink: /:categories/:title
 
 kramdown:
@@ -35,7 +39,7 @@ pagination:
   enabled: true
   debug: false
   collection: 'posts'
-  per_page: 5
+  per_page: 7
   permalink: /page/:num/
   sort_field: 'date'
   sort_reverse: true

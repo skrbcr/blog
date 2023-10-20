@@ -2,17 +2,14 @@
 layout: default
 ---
 
-<div class="home">
-  <!-- {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%} -->
+<h2 class="post-list-heading">{{ page.title }} カテゴリーの記事（{{ paginator.page }}ページ目）</h2>
 
-  {{ content }}
+{{ content }}
 
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">投稿一覧（{{ paginator.page }}ページ目）</h2>
-    <ul class="post-list">
-      {%- for post in paginator.posts -%}
+{%- if site.posts.size > 0 -%}
+  <ul class="post-list">
+    {%- assign category = page.category -%}
+    {%- for post in paginator.posts -%}
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
@@ -25,11 +22,9 @@ layout: default
           {{ post.excerpt }}
         {%- endif -%}
       </li>
-      {%- endfor -%}
-    </ul>
+    {%- endfor -%}
+  </ul>    
 
-    {%- include pagination_footer.html -%}
+  {%- include pagination_footer.html -%}
 
-  {%- endif -%}
-
-</div>
+{%- endif -%}
