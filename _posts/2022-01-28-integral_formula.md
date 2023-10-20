@@ -2,6 +2,7 @@
 layout: post
 title: "積分公式"
 date: 2022-01-28
+update: 2023-10-20
 categories: math
 ---
 
@@ -37,11 +38,13 @@ $$\begin{align}
 ## 定積分
 ### Gauss関数
 
-$$\begin{align}
-    \int_{-\infty}^{\infty} e^{-ax^2} \dd x = \sqrt{\frac{\pi}{a}}
-\end{align}$$
+$$\begin{gather}
+    \int_{-\infty}^{\infty} e^{-ax^2} \dd x = \sqrt{\frac{\pi}{a}} \\
+    \int_{-\infty}^{\infty} x^2 e^{-ax^2} \dd x = \frac{1}{2}\sqrt{\frac{\pi}{a^3}} \\
+    \int_{-\infty}^{\infty} x^4 e^{-ax^2} \dd x = \frac{3}{4}\sqrt{\frac{\pi}{a^5}}
+\end{gather}$$
 
-Gauss積分は、複素平面上で積分経路を虚軸方向にずらしても同じ値になる：
+複素平面上で積分経路を虚軸方向にずらした場合：
 
 $$\begin{align}
     \int_{-\infty}^{\infty} e^{-a(x + ib)^2} \dd x = \sqrt{\frac{\pi}{a}}
