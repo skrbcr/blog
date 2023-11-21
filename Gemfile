@@ -36,3 +36,4 @@ gem "jekyll-remote-theme"
 gem 'jemoji'
 gem 'jekyll-paginate-v2'
 gem 'jekyll-sitemap'
+gem 'jekyll-seo-tag'

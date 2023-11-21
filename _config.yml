@@ -30,6 +30,7 @@ plugins:
   - jekyll-feed
   - jekyll-paginate-v2
   - jekyll-sitemap
+  - jekyll-seo-tag
   # - jekyll-remote-theme
 
 # remote_theme: niklasbuschmann/contrast@v2.11
