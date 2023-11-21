@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="960px"
+   height="720px"
+   viewBox="0 0 720 960"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="orbit2.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="0.97764853"
+     inkscape:cx="424.48793"
+     inkscape:cy="334.47603"
+     inkscape:window-width="1920"
+     inkscape:window-height="974"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       x="390"
+       y="470"
+       id="text292"
+       font-size="32px"><tspan
+         sodipodi:role="line"
+         id="tspan290"
+         style="fill:#000000;stroke-width:1.33333"
+         x="390"
+         y="470">太陽</tspan></text>
+    <circle
+       id="circle228"
+       cx="360"
+       cy="480"
+       r="15"
+       style="fill:#ffff00;stroke:#000000;stroke-width:2;" />
+    <text
+       xml:space="preserve"
+       x="770"
+       y="470"
+       id="text301"
+       font-size="32px"><tspan
+         sodipodi:role="line"
+         id="tspan299"
+         style="fill:#0000ff;stroke-width:1.33333"
+         x="790"
+         y="470">地球</tspan></text>
+    <circle
+       id="circle230"
+       cx="720"
+       cy="480"
+       r="10"
+       style="fill:#0000ff;stroke:#0000ff;stroke-width:2;" />
+    <circle
+       style="fill:none;stroke:#0000ff;stroke-width:2;"
+       id="path111"
+       cx="360"
+       cy="480"
+       r="360" />
+    <text
+       xml:space="preserve"
+       x="610"
+       y="470"
+       id="text355"
+       font-size="32px"><tspan
+         sodipodi:role="line"
+         id="tspan353"
+         style="fill:#ff0000;stroke-width:1.33333"
+         x="610"
+         y="470">月</tspan></text>
+    <circle
+       id="circle234"
+       cx="660"
+       cy="480"
+       r="10"
+       style="fill:#ff0000;stroke:#ff0000;fill-width:2" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:5px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 665.0767,481.21763 C 713.94929,393.73112 706.99418,294.18448 685.32834,260.37827 671.66173,239.05363 622.79208,220.31982 573.83179,205.3253 529.28851,191.68353 484.67021,181.13679 466.41771,174.54988 415.81764,156.2895 279.11328,86.879884 225.32672,103.18695"
+       id="path286"
+       sodipodi:nodetypes="csssc" />
+    <text
+       xml:space="preserve"
+       style="font-size:53.3333px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';stroke-width:1.33333"
+       x="78.683746"
+       y="894.6637"
+       id="text571"><tspan
+         sodipodi:role="line"
+         id="tspan569"
+         style="stroke-width:1.33333"
+         x="78.683746"
+         y="894.6637" /></text>
+  </g>
+</svg>
