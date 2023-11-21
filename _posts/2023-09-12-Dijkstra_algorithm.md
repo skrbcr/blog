@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "ダイクストラ法"
-date: 2023-10-30
+date: 2024-2-30
 categories: programming
 ---
 
