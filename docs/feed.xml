@@ -1,4 +1,201 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://skrbcr.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://skrbcr.github.io/blog/" rel="alternate" type="text/html" hreflang="ja" /><updated>2023-11-21T19:48:49+09:00</updated><id>https://skrbcr.github.io/blog/feed.xml</id><title type="html">今月の物置</title><subtitle>物理＋プログラミング＋その他</subtitle><author><name>今月の新刊（@skrbcr）</name></author><entry><title type="html">AtCoder 緑色になりました</title><link href="https://skrbcr.github.io/blog/programming/atcoder_green" rel="alternate" type="text/html" title="AtCoder 緑色になりました" /><published>2023-10-20T00:00:00+09:00</published><updated>2023-10-20T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/programming/atcoder_green</id><content type="html" xml:base="https://skrbcr.github.io/blog/programming/atcoder_green"><![CDATA[<p><a href="https://skrbcr.github.io/blog/programming/atcoder_brown">前回</a>のあらすじ：茶色くなりました</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://skrbcr.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://skrbcr.github.io/blog/" rel="alternate" type="text/html" hreflang="ja" /><updated>2023-11-22T11:11:18+09:00</updated><id>https://skrbcr.github.io/blog/feed.xml</id><title type="html">今月の物置</title><subtitle>物理＋プログラミング＋その他</subtitle><author><name>今月の新刊（@skrbcr）</name></author><entry><title type="html">連想記憶モデル（Hopfield network）の実装</title><link href="https://skrbcr.github.io/blog/physics/associative_memory" rel="alternate" type="text/html" title="連想記憶モデル（Hopfield network）の実装" /><published>2023-11-22T00:00:00+09:00</published><updated>2023-11-22T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/physics/associative_memory</id><content type="html" xml:base="https://skrbcr.github.io/blog/physics/associative_memory"><![CDATA[<p>（一応 physics ジャンルの投稿です）</p>
+
+<p>（細かい話に興味ない人は「原理」の節を飛ばしてください）</p>
+
+<h2 id="投稿の概要">投稿の概要</h2>
+<p>連想記憶モデル（Hopfield model）は人工知能（AI）の一種で、情報の記憶、取り出しを行うことができる。以下で述べるように、不鮮明な入力から記憶した情報を思い出すことができる。本投稿は連想記憶モデルの原理について述べ、簡単な実験を行えるプログラムを紹介する。実験結果についても簡単に述べる。なお、"Statistical Physics of Spin Glasses and Information Processing An Introduction" by Hidetoshi Nishimori<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> を参考文献としてお送りする。</p>
+
+<h2 id="連想記憶モデルとは">連想記憶モデルとは？</h2>
+<p>連想記憶モデル（Hopfield network）は情報の記憶・思い出しを行うニューラルネットワーク。例えば、1000枚の画像をこのネットワークに記憶させる。次に、1000枚の中から1枚を選び、それにノイズをのせた画像を用意する。そして、その画像をネットワークに入力すると、徐々に元の画像が再現される。この思い出しは常に成功するのではなく、ある条件を満たす必要がある。</p>
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UE2mZNWXd-A?si=IULMuAeYakfd99YU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+<p>画像を思い出す様子</p>
+</center>
+
+<p>連想記憶は脳が記憶したり思い出したりする仕組みを参考に構築されている。そのため、各記憶素子を「ニューロン」と呼ぶ。実際の脳のニューロンは発火したりしなかったりすることで情報を保持・伝達する。本モデルでもニューロンは発火・非発火により情報の保持・伝達を行う。</p>
+
+<h2 id="原理">原理</h2>
+<h3 id="パターンの記憶">パターンの記憶</h3>
+
+<p>記憶するパターン数を $p$ とし、各ニューロンの記憶パターンを ${\xi_i^\mu}$ で表す。$\mu$ 番目の記憶パターンでは $i$ 個目のニューロンが $\xi_i^\mu$ の状態（発火・非発火）を表す：</p>
+
+\[\begin{equation}
+    \xi_i^{\mu} = \begin{cases}
+        1  &amp; \text{：発火} \\
+        -1 &amp; \text{：非発火} \\
+    \end{cases}
+\end{equation}\]
+
+<p>ニューロン同士のconnection として次の量$J_{ij}$を定義する。系は$J_{ij}$を計算することで $p$ 個のパターンがネットワークを記憶（埋め込み）する：</p>
+
+\[\begin{equation}
+    J_{ij} = \frac{1}{N} \sum_{\mu = 1}^{p} \xi_i^\mu \xi_j^\mu
+\end{equation}\]
+
+<p>$N$ はニューロンの個数。$J$ は $N\times N$ の行列。また、$J_{ii} = 0$ とする。</p>
+
+<h3 id="ニューロン間のやりとり">ニューロン間のやりとり</h3>
+
+<p>ニューロン同士は情報のやり取りを行うことで記憶したものを思い出す。あるニューロンの状態は他のニューロンの状態により決まる。ニューロン $i$ がニューロン $j$ から受け取る信号の大きさを次のように決める：</p>
+
+\[\begin{equation}
+    J_{ij}(S_j + 1) = \begin{cases}
+        2J_{ij} &amp; :~S_j = +1 \\
+        0       &amp; :~S_j = -1 \\
+    \end{cases}
+\end{equation}\]
+
+<p>なぜこうするのかは後述。すると、ニューロン $i$ に入ってくる信号の和 $h_i$ は</p>
+
+\[\begin{equation}
+    h_i = \sum_{j = 1}^{N} J_{ij}(S_j + 1)
+\end{equation}\]
+
+<p>ニューロン $i$ は入力の和があるしきい値 $\theta_i$ を超えるときに発火、そうでなければ非発火とする：</p>
+
+\[\begin{align}
+    S_i(t + \Delta t) &amp;= \mathrm{sgn}(h_i - \theta_i) \nonumber\\
+                      &amp;= \mathrm{sgn}\left(\sum_{j = 1}^{N} J_{ij}(S_j + 1) - \theta_i\right)
+\end{align}\]
+
+<p>ここで $\mathrm{sgn}(\cdot)$ は符号関数。簡単のために、$\theta_i = J_{ij}$ として</p>
+
+\[\begin{equation}
+    S_i(t + \Delta t) = \mathrm{sgn}\left(\sum_{j = 1}^{N} J_{ij}S_j(t)\right)
+\end{equation}\]
+
+<h3 id="思い出し">思い出し</h3>
+<p>ここまで、ニューロンを使った記憶の方法・情報のやり取りの方法を説明した。この方法で本当に上手くいくのか？　上手くいくことを確認する。</p>
+
+<p>思い出すとは、記憶したパターンに近いものを与えられたとき、元のパターンを復元できること。まずは、与えられるニューロンパターンが $\mu$ 番目パターンそのものの場合を考える。時刻 $t$ でニューロンたちが $\mu$ 番目のパターンそのものであるとき、時刻 $t + \Delta t$ では</p>
+
+\[\begin{align}
+    S_i (t + \Delta t) &amp;= \mathrm{sgn}\left(\sum_{j = 1}^{N} J_{ij}S_j(t)\right) \nonumber\\
+                       &amp;= \mathrm{sgn}\left(\sum_{j = 1}^{N} J_{ij}\xi_j^\mu\right) \nonumber\\
+                       &amp;= \mathrm{sgn}\left(\sum_{j = 1}^{N} \frac{1}{N}\sum_{\nu = 1}^p \xi_i^\nu \xi_j^\nu \xi_j^\mu\right) \nonumber\\
+                       &amp;= \mathrm{sgn}\left(\sum_{\nu = 1}^p \xi_i^\nu \frac{1}{N} \sum_{j = 1}^{N} \xi_j^\nu \xi_j^\mu\right)
+\end{align}\]
+
+<p>ここで</p>
+
+\[\begin{equation}
+    \frac{1}{N} \sum_{j = 1}^{N} \xi_j^\nu \xi_j^\mu
+\end{equation}\]
+
+<p>は、$\mu = \nu$ のときは 1、$\mu \neq \nu$ のときは $N$ が十分大きければ 0 になりそう。なので、この部分はクロネッカーのデルタ $\delta_{\nu,\mu}$ になる。</p>
+
+\[\begin{align}
+    S_i (t + \Delta t) &amp;= \mathrm{sgn}\left(\sum_{\nu = 1}^p \xi_i^\nu \frac{1}{N} \sum_{j = 1}^{N} \xi_j^\nu \xi_j^\mu\right) \nonumber\\
+                       &amp;= \mathrm{sgn}\left(\sum_{\nu = 1}^p \xi_i^\nu \delta_{\nu,\mu}\right) \nonumber\\
+                       &amp;= \mathrm{sgn}(\xi_i^\mu) \nonumber\\
+                       &amp;= \xi_i^\mu 
+\end{align}\]
+
+<p>確かに、時刻 $t + \Delta t$ でも系の状態はパターン $\mu$ のままであった。</p>
+
+<p>次に、与えられるパターンがパターン $\mu$ から少しだけずれているときを考える。これは、系のエネルギーから定性的に説明できる。ニューロン $i$ に関して、入力信号 $h_i$ と状態 $S_i$ の積を考えると</p>
+
+\[\begin{align}
+    -h_iS_i &amp;= -\sum_j J_{ij}(S_j + 1) S_i \nonumber\\
+            &amp;= -\sum_j J_{ij}S_iS_j + const. \times S_i
+\end{align}\]
+
+<p>全ての $i$ について和をとれば</p>
+
+\[\begin{equation}
+    H = -\frac{1}{2}\sum_{i,j} J_{ij}S_iS_j
+\end{equation}\]
+
+<p>ただし、定数部分を無視するなどした。この $H$ に関して次のことがわかる：</p>
+
+<ul>
+  <li>$H$ は Ising model の Hamiltonian</li>
+  <li>ひとつのニューロンに関して、入力信号と状態が等しいときエネルギーは小さく、異なるときエネルギーは大きくなる</li>
+  <li>系の状態がパターンの状態と等しいとき、エネルギーは極小（各ニューロン、入力 $h_i$ と状態 $S_i$ は等しくなっているので）</li>
+</ul>
+
+<p>従って、系の状態がパターン $\mu$ から少し異なるとき、エネルギーが極小に落ち込むように、パターン $\mu$ に近づいていく。</p>
+
+<p>以上により、連想記憶モデルは記憶と思い出しが行えることがわかった。</p>
+
+<h2 id="実装">実装</h2>
+<p><a href="https://github.com/skrbcr/toybox/tree/main/Hopfield_network">GitHub</a> で公開している。</p>
+
+<p>ここでは簡単に、記憶パートと思い出しパートを取り出して説明する。とはいえ、どちらも行列・ベクトルの計算をするだけで、それには <a href="https://www.boost.org/">Boost C++ Library</a> の <code class="language-plaintext highlighter-rouge">boost::numeric::ublas</code> を用いた。</p>
+
+<p><strong>記憶</strong></p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#define sgn(x) (x &gt;= 0 ? 1 : -1)  // 符号関数
+</span>
+<span class="n">std</span><span class="o">::</span><span class="n">mt19937</span> <span class="nf">engine</span><span class="p">(</span><span class="mi">12345</span><span class="p">);</span>  <span class="c1">// 乱数生成器</span>
+
+<span class="n">boost</span><span class="o">::</span><span class="n">numeric</span><span class="o">::</span><span class="n">ublas</span><span class="o">::</span><span class="n">matrix</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="n">J</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">n</span><span class="p">);</span>  <span class="c1">// J 行列</span>
+<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">boost</span><span class="o">::</span><span class="n">numeric</span><span class="o">::</span><span class="n">ublas</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">xi</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">ublas</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="n">n</span><span class="p">));</span>  <span class="c1">// p個のパターン ξ ベクトル</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">mu</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">mu</span> <span class="o">&lt;</span> <span class="n">p</span><span class="p">;</span> <span class="o">++</span><span class="n">mu</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">// p個のパターンに対して</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">mu</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="n">xi</span><span class="p">[</span><span class="n">mu</span><span class="p">](</span><span class="n">i</span><span class="p">)</span> <span class="o">=</span> <span class="n">sgn</span><span class="p">((</span><span class="kt">int</span><span class="p">)</span><span class="n">engine</span><span class="p">());</span>  <span class="c1">// (p - 1)個のパターンをランダム生成</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;=</span> <span class="n">i</span><span class="p">;</span> <span class="o">++</span><span class="n">j</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">// 行列の下三角だけ埋めます</span>
+            <span class="n">J</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span> <span class="o">+=</span> <span class="n">xi</span><span class="p">[</span><span class="n">mu</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">xi</span><span class="p">[</span><span class="n">mu</span><span class="p">][</span><span class="n">j</span><span class="p">];</span>  <span class="c1">// ξ_i^μ × ξ_j^μ</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">J</span> <span class="o">/=</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="n">n</span><span class="p">;</span>
+<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">i</span><span class="p">;</span> <span class="o">++</span><span class="n">j</span><span class="p">)</span> <span class="n">J</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span> <span class="o">=</span> <span class="n">J</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">);</span>  <span class="c1">// 行列の上半分は下半分のコピー</span>
+</code></pre></div></div>
+
+<p><strong>思い出し</strong></p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">boost</span><span class="o">::</span><span class="n">numeric</span><span class="o">::</span><span class="n">ublas</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="n">s</span><span class="p">(</span><span class="n">n</span><span class="p">),</span> <span class="n">stemp</span><span class="p">(</span><span class="n">n</span><span class="p">);</span>  <span class="c1">// s: 入力（元画像にノイズがのったもの）; stemp: 計算の途中結果を一次保存</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">t</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">t</span> <span class="o">&lt;</span> <span class="n">duration</span><span class="p">;</span> <span class="o">++</span><span class="n">t</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// sgn(J * s)</span>
+    <span class="n">stemp</span> <span class="o">=</span> <span class="n">ublas</span><span class="o">::</span><span class="n">prod</span><span class="p">(</span><span class="n">J</span><span class="p">,</span> <span class="n">s</span><span class="p">);</span>  
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="n">s</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">=</span> <span class="n">sgn</span><span class="p">(</span><span class="n">stemp</span><span class="p">(</span><span class="n">i</span><span class="p">));</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="結果">結果</h2>
+<p>下の画像と、ランダム生成される $p - 1$ 枚の画像を記憶させる（サイズ：100 x 100）。</p>
+
+<p><img src="/blog/assets/2023-11-01-associative_memory/github.png" alt="記憶する画像" title="記憶する画像" /></p>
+
+<p>思い出す画像は、この画像である。画像にノイズをのせてAI に与える。パターン数 $p$ と一致率 $r_n$（$1 - $(ノイズ比率)）を変えて思い出せるかどうかの実験を行った。</p>
+
+<ul>
+  <li>$p = 100, n_r = 0.6$</li>
+</ul>
+<center><video controls="" src="/blog/assets/2023-11-01-associative_memory/p100_n40.mp4" width="50%"></video></center>
+<p>あっという間に、完全に画像を復元できた。</p>
+
+<ul>
+  <li>$p = 1000, n_r = 0.75$</li>
+</ul>
+<center><video controls="" src="/blog/assets/2023-11-01-associative_memory/p1000_n25.mp4" width="50%"></video></center>
+<p>パターン数を増やすと、再現はできているものの若干のノイズが残る。</p>
+
+<ul>
+  <li>$p = 1000, n_r = 0.65$</li>
+</ul>
+<center><video controls="" src="/blog/assets/2023-11-01-associative_memory/p1000_n35.mp4" width="50%"></video></center>
+<p>同じくパターン数1000だが一致率を下げた。すると、再現できなくなった。</p>
+
+<ul>
+  <li>$p = 3000, n_r = 0.95$</li>
+</ul>
+<center><video controls="" src="/blog/assets/2023-11-01-associative_memory/p3000_n5.mp4" width="50%"></video></center>
+<p>パターン数を増やしていくと、高い一致率の画像を与えても再現できなくなった。ノイズは減るどころか増えている。</p>
+
+<p>どれくらいのパターン数を埋め込めるのかは、数値計算で特定されている。パターン数 $p$ とニューロン数 $N$ の比率 $\alpha = p / N$ が 0.138 を超えると画像の再現ができなくなるらしい。一致率の方はどういう研究がされているのか、残念ながら知らないです。。</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>電子版は<a href="https://sites.google.com/view/nishimori/open_access_books">著者の先生のHP のページ</a>より無料DL できます <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="physics" /><summary type="html"><![CDATA[（一応 physics ジャンルの投稿です）]]></summary></entry><entry><title type="html">AtCoder 緑色になりました</title><link href="https://skrbcr.github.io/blog/programming/atcoder_green" rel="alternate" type="text/html" title="AtCoder 緑色になりました" /><published>2023-10-20T00:00:00+09:00</published><updated>2023-10-20T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/programming/atcoder_green</id><content type="html" xml:base="https://skrbcr.github.io/blog/programming/atcoder_green"><![CDATA[<p><a href="https://skrbcr.github.io/blog/programming/atcoder_brown">前回</a>のあらすじ：茶色くなりました</p>
 
 <h2 id="入緑">入緑</h2>
 <p>AtCoder のランクが緑になりました。わーい。緑くなるまでの経緯を書きます。</p>
@@ -545,171 +742,4 @@
 
 <p>記事が書けたら commit し、GitHub の Repository に push すれば投稿完了。</p>
 
-<p>暫くすると反映されるので、実際の投稿を確認して終了。</p>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="manage" /><summary type="html"><![CDATA[Jekyll のインストールから GitHub Pages での公開まで のつづき。やはりメモ書きなので必要な情報は網羅されていません。]]></summary></entry><entry><title type="html">熱拡散方程式を数値的に解く</title><link href="https://skrbcr.github.io/blog/physics/heat_equation" rel="alternate" type="text/html" title="熱拡散方程式を数値的に解く" /><published>2022-05-01T00:00:00+09:00</published><updated>2022-05-01T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/physics/heat_equation</id><content type="html" xml:base="https://skrbcr.github.io/blog/physics/heat_equation"><![CDATA[<h2 id="熱拡散方程式とは">熱拡散方程式とは</h2>
-<p>（物理数学の授業で習っただけの知識なので、かなり浅いですが……）</p>
-
-<p>熱の拡散の様子を表す微分方程式。熱分布の時間変化が空間的勾配を用いて表現される。あるいは、熱の空間的な分布（勾配）が時間変化によって表現される。そのため、式中に時間と空間の微分が現れる。この微分方程式は解析的に解くことが出来るが、ここでは数値的な解によるシミュレーションを行う。</p>
-
-<h3 id="基本の熱拡散方程式">基本の熱拡散方程式</h3>
-<p>外部からの熱の供給や吸収がなく単純に熱が拡がっていく場合。熱の拡散速度に関する定数 $\kappa$ を用いて以下の式で与えられる：</p>
-
-\[\begin{equation}
-    \pdv{}{t} u(t, x) = \kappa\ppdv{2}{}{x}u(t, x)
-\end{equation}\]
-
-<p>境界条件や初期条件を与えたり $\kappa$ の値を指定したりして解くことで、様々な条件下での熱の拡がりかたを求めることができる。</p>
-
-<h3 id="熱の湧き出しがある場合">熱の湧き出しがある場合</h3>
-<p>ヒーターなどで常に一定の熱が供給されている場合を考える。点 $x$ における熱の供給率を $q(x)$ とおく。このとき</p>
-
-\[\begin{align}
-    \pdv{u}{t} = q(x)
-\end{align}\]
-
-<p>であるから、熱拡散方程式は次になる：</p>
-
-\[\begin{align}
-    \pdv{}{t} u(t, x) = \kappa\ppdv{2}{}{x}u(t, x) + q(x)
-\end{align}\]
-
-<h2 id="微分方程式の数値解">微分方程式の数値解</h2>
-<h3 id="熱の湧き出しなし">熱の湧き出しなし</h3>
-<p>最初に述べた通り、微分方程式を数値的に解く。簡便な方法であるオイラー陽解法を採用する。<br />
-オイラー法の通常の手順に従う。まず、次の近似式が成立することに注目する：</p>
-
-\[\begin{align}
-    \pdv{}{x} u(t, x) \sim \frac{u(t, x + \Delta x) - u(t, x)}{\Delta x}
-\end{align}\]
-
-<p>この近似を式 $(1)$ に適用する：</p>
-
-\[\begin{align}
-    \frac{u(t + \Delta t, x) - u(t, x)}{\Delta t} &amp;\sim \kappa\pdv{}{x}\frac{u'(t, x + \Delta x) - u'(t, x)}{\Delta x} \nonumber\\
-    &amp;\sim \kappa\frac{1}{\Delta x}\left(\frac{u(t, x + 2\Delta x) - u(t, x + \Delta x)}{\Delta x} - \frac{u(t, x + \Delta x) - u(t, x)}{\Delta x}\right) \nonumber\\
-    &amp;= \kappa\frac{u(t, x + 2\Delta x) - 2u(t, x + \Delta x) + u(t, x)}{\left(\Delta x\right)^2}
-\end{align}\]
-
-<p>さらに、変形を行うと、必要な近似式が得られる：</p>
-
-\[\begin{align}
-    u(t + \Delta t, x) = u(t, x) + \frac{\kappa\Delta t}{\left(\Delta x\right)^2}\big[u(t, x + 2\Delta x) - 2u(t, x + \Delta x) + u(t, x)\big]
-\end{align}\]
-
-<p>この式を用いれば現在時刻の熱分布から、$\Delta t$ 経過後の熱分布が求まる。</p>
-
-<h3 id="熱の湧き出しあり">熱の湧き出しあり</h3>
-<p>いまやったのと同じ近似を式 $(3)$ に適用すれば、近似式が得られる：</p>
-
-\[\begin{align}
-    &amp;u(t + \Delta t, x)\nonumber\\ =&amp; u(t, x) + \frac{\kappa\Delta t}{\left(\Delta x\right)^2}\big[u(t, x + 2\Delta x) - 2u(t, x + \Delta x) + u(t, x)\big] + q(x)\Delta t
-\end{align}\]
-
-<h2 id="シミュレーション">シミュレーション</h2>
-<p>Pythonを用いてシミュレーションした。どの計算においても境界条件は、有限の区間を考え、区間の両端では常に熱は $0$ であるとした。結果は、横軸に $x$ 座標、縦軸に $u(t, x)$ をとったグラフで表し、時間変化をアニメーション（動画）で示す。</p>
-
-<h3 id="熱の湧き出しなし-1">熱の湧き出しなし</h3>
-<p>2つの初期条件でシミュレートを行った。</p>
-
-<h4 id="初期条件１">初期条件１</h4>
-<p>初期条件：</p>
-
-\[\begin{align}
-    \begin{cases}
-        u(x) = 4 \quad &amp; for~ -2\le x \le 2 \\
-        u(x) = 0 \quad &amp; for~ x &lt; -2,~2 &lt; x
-    \end{cases}
-\end{align}\]
-
-<p>$4$ や $2$ という数字に意味はない（適当なスケーリングがされているだけ）。この $t = 0$ での状態をグラフで表す。縦軸に熱の量 $u(x)$、横軸に位置座標 $x$ をとる。</p>
-<center><img src="/blog/assets/2022-05-01-heat_equation/湧き出しなし_初期条件1.svg" style="width: 70%;" /></center>
-<p>グラフは、「高い部分＝熱い部分」と見なせばよいと思う。</p>
-
-<p>では、時間を進めると熱がどのように拡散していくかをシミュレートする。式 $(7)$ において $\Delta t = dt = 0.001,~\Delta x = dx = 0.01$ として計算した結果が下の動画：</p>
-<center><video src="/blog/assets/2022-05-01-heat_equation/heat1_slow.mp4" controls="" style="width: 70%;"></video></center>
-<p>$u = 0$ と $u = 4$ の境界辺りから熱がゆっくりと拡がっていくのが分かる。</p>
-
-<p>条件はそのままに、シミュレートの時間間隔を大きくしてする。$\Delta t = dt = 0.01,~\Delta x = dx = 0.05$ として計算した：</p>
-<center><video src="/blog/assets/2022-05-01-heat_equation/heat1.mp4" controls="" style="width: 70%;"></video></center>
-<p>矩形のグラフが丸みを帯びていく様子が見られる。</p>
-
-<h4 id="初期条件2">初期条件2</h4>
-<p>初期条件：</p>
-
-\[\begin{align}
-    \begin{cases}
-        u(x) = x + 4  \quad &amp; for~ -4\le x \le 0 \\
-        u(x) = -x + 4 \quad &amp; for~ 0\le x\le 4 \\
-        u(x) = 0 \quad &amp; for~ x &lt; -4,~4 &lt; x
-    \end{cases}
-\end{align}\]
-
-<center><img src="/blog/assets/2022-05-01-heat_equation/湧き出しなし_初期条件2.svg" style="width: 70%;" /></center>
-
-<p>上でやったのと同じように、$\Delta t = 0.01,~\Delta x = 0.05$ として（以下のシミュレーションでもこの数値を用いる）計算する：</p>
-<center><video src="/blog/assets/2022-05-01-heat_equation/heat2.mp4" controls="" style="width: 70%;"></video></center>
-<p>やはり、時間経過とともにグラフは丸みを帯びてゆく。</p>
-
-<p>また、二つの初期条件において $t = 0$ でのグラフの形は異なるが、どちらも徐々にガウス関数に近い形に変形していくように見える。それには何か理由があるのか、それともただの思い違いなのかは知らない。</p>
-
-<h3 id="熱の湧き出しあり-1">熱の湧き出しあり</h3>
-<p>点または区間から一定の熱が供給され続ける場合のシミュレーション。</p>
-
-<h4 id="条件1">条件1</h4>
-<p>空間全体は最初熱を持たず、一点からの熱供給が絶えず行われている場合を考える。</p>
-<center><video src="/blog/assets/2022-05-01-heat_equation/heat3.mp4" controls="" style="width: 70%;"></video></center>
-<p>一点から鋭いピークが出現する。湧き出しがない時のような丸みを帯びたグラフへは変化しない。</p>
-
-<h4 id="条件2">条件2</h4>
-<p>条件1と同じ設定で、熱の湧き出しを点ではなく区間（$2\le x\le 3$）とした。</p>
-<center><video src="/blog/assets/2022-05-01-heat_equation/heat4.mp4" controls="" style="width: 70%;"></video></center>
-<p>時間経過とともに山のピークがどんどん鋭くなるようだ。延々と続ければ、グラフの形は条件1にに限りなく近づいていくはず。</p>
-
-<h2 id="与太話">与太話</h2>
-<p>色々な初期条件・境界条件で試すと面白いはず。それと、拡散方程式に関して気になっていることもある。が、今回はここまでにしておく。</p>
-
-<p>Python コード：</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
-<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
-<span class="kn">from</span> <span class="nn">matplotlib.animation</span> <span class="kn">import</span> <span class="n">FuncAnimation</span>
-
-<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="p">.</span><span class="n">subplots</span><span class="p">()</span>
-
-<span class="n">dx</span> <span class="o">=</span> <span class="mf">0.5</span>    <span class="c1"># 刻み幅（位置）
-</span><span class="n">dt</span> <span class="o">=</span> <span class="mf">0.1</span>    <span class="c1"># 刻み幅（時間）
-</span><span class="n">kappa</span> <span class="o">=</span> <span class="mf">0.05</span>    <span class="c1"># 拡散の定数
-</span><span class="n">cons</span> <span class="o">=</span> <span class="p">(</span><span class="n">dt</span> <span class="o">/</span> <span class="n">dx</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">kappa</span> <span class="o">/</span> <span class="n">dx</span><span class="p">)</span>
-
-<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">dx</span><span class="p">)</span>
-<span class="n">u</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">size</span><span class="p">)</span>
-
-<span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">n</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">u</span><span class="p">.</span><span class="n">size</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
-            <span class="n">u</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+=</span> <span class="p">(</span><span class="n">u</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">u</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">u</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">*</span> <span class="n">cons</span>
-            <span class="c1"># 湧き出しがある場合
-</span>            <span class="c1">#if 2 &lt;= x[i] &lt;= 3:
-</span>            <span class="c1">#    u[i] += 0.01 * dt
-</span>    
-    <span class="n">ax</span><span class="p">.</span><span class="n">cla</span><span class="p">()</span>
-    <span class="n">ax</span><span class="p">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="n">bottom</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">top</span> <span class="o">=</span> <span class="mi">5</span><span class="p">)</span>
-    <span class="n">ax</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">u</span><span class="p">,</span> <span class="s">'r'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">'$t = '</span> <span class="o">+</span> <span class="s">'{:.2f}'</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">n</span> <span class="o">*</span> <span class="n">dt</span><span class="p">)</span> <span class="o">+</span> <span class="s">'$'</span><span class="p">)</span>
-    <span class="n">ax</span><span class="p">.</span><span class="n">legend</span><span class="p">()</span>
-    <span class="n">ax</span><span class="p">.</span><span class="n">set_title</span><span class="p">(</span><span class="s">'graph title'</span><span class="p">)</span>
-
-<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">dt</span> <span class="o">*</span> <span class="n">kappa</span> <span class="o">/</span> <span class="p">(</span><span class="n">dx</span> <span class="o">*</span> <span class="n">dx</span><span class="p">))</span>
-    <span class="c1"># 初期条件を設定
-</span>    <span class="c1">#for i in range(u.size):
-</span>    <span class="c1">#    if -4 &lt;= x[i] &lt;= 0:
-</span>    <span class="c1">#        u[i] = x[i] + 4
-</span>    <span class="c1">#    elif 0 &lt;= x[i] &lt;= 4:
-</span>    <span class="c1">#        u[i] = -x[i] + 4
-</span>
-    <span class="c1"># アニメーション作成
-</span>    <span class="n">ani</span> <span class="o">=</span> <span class="n">FuncAnimation</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">update</span><span class="p">,</span> <span class="n">frames</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">601</span><span class="p">),</span> <span class="n">interval</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
-    <span class="n">ani</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="sa">R</span><span class="s">"directory\heat_simulations.mp4"</span><span class="p">,</span> <span class="n">writer</span><span class="o">=</span><span class="s">'ffmpeg'</span><span class="p">)</span>
-    <span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
-
-<span class="n">main</span><span class="p">()</span>
-</code></pre></div></div>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="physics" /><summary type="html"><![CDATA[熱拡散方程式とは （物理数学の授業で習っただけの知識なので、かなり浅いですが……）]]></summary></entry></feed>
+<p>暫くすると反映されるので、実際の投稿を確認して終了。</p>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="manage" /><summary type="html"><![CDATA[Jekyll のインストールから GitHub Pages での公開まで のつづき。やはりメモ書きなので必要な情報は網羅されていません。]]></summary></entry></feed>
