@@ -110,7 +110,7 @@
 <p>連想記憶モデル（Hopfield model）は人工知能（AI）の一種で、情報の記憶、取り出しを行うことができる。以下で述べるように、不鮮明な入力から記憶した情報を思い出すことができる。本投稿は連想記憶モデルの原理について述べ、簡単な実験を行えるプログラムを紹介する。実験結果についても簡単に述べる。なお、"Statistical Physics of Spin Glasses and Information Processing An Introduction" by Hidetoshi Nishimori<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> を参考文献としてお送りする。</p>
 
 <h2 id="連想記憶モデルとは">連想記憶モデルとは？</h2>
-<p>連想記憶モデル（Hopfield network）は情報の記憶・思い出しを行うニューラルネットワーク。例えば、1000枚の画像をこのネットワークに記憶させる。次に、1000枚の中から1枚を選び、それにノイズをのせた画像を用意する。そして、その画像をネットワークに入力すると、徐々に元の画像が再現される。この思い出しは常に成功するのではなく、ある条件を満たす必要がある。</p>
+<p>連想記憶モデル（Hopfield network）は情報の記憶・思い出しを行うニューラルネットワーク。例えば、1000枚の画像をこのネットワークに記憶させる。次に、1000枚の中から1枚を選び、それにノイズをのせた画像を用意する。そして、その画像をネットワークに入力すると、徐々に元の画像が再現される。この思い出しは常に成功するのではなく、条件を満たす必要がある。</p>
 
 <center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UE2mZNWXd-A?si=IULMuAeYakfd99YU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
@@ -131,7 +131,7 @@
     \end{cases}
 \end{equation}\]
 
-<p>ニューロン同士のconnection として次の量$J_{ij}$を定義する。系は$J_{ij}$を計算することで $p$ 個のパターンがネットワークを記憶（埋め込み）する：</p>
+<p>ニューロン同士の相互作用として次の量$J_{ij}$を定義する。系は$J_{ij}$を計算することで $p$ 個のパターンがネットワークを記憶（埋め込み）する：</p>
 
 \[\begin{equation}
     J_{ij} = \frac{1}{N} \sum_{\mu = 1}^{p} \xi_i^\mu \xi_j^\mu
@@ -150,7 +150,7 @@
     \end{cases}
 \end{equation}\]
 
-<p>なぜこうするのかは後述。すると、ニューロン $i$ に入ってくる信号の和 $h_i$ は</p>
+<p>こうすると良い理由は後述。すると、ニューロン $i$ に入ってくる信号の和 $h_i$ は</p>
 
 \[\begin{equation}
     h_i = \sum_{j = 1}^{N} J_{ij}(S_j + 1)
@@ -190,8 +190,7 @@
 <p>は、$\mu = \nu$ のときは 1、$\mu \neq \nu$ のときは $N$ が十分大きければ 0 になりそう。なので、この部分はクロネッカーのデルタ $\delta_{\nu,\mu}$ になる。</p>
 
 \[\begin{align}
-    S_i (t + \Delta t) &amp;= \mathrm{sgn}\left(\sum_{\nu = 1}^p \xi_i^\nu \frac{1}{N} \sum_{j = 1}^{N} \xi_j^\nu \xi_j^\mu\right) \nonumber\\
-                       &amp;= \mathrm{sgn}\left(\sum_{\nu = 1}^p \xi_i^\nu \delta_{\nu,\mu}\right) \nonumber\\
+    S_i (t + \Delta t) &amp;= \mathrm{sgn}\left(\sum_{\nu = 1}^p \xi_i^\nu \delta_{\nu,\mu}\right) \nonumber\\
                        &amp;= \mathrm{sgn}(\xi_i^\mu) \nonumber\\
                        &amp;= \xi_i^\mu 
 \end{align}\]
@@ -211,7 +210,7 @@
     H = -\frac{1}{2}\sum_{i,j} J_{ij}S_iS_j
 \end{equation}\]
 
-<p>ただし、定数部分を無視するなどした。この $H$ に関して次のことがわかる：</p>
+<p>ただし、定数部分は適当。この $H$ に関して次のことがわかる：</p>
 
 <ul>
   <li>$H$ は Ising model の Hamiltonian</li>
@@ -240,13 +239,13 @@
 <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">mu</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">mu</span> <span class="o">&lt;</span> <span class="n">p</span><span class="p">;</span> <span class="o">++</span><span class="n">mu</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">// p個のパターンに対して</span>
     <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">if</span> <span class="p">(</span><span class="n">mu</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="n">xi</span><span class="p">[</span><span class="n">mu</span><span class="p">](</span><span class="n">i</span><span class="p">)</span> <span class="o">=</span> <span class="n">sgn</span><span class="p">((</span><span class="kt">int</span><span class="p">)</span><span class="n">engine</span><span class="p">());</span>  <span class="c1">// (p - 1)個のパターンをランダム生成</span>
-        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;=</span> <span class="n">i</span><span class="p">;</span> <span class="o">++</span><span class="n">j</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">// 行列の下三角だけ埋めます</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;=</span> <span class="n">i</span><span class="p">;</span> <span class="o">++</span><span class="n">j</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">// 行列の下三角だけ埋める</span>
             <span class="n">J</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span> <span class="o">+=</span> <span class="n">xi</span><span class="p">[</span><span class="n">mu</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">xi</span><span class="p">[</span><span class="n">mu</span><span class="p">][</span><span class="n">j</span><span class="p">];</span>  <span class="c1">// ξ_i^μ × ξ_j^μ</span>
         <span class="p">}</span>
     <span class="p">}</span>
 <span class="p">}</span>
 <span class="n">J</span> <span class="o">/=</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="n">n</span><span class="p">;</span>
-<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">i</span><span class="p">;</span> <span class="o">++</span><span class="n">j</span><span class="p">)</span> <span class="n">J</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span> <span class="o">=</span> <span class="n">J</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">);</span>  <span class="c1">// 行列の上半分は下半分のコピー</span>
+<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">i</span><span class="p">;</span> <span class="o">++</span><span class="n">j</span><span class="p">)</span> <span class="n">J</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span> <span class="o">=</span> <span class="n">J</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">);</span>  <span class="c1">// 行列の上半分は下半分のコピー（J_ij = J_ji）</span>
 </code></pre></div></div>
 
 <p><strong>思い出し</strong></p>

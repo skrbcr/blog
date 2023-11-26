@@ -1,4 +1,69 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://skrbcr.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://skrbcr.github.io/blog/" rel="alternate" type="text/html" hreflang="ja" /><updated>2023-11-22T11:11:18+09:00</updated><id>https://skrbcr.github.io/blog/feed.xml</id><title type="html">今月の物置</title><subtitle>物理＋プログラミング＋その他</subtitle><author><name>今月の新刊（@skrbcr）</name></author><entry><title type="html">連想記憶モデル（Hopfield network）の実装</title><link href="https://skrbcr.github.io/blog/physics/associative_memory" rel="alternate" type="text/html" title="連想記憶モデル（Hopfield network）の実装" /><published>2023-11-22T00:00:00+09:00</published><updated>2023-11-22T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/physics/associative_memory</id><content type="html" xml:base="https://skrbcr.github.io/blog/physics/associative_memory"><![CDATA[<p>（一応 physics ジャンルの投稿です）</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://skrbcr.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://skrbcr.github.io/blog/" rel="alternate" type="text/html" hreflang="ja" /><updated>2023-11-26T21:54:04+09:00</updated><id>https://skrbcr.github.io/blog/feed.xml</id><title type="html">今月の物置</title><subtitle>物理＋プログラミング＋その他</subtitle><author><name>今月の新刊（@skrbcr）</name></author><entry><title type="html">Jekyll のインストール（WSL・Linux の場合）</title><link href="https://skrbcr.github.io/blog/manage/install_jekyll_linux" rel="alternate" type="text/html" title="Jekyll のインストール（WSL・Linux の場合）" /><published>2023-11-26T00:00:00+09:00</published><updated>2023-11-26T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/manage/install_jekyll_linux</id><content type="html" xml:base="https://skrbcr.github.io/blog/manage/install_jekyll_linux"><![CDATA[<p><a href="https://skrbcr.github.io/blog/manage/setup_pages">以前の記事</a>の Linux 版です。</p>
+
+<h2 id="実行環境">実行環境</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">ソフト</th>
+      <th style="text-align: center">バージョン</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">OS</td>
+      <td style="text-align: center">Windows 11 Home 23H2</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">WSL</td>
+      <td style="text-align: center">2.0.9.0</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Linux</td>
+      <td style="text-align: center">Arch Linux</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Ruby</td>
+      <td style="text-align: center">3.0.6p216</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Jekyll</td>
+      <td style="text-align: center">4.2.2</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="作業の流れ">作業の流れ</h2>
+<ol>
+  <li>Ruby と Bundler をインストール</li>
+  <li>Jekyll のインストール</li>
+</ol>
+
+<h2 id="ruby-と-bundler-をインストール">Ruby と Bundler をインストール</h2>
+<p>まずは Ruby。各OS 毎のインストールコマンドが <a href="https://jekyllrb.com/docs/installation/other-linux/">docs</a> に掲載されている。</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>pacman <span class="nt">-S</span> ruby base-devel
+</code></pre></div></div>
+
+<p>次に Bundler。</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gem <span class="nb">install </span>bundler
+</code></pre></div></div>
+
+<p>そして環境変数の設定。<a href="https://jekyllrb.com/docs/installation/ubuntu/">docs</a> に従う。私は fish を使用しているので <code class="language-plaintext highlighter-rouge">config.fish</code> に以下を追記する。</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">set</span> <span class="nt">-gx</span> PATH <span class="nv">$PATH</span> <span class="nv">$HOME</span>/.local/share/gem/ruby/3.0.0/bin
+<span class="nb">set</span> <span class="nt">-gx</span> GEM_HOME <span class="nv">$HOME</span>/gems
+</code></pre></div></div>
+
+<h2 id="jekyll-のインストール">Jekyll のインストール</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gem <span class="nb">install </span>jekyll
+</code></pre></div></div>
+
+<p>最後にインストールされたことを確認：</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>bundle <span class="nt">--version</span>
+<span class="nv">$ </span>jekyll <span class="nt">--version</span>
+</code></pre></div></div>
+
+<p>以下、プロジェクトの作成からは <a href="https://skrbcr.github.io/blog/manage/setup_pages#jekyll-で新しいプロジェクトの作成設定">Windowsのとき</a>と同じ。</p>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="manage" /><summary type="html"><![CDATA[以前の記事の Linux 版です。]]></summary></entry><entry><title type="html">連想記憶モデル（Hopfield network）の実装</title><link href="https://skrbcr.github.io/blog/physics/associative_memory" rel="alternate" type="text/html" title="連想記憶モデル（Hopfield network）の実装" /><published>2023-11-22T00:00:00+09:00</published><updated>2023-11-22T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/physics/associative_memory</id><content type="html" xml:base="https://skrbcr.github.io/blog/physics/associative_memory"><![CDATA[<p>（一応 physics ジャンルの投稿です）</p>
 
 <p>（細かい話に興味ない人は「原理」の節を飛ばしてください）</p>
 
@@ -6,7 +71,7 @@
 <p>連想記憶モデル（Hopfield model）は人工知能（AI）の一種で、情報の記憶、取り出しを行うことができる。以下で述べるように、不鮮明な入力から記憶した情報を思い出すことができる。本投稿は連想記憶モデルの原理について述べ、簡単な実験を行えるプログラムを紹介する。実験結果についても簡単に述べる。なお、"Statistical Physics of Spin Glasses and Information Processing An Introduction" by Hidetoshi Nishimori<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> を参考文献としてお送りする。</p>
 
 <h2 id="連想記憶モデルとは">連想記憶モデルとは？</h2>
-<p>連想記憶モデル（Hopfield network）は情報の記憶・思い出しを行うニューラルネットワーク。例えば、1000枚の画像をこのネットワークに記憶させる。次に、1000枚の中から1枚を選び、それにノイズをのせた画像を用意する。そして、その画像をネットワークに入力すると、徐々に元の画像が再現される。この思い出しは常に成功するのではなく、ある条件を満たす必要がある。</p>
+<p>連想記憶モデル（Hopfield network）は情報の記憶・思い出しを行うニューラルネットワーク。例えば、1000枚の画像をこのネットワークに記憶させる。次に、1000枚の中から1枚を選び、それにノイズをのせた画像を用意する。そして、その画像をネットワークに入力すると、徐々に元の画像が再現される。この思い出しは常に成功するのではなく、条件を満たす必要がある。</p>
 
 <center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UE2mZNWXd-A?si=IULMuAeYakfd99YU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
@@ -27,7 +92,7 @@
     \end{cases}
 \end{equation}\]
 
-<p>ニューロン同士のconnection として次の量$J_{ij}$を定義する。系は$J_{ij}$を計算することで $p$ 個のパターンがネットワークを記憶（埋め込み）する：</p>
+<p>ニューロン同士の相互作用として次の量$J_{ij}$を定義する。系は$J_{ij}$を計算することで $p$ 個のパターンがネットワークを記憶（埋め込み）する：</p>
 
 \[\begin{equation}
     J_{ij} = \frac{1}{N} \sum_{\mu = 1}^{p} \xi_i^\mu \xi_j^\mu
@@ -46,7 +111,7 @@
     \end{cases}
 \end{equation}\]
 
-<p>なぜこうするのかは後述。すると、ニューロン $i$ に入ってくる信号の和 $h_i$ は</p>
+<p>こうすると良い理由は後述。すると、ニューロン $i$ に入ってくる信号の和 $h_i$ は</p>
 
 \[\begin{equation}
     h_i = \sum_{j = 1}^{N} J_{ij}(S_j + 1)
@@ -86,8 +151,7 @@
 <p>は、$\mu = \nu$ のときは 1、$\mu \neq \nu$ のときは $N$ が十分大きければ 0 になりそう。なので、この部分はクロネッカーのデルタ $\delta_{\nu,\mu}$ になる。</p>
 
 \[\begin{align}
-    S_i (t + \Delta t) &amp;= \mathrm{sgn}\left(\sum_{\nu = 1}^p \xi_i^\nu \frac{1}{N} \sum_{j = 1}^{N} \xi_j^\nu \xi_j^\mu\right) \nonumber\\
-                       &amp;= \mathrm{sgn}\left(\sum_{\nu = 1}^p \xi_i^\nu \delta_{\nu,\mu}\right) \nonumber\\
+    S_i (t + \Delta t) &amp;= \mathrm{sgn}\left(\sum_{\nu = 1}^p \xi_i^\nu \delta_{\nu,\mu}\right) \nonumber\\
                        &amp;= \mathrm{sgn}(\xi_i^\mu) \nonumber\\
                        &amp;= \xi_i^\mu 
 \end{align}\]
@@ -107,7 +171,7 @@
     H = -\frac{1}{2}\sum_{i,j} J_{ij}S_iS_j
 \end{equation}\]
 
-<p>ただし、定数部分を無視するなどした。この $H$ に関して次のことがわかる：</p>
+<p>ただし、定数部分は適当。この $H$ に関して次のことがわかる：</p>
 
 <ul>
   <li>$H$ は Ising model の Hamiltonian</li>
@@ -136,13 +200,13 @@
 <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">mu</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">mu</span> <span class="o">&lt;</span> <span class="n">p</span><span class="p">;</span> <span class="o">++</span><span class="n">mu</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">// p個のパターンに対して</span>
     <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">if</span> <span class="p">(</span><span class="n">mu</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="n">xi</span><span class="p">[</span><span class="n">mu</span><span class="p">](</span><span class="n">i</span><span class="p">)</span> <span class="o">=</span> <span class="n">sgn</span><span class="p">((</span><span class="kt">int</span><span class="p">)</span><span class="n">engine</span><span class="p">());</span>  <span class="c1">// (p - 1)個のパターンをランダム生成</span>
-        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;=</span> <span class="n">i</span><span class="p">;</span> <span class="o">++</span><span class="n">j</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">// 行列の下三角だけ埋めます</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;=</span> <span class="n">i</span><span class="p">;</span> <span class="o">++</span><span class="n">j</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">// 行列の下三角だけ埋める</span>
             <span class="n">J</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span> <span class="o">+=</span> <span class="n">xi</span><span class="p">[</span><span class="n">mu</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">xi</span><span class="p">[</span><span class="n">mu</span><span class="p">][</span><span class="n">j</span><span class="p">];</span>  <span class="c1">// ξ_i^μ × ξ_j^μ</span>
         <span class="p">}</span>
     <span class="p">}</span>
 <span class="p">}</span>
 <span class="n">J</span> <span class="o">/=</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="n">n</span><span class="p">;</span>
-<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">i</span><span class="p">;</span> <span class="o">++</span><span class="n">j</span><span class="p">)</span> <span class="n">J</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span> <span class="o">=</span> <span class="n">J</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">);</span>  <span class="c1">// 行列の上半分は下半分のコピー</span>
+<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">i</span><span class="p">;</span> <span class="o">++</span><span class="n">j</span><span class="p">)</span> <span class="n">J</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span> <span class="o">=</span> <span class="n">J</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">);</span>  <span class="c1">// 行列の上半分は下半分のコピー（J_ij = J_ji）</span>
 </code></pre></div></div>
 
 <p><strong>思い出し</strong></p>
@@ -669,77 +733,4 @@
 
 <h3 id="循環が大きい場合">循環が大きい場合</h3>
 <center><img src="/blog/assets/2022-07-22-cylinder_flow/rot_strong_stream.svg" style="width: 50%" /><img src="/blog/assets/2022-07-22-cylinder_flow/rot_strong_quiver.svg" style="width: 50%" /></center>
-<p>さらに循環の流速を上げると円筒下部の淀み点は円筒から離れた位置に移動する。直感的には分かりずらい流れが発生している。</p>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="physics" /><summary type="html"><![CDATA[調べること 流体力学の講義で複素速度ポテンシャルを学習した。具体例として、一様流のなかに円筒を置いた場合の流れを計算した。そこで、コンピュータで流れを計算・描画してみることにした。コード（Python）はこちら。 内容の薄い記事だが、作りかけで放置状態だったのでとりあえず文章をまとめて公開することにした。 一様流中に置かれた円筒周りの流れ 二次元平面上に一様な流れを考える。流れ（左図）や各点での流体の速度（右図。左図よりも2倍拡大してあることに注意）を図示すると、下図のようになる： この一様流の中に、中身の詰まった円を入れてみる。あるいは、円筒を置いてみる。流れは直感通り、次のようになる： 左の図からは、流体が円筒（円）を避けるようにして流れていることがわかる。右の図からは、円筒表面では流速が $0$ になる淀み点 $(-1, 0), (1, 0)$ と一様流の速さ（例えば $(2.0, 2.0)$ あたり）よりも大きくなる点 $(0, -1), (0, 1)$ があることがわかる。 循環を加える 前節の流れに下図のような渦糸（循環）を加えてみる。 このとき、流れの様子は、循環の大きさにより変化する。 循環が小さい場合 循環流と一様流の向きが同じとなる上側では流速が速くなり、下側では遅くなる。ここまでは直感的な結果が得られている。 循環が特別な大きさの場合 循環の流速を上げていくと、やがて円筒下部に特徴的な流れが出現する。左側の流れと右側の流れがぶつかり合う点ができる。具体的な循環の大きさは、流速を $U$、円筒の半径を $a$ とすると $\Gamma = 4\pi Ua$。 循環が大きい場合 さらに循環の流速を上げると円筒下部の淀み点は円筒から離れた位置に移動する。直感的には分かりずらい流れが発生している。]]></summary></entry><entry><title type="html">Jekyll を用いて GitHub Pages に記事を投稿する</title><link href="https://skrbcr.github.io/blog/manage/create_new_post" rel="alternate" type="text/html" title="Jekyll を用いて GitHub Pages に記事を投稿する" /><published>2022-05-05T00:00:00+09:00</published><updated>2022-05-05T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/manage/create_new_post</id><content type="html" xml:base="https://skrbcr.github.io/blog/manage/create_new_post"><![CDATA[<p><a href="https://skrbcr.github.io/blog/manage/setup_pages">Jekyll のインストールから GitHub Pages での公開まで</a> のつづき。やはりメモ書きなので必要な情報は網羅されていません。</p>
-
-<h2 id="実行環境">実行環境</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">ソフト</th>
-      <th style="text-align: center">バージョン</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">OS</td>
-      <td style="text-align: center">Windows 11 Home</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Ruby</td>
-      <td style="text-align: center">3.1.0p0</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Jekyll</td>
-      <td style="text-align: center">4.2.1</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">GitHub Desktop</td>
-      <td style="text-align: center">3.0.0</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Visual Studio Code</td>
-      <td style="text-align: center">1.66.2</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Visual Studio Code を使って記事を作成しています。なお、Ruby がアップデートされていないです。</p>
-
-<h2 id="作業の流れ">作業の流れ</h2>
-<ol>
-  <li><code class="language-plaintext highlighter-rouge">_posts</code> フォルダ内にファイル作成</li>
-  <li>記事の中身を書く</li>
-  <li>変更を commit して push</li>
-  <li>投稿完了</li>
-</ol>
-
-<p>結局は <a href="https://jekyllrb.com/docs/posts/">Posts - Jekyll</a> に従えばよい。</p>
-
-<h2 id="作業過程">作業過程</h2>
-<p>まず、プロジェクト内の <code class="language-plaintext highlighter-rouge">_posts</code> フォルダに Markdown や HTML のファイルを作成する。ファイル名は <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-title.md</code> つまり <code class="language-plaintext highlighter-rouge">2022-05-05-physics.md</code> のような形式にする。</p>
-
-<p>記事の中身を書いていく。冒頭部には次のように書く。これにより、Jekyll がタイトルや投稿日などを自動的に設定してくれる：</p>
-
-<div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
-<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
-<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">アヒルの観察"</span>
-<span class="na">date</span><span class="pi">:</span> <span class="s">2022-05-05</span>
-<span class="na">categories</span><span class="pi">:</span> <span class="s">physics</span>
-<span class="nn">---</span>
-
-（ここから記事の中身を書く）みなさんはアヒルが好きですか？　私は好きでも嫌いでもないです。
-・・・・・・
-・・・
-</code></pre></div></div>
-
-<p>ところで、記事中に画像などを挿入したい場合は、それらを <code class="language-plaintext highlighter-rouge">assets</code> フォルダ内に入れておくことで使えるようになる（こちらはファイル名の指定はない）。例として、このサイト <code class="language-plaintext highlighter-rouge">https://skrbcr.github.io/blog/</code> で記事を作成していて、画像 <code class="language-plaintext highlighter-rouge">awsome_photo.jpg</code> を使いたい場合。<code class="language-plaintext highlighter-rouge">assets</code> フォルダに <code class="language-plaintext highlighter-rouge">awsome_photo.jpg</code> を入れておけば、<code class="language-plaintext highlighter-rouge">https://skrbcr.github.io/blog/assets/awsome_photo.jpg/</code> で画像が利用できるようになる。つまり</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://skrbcr.github.io/blog/assets/awsome_photo.jpg/"</span><span class="nt">&gt;</span>
-</code></pre></div></div>
-
-<p>と書けば、そこに画像が表示される。</p>
-
-<p>記事が書けたら commit し、GitHub の Repository に push すれば投稿完了。</p>
-
-<p>暫くすると反映されるので、実際の投稿を確認して終了。</p>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="manage" /><summary type="html"><![CDATA[Jekyll のインストールから GitHub Pages での公開まで のつづき。やはりメモ書きなので必要な情報は網羅されていません。]]></summary></entry></feed>
+<p>さらに循環の流速を上げると円筒下部の淀み点は円筒から離れた位置に移動する。直感的には分かりずらい流れが発生している。</p>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="physics" /><summary type="html"><![CDATA[調べること 流体力学の講義で複素速度ポテンシャルを学習した。具体例として、一様流のなかに円筒を置いた場合の流れを計算した。そこで、コンピュータで流れを計算・描画してみることにした。コード（Python）はこちら。 内容の薄い記事だが、作りかけで放置状態だったのでとりあえず文章をまとめて公開することにした。 一様流中に置かれた円筒周りの流れ 二次元平面上に一様な流れを考える。流れ（左図）や各点での流体の速度（右図。左図よりも2倍拡大してあることに注意）を図示すると、下図のようになる： この一様流の中に、中身の詰まった円を入れてみる。あるいは、円筒を置いてみる。流れは直感通り、次のようになる： 左の図からは、流体が円筒（円）を避けるようにして流れていることがわかる。右の図からは、円筒表面では流速が $0$ になる淀み点 $(-1, 0), (1, 0)$ と一様流の速さ（例えば $(2.0, 2.0)$ あたり）よりも大きくなる点 $(0, -1), (0, 1)$ があることがわかる。 循環を加える 前節の流れに下図のような渦糸（循環）を加えてみる。 このとき、流れの様子は、循環の大きさにより変化する。 循環が小さい場合 循環流と一様流の向きが同じとなる上側では流速が速くなり、下側では遅くなる。ここまでは直感的な結果が得られている。 循環が特別な大きさの場合 循環の流速を上げていくと、やがて円筒下部に特徴的な流れが出現する。左側の流れと右側の流れがぶつかり合う点ができる。具体的な循環の大きさは、流速を $U$、円筒の半径を $a$ とすると $\Gamma = 4\pi Ua$。 循環が大きい場合 さらに循環の流速を上げると円筒下部の淀み点は円筒から離れた位置に移動する。直感的には分かりずらい流れが発生している。]]></summary></entry></feed>

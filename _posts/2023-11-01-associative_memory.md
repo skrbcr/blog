@@ -15,7 +15,7 @@ categories: physics
 [^1]: 電子版は[著者の先生のHP のページ](https://sites.google.com/view/nishimori/open_access_books)より無料DL できます
 
 ## 連想記憶モデルとは？
-連想記憶モデル（Hopfield network）は情報の記憶・思い出しを行うニューラルネットワーク。例えば、1000枚の画像をこのネットワークに記憶させる。次に、1000枚の中から1枚を選び、それにノイズをのせた画像を用意する。そして、その画像をネットワークに入力すると、徐々に元の画像が再現される。この思い出しは常に成功するのではなく、ある条件を満たす必要がある。
+連想記憶モデル（Hopfield network）は情報の記憶・思い出しを行うニューラルネットワーク。例えば、1000枚の画像をこのネットワークに記憶させる。次に、1000枚の中から1枚を選び、それにノイズをのせた画像を用意する。そして、その画像をネットワークに入力すると、徐々に元の画像が再現される。この思い出しは常に成功するのではなく、条件を満たす必要がある。
 
 <center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UE2mZNWXd-A?si=IULMuAeYakfd99YU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -36,7 +36,7 @@ $$\begin{equation}
     \end{cases}
 \end{equation}$$
 
-ニューロン同士のconnection として次の量$J_{ij}$を定義する。系は$J_{ij}$を計算することで $p$ 個のパターンがネットワークを記憶（埋め込み）する：
+ニューロン同士の相互作用として次の量$J_{ij}$を定義する。系は$J_{ij}$を計算することで $p$ 個のパターンがネットワークを記憶（埋め込み）する：
 
 $$\begin{equation}
     J_{ij} = \frac{1}{N} \sum_{\mu = 1}^{p} \xi_i^\mu \xi_j^\mu
@@ -55,7 +55,7 @@ $$\begin{equation}
     \end{cases}
 \end{equation}$$
 
-なぜこうするのかは後述。すると、ニューロン $i$ に入ってくる信号の和 $h_i$ は
+こうすると良い理由は後述。すると、ニューロン $i$ に入ってくる信号の和 $h_i$ は
 
 $$\begin{equation}
     h_i = \sum_{j = 1}^{N} J_{ij}(S_j + 1)
@@ -95,8 +95,7 @@ $$\begin{equation}
 は、$\mu = \nu$ のときは 1、$\mu \neq \nu$ のときは $N$ が十分大きければ 0 になりそう。なので、この部分はクロネッカーのデルタ $\delta_{\nu,\mu}$ になる。
 
 $$\begin{align}
-    S_i (t + \Delta t) &= \mathrm{sgn}\left(\sum_{\nu = 1}^p \xi_i^\nu \frac{1}{N} \sum_{j = 1}^{N} \xi_j^\nu \xi_j^\mu\right) \nonumber\\
-                       &= \mathrm{sgn}\left(\sum_{\nu = 1}^p \xi_i^\nu \delta_{\nu,\mu}\right) \nonumber\\
+    S_i (t + \Delta t) &= \mathrm{sgn}\left(\sum_{\nu = 1}^p \xi_i^\nu \delta_{\nu,\mu}\right) \nonumber\\
                        &= \mathrm{sgn}(\xi_i^\mu) \nonumber\\
                        &= \xi_i^\mu 
 \end{align}$$
@@ -116,7 +115,7 @@ $$\begin{equation}
     H = -\frac{1}{2}\sum_{i,j} J_{ij}S_iS_j
 \end{equation}$$
 
-ただし、定数部分を無視するなどした。この $H$ に関して次のことがわかる：
+ただし、定数部分は適当。この $H$ に関して次のことがわかる：
 
 - $H$ は Ising model の Hamiltonian
 - ひとつのニューロンに関して、入力信号と状態が等しいときエネルギーは小さく、異なるときエネルギーは大きくなる
@@ -144,13 +143,13 @@ std::vector<boost::numeric::ublas::vector<int>> xi(p, ublas::vector<int>(n));  /
 for (int mu = 0; mu < p; ++mu) {  // p個のパターンに対して
     for (int i = 0; i < n; ++i) {
         if (mu != 0) xi[mu](i) = sgn((int)engine());  // (p - 1)個のパターンをランダム生成
-        for (int j = 0; j <= i; ++j) {  // 行列の下三角だけ埋めます
+        for (int j = 0; j <= i; ++j) {  // 行列の下三角だけ埋める
             J(i, j) += xi[mu][i] * xi[mu][j];  // ξ_i^μ × ξ_j^μ
         }
     }
 }
 J /= (double)n;
-for (int i = 0; i < n; ++i) for (int j = 0; j < i; ++j) J(j, i) = J(i, j);  // 行列の上半分は下半分のコピー
+for (int i = 0; i < n; ++i) for (int j = 0; j < i; ++j) J(j, i) = J(i, j);  // 行列の上半分は下半分のコピー（J_ij = J_ji）
 ```
 
 **思い出し**
