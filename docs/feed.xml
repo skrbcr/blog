@@ -1,4 +1,114 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://skrbcr.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://skrbcr.github.io/blog/" rel="alternate" type="text/html" hreflang="ja" /><updated>2023-11-26T21:54:04+09:00</updated><id>https://skrbcr.github.io/blog/feed.xml</id><title type="html">今月の物置</title><subtitle>物理＋プログラミング＋その他</subtitle><author><name>今月の新刊（@skrbcr）</name></author><entry><title type="html">Jekyll のインストール（WSL・Linux の場合）</title><link href="https://skrbcr.github.io/blog/manage/install_jekyll_linux" rel="alternate" type="text/html" title="Jekyll のインストール（WSL・Linux の場合）" /><published>2023-11-26T00:00:00+09:00</published><updated>2023-11-26T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/manage/install_jekyll_linux</id><content type="html" xml:base="https://skrbcr.github.io/blog/manage/install_jekyll_linux"><![CDATA[<p><a href="https://skrbcr.github.io/blog/manage/setup_pages">以前の記事</a>の Linux 版です。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://skrbcr.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://skrbcr.github.io/blog/" rel="alternate" type="text/html" hreflang="ja" /><updated>2023-11-29T18:20:23+09:00</updated><id>https://skrbcr.github.io/blog/feed.xml</id><title type="html">今月の物置</title><subtitle>物理＋プログラミング＋その他</subtitle><author><name>今月の新刊（@skrbcr）</name></author><entry><title type="html">動画投稿：【東方MMD】発売! パチュリーの匂い缶詰</title><link href="https://skrbcr.github.io/blog/movie/movie_patchouli_and_patchouli" rel="alternate" type="text/html" title="動画投稿：【東方MMD】発売! パチュリーの匂い缶詰" /><published>2023-11-29T00:00:00+09:00</published><updated>2023-11-29T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/movie/movie_patchouli_and_patchouli</id><content type="html" xml:base="https://skrbcr.github.io/blog/movie/movie_patchouli_and_patchouli"><![CDATA[<p>ニコニコ動画にて<a href="https://www.nicovideo.jp/watch/sm43083830">動画</a>を投稿しました。</p>
+
+<h2 id="使用作品目録">使用作品目録</h2>
+<p>使わせていただいた素材作品の紹介です。</p>
+
+<h3 id="mmdモデル">MMDモデル</h3>
+<h4 id="キャラクター">キャラクター</h4>
+<ul>
+  <li>パチュリー・ノーレッジ Ver.2.00 Rev.B Type-C(フル_おさげ_ケープ_ロンスカ_ブーツA_パンプス_あずき)：アールビット<a href="https://commons.nicovideo.jp/works/im8313020">ニコニコ</a> <a href="https://bowlroll.net/file/171703">DL元</a></li>
+  <li>レミリア・スカーレット：Kanata/anek/eto/キングM/Cresato/DeviantArt - YamiSweet/Montecore/雪萱 <a href="https://bowlroll.net/file/238262">DL元</a></li>
+  <li>十六夜咲夜 Ver.2.20 Rev.G Type-E(ダンス_上着A_膝丈スカート_パンプス)：アールビット <a href="https://commons.nicovideo.jp/works/im6840567">ニコニコ</a> <a href="https://bowlroll.net/file/141058">DL元</a></li>
+  <li>小悪魔 アールビット式りとばな風改変+翼等変更モデル(こあ)：アールビット/モンテコア/HVP/nya/ココア/iRon0129/切な顔P/りとばな/小悪魔らぼらとりー/remii/あい <a href="https://commons.nicovideo.jp/works/im7934536">ニコニコ</a> <a href="https://bowlroll.net/file/160746">DL元</a></li>
+  <li>FL改_博麗霊夢_v1.00 春：cham/モンテコア/かきすけ/フリック <a href="https://commons.nicovideo.jp/works/sm30356135">ニコニコ</a> <a href="https://bowlroll.net/file/124738">DL元</a></li>
+  <li>FL改_霧雨魔理沙_v1.60 (茨)：cham/kaoru/かきすけ/T.M/なつか/フリック <a href="https://commons.nicovideo.jp/works/im6146103">ニコニコ</a> <a href="https://bowlroll.net/file/116163">DL元</a></li>
+  <li>紅美鈴 Ver.2.10 Rev.B Type-C(フル_ロングヘア_半袖_膝丈_パンプス)：アールビット <a href="https://commons.nicovideo.jp/works/sm27899799">ニコニコ</a> <a href="https://bowlroll.net/file/242486">DL元</a></li>
+  <li>フランドール・スカーレット：Kanata/anek/eto/キングM/Cresato/DeviantArt - YamiSweet/Montecore/雪萱 <a href="https://bowlroll.net/file/238263">DL元</a></li>
+  <li>人里モブセット v1.1：ニクムニ <a href="https://commons.nicovideo.jp/works/im4449956">ニコニコ</a> <a href="http://ux.getuploader.com/2962mmd/">DL元</a></li>
+</ul>
+
+<h4 id="ステージ">ステージ</h4>
+<ul>
+  <li>人里ver0.77：鯖缶 <a href="https://commons.nicovideo.jp/works/im4355721">ニコニコ</a> <a href="https://bowlroll.net/file/53168">DL元</a></li>
+  <li>紅魔館　ver1.0版：フレスベルク <a href="https://commons.nicovideo.jp/works/sm22298599">ニコニコ</a> <a href="https://bowlroll.net/file/27587">DL元</a></li>
+  <li>紅魔館図書館　ver1.0版：フレスベルク <a href="https://commons.nicovideo.jp/works/sm22298599">ニコニコ</a> <a href="https://bowlroll.net/file/27588">DL元</a></li>
+</ul>
+
+<h4 id="静物">静物</h4>
+<ul>
+  <li>段ボール箱：ejima <a href="https://commons.nicovideo.jp/works/im2664887">ニコニコ</a> <a href="https://bowlroll.net/file/11799">DL元</a></li>
+  <li>洋風日傘（桃・黃）：智沙都 <a href="https://commons.nicovideo.jp/works/im5110399">ニコニコ</a> <a href="https://bowlroll.net/file/77990">DL元</a></li>
+  <li>イベント用テーブル：ぐず <a href="https://commons.nicovideo.jp/works/im4256284">ニコニコ</a> <a href="https://bowlroll.net/file/45534">DL元</a></li>
+  <li>M1 MacBook Pro (2021 16 Inch) Ver0.1 Silver：S.Aikawa <a href="https://3d.nicovideo.jp/works/td85034">ニコニコ</a> <a href="https://3d.nicovideo.jp/works/td85034">DL元</a></li>
+  <li>椅子：88 <a href="https://bowlroll.net/file/69690">DL元</a></li>
+  <li>揺らぐろうそく、燭台と共に：hiro K <a href="https://commons.nicovideo.jp/works/im5166776">ニコニコ</a> <a href="https://bowlroll.net/file/87124">DL元</a></li>
+  <li>いろんなダミー剛体 箱G1：Rui <a href="https://commons.nicovideo.jp/works/im4821098">ニコニコ</a> <a href="https://bowlroll.net/file/68242">DL元</a></li>
+  <li>魔導書(開)、魔導書ページめくりモーションと共に：アールビット <a href="https://commons.nicovideo.jp/works/im8313020">ニコニコ</a> <a href="https://bowlroll.net/file/171703">DL元</a></li>
+  <li>ぞうさんじょうろ：森の民やむぅ <a href="https://commons.nicovideo.jp/works/im9605109">ニコニコ</a> <a href="https://bowlroll.net/file/206447">DL元</a></li>
+  <li>可動式八卦炉 ver1.35：ネムネコ <a href="https://commons.nicovideo.jp/works/im6209252">ニコニコ</a> <a href="https://bowlroll.net/file/118556">DL元</a></li>
+</ul>
+
+<h4 id="アクセサリ">アクセサリ</h4>
+<ul>
+  <li>スカイドームいろいろ詰め合わせ 青空_山つき（http://ryntaro-n.anime.coocan.jp/MMD.htm, sm17874820）：額田倫太郎 <a href="https://commons.nicovideo.jp/works/sm17874820">ニコニコ</a> <a href="https://bowlroll.net/file/186281">DL元</a></li>
+</ul>
+
+<h4 id="エフェクト">エフェクト</h4>
+<ul>
+  <li>水面エフェクト (Water v5.6) Water2_low_湖：ビームマン <a href="https://commons.nicovideo.jp/works/sm21437138">ニコニコ</a> <a href="https://w.atwiki.jp/beamman/">DL元</a></li>
+  <li>超高品質セルフシャドウエフェクト ExcellentShadow2 (Ver.2.4), ExShadowSSAO：そぼろ <a href="https://commons.nicovideo.jp/works/sm19123817">ニコニコ</a> <a href="https://onedrive.live.com/?authkey=Arbitrary&amp;id=EF581C37A4524EDA%21107&amp;cid=EF581C37A4524EDA">DL元</a></li>
+  <li>AutoLuminous Ver.4.2：そぼろ <a href="https://commons.nicovideo.jp/works/sm16087751">ニコニコ</a> <a href="https://onedrive.live.com/?authkey=Arbitrary&amp;id=EF581C37A4524EDA%21107&amp;cid=EF581C37A4524EDA">DL元</a></li>
+  <li>空気遠近エフェクト：化身バレッタ <a href="https://commons.nicovideo.jp/works/im4505494">ニコニコ</a> <a href="https://bowlroll.net/file/26250">DL元</a></li>
+</ul>
+
+<h3 id="フォント">フォント</h3>
+<ul>
+  <li>源ノ角ゴシック：Adobe</li>
+  <li>衡山毛筆フォント行書：武蔵システム</li>
+</ul>
+
+<h3 id="音楽">音楽</h3>
+<h4 id="bgm">BGM</h4>
+<ul>
+  <li>ラクトガール　～ 少女密室　日常的BGM（nc130262）：そぼろ <a href="https://commons.nicovideo.jp/works/nc130262">ニコニコ</a></li>
+  <li>チャイコフスキー：組曲《くるみ割り人形》 Op.71aより 第3曲“こんぺい糖の踊り”：クラシック名曲サウンドライブラリー（http://classical-sound.seesaa.net/） <a href="http://classical-sound.seesaa.net/article/215433975.html">DL元</a></li>
+  <li>ビゼー：歌劇《カルメン》 前奏曲 [2019][AR]：クラシック名曲サウンドライブラリー（http://classical-sound.seesaa.net/） <a href="http://classical-sound.seesaa.net/article/472021095.html">DL元</a></li>
+  <li>Locked in her Embrace【ラクトガール】（nc272097）：しおーる <a href="https://commons.nicovideo.jp/works/nc272097">ニコニコ</a></li>
+  <li>PeriTune：Piano_Melancholy <a href="https://peritune.com/blog/2016/07/05/piano_melancholy/">DL元</a></li>
+</ul>
+
+<h4 id="se">SE</h4>
+<ul>
+  <li>OtoLogic：フレーズ02、オノマトペ　チーン03、スイング01 <a href="https://otologic.jp/">HP</a></li>
+  <li>効果音ラボ：和太鼓でドン、和太鼓でドドン、煙モクモク、時計塔内部 <a href="https://commons.nicovideo.jp/works/nc133519">ニコニコ 和太鼓でドン</a> <a href="https://commons.nicovideo.jp/works/nc133520">ニコニコ 和太鼓でドドン</a> <a href="https://commons.nicovideo.jp/works/nc278990">ニコニコ 時計塔内部</a> <a href="https://soundeffect-lab.info/">HP</a></li>
+</ul>
+
+<h3 id="ソフトウェア">ソフトウェア</h3>
+<ul>
+  <li>樋口優：MikuMikuDance</li>
+  <li>舞力介入P：MikuMikuEffect</li>
+  <li>饅頭遣い：YukkuriMovieMaker4</li>
+  <li>アクエスト：AquesTalk</li>
+  <li>ＫＥＮくん：AviUtl</li>
+  <li>rigaya：拡張 x264 出力(GUI) Ex</li>
+</ul>
+
+<h2 id="感想">感想</h2>
+<p>本動画を作った感想です。</p>
+
+<h3 id="良かった点">良かった点</h3>
+<ul>
+  <li>完成させた</li>
+  <li>1本動画を作る中で MMD に慣れることができた</li>
+  <li>作りながら効率を上げられた</li>
+  <li>テンポは悪くなかったと思う</li>
+</ul>
+
+<h3 id="悪かった点">悪かった点</h3>
+<ul>
+  <li>ほとんど紙芝居？　MMD ドラマ仕立てにしたかったが、動きが少なかった</li>
+  <li>単調な演出。演出の引き出しを増やしたい。。</li>
+  <li>キャラクターの動きが少ない。もうちょっと動かした方が自然な気がする</li>
+  <li>口調の書き分けができていない気がする</li>
+  <li>脚本を書く前に十分にキャラクター設定（立場や考えていること）ができていなかった。結果、キャラクターの心情を反映した演出ができなかった</li>
+  <li>シナリオのテンポが速すぎた気もする。正直よく分からない</li>
+</ul>
+
+<h3 id="その他の点">その他の点</h3>
+<ul>
+  <li>二番煎じが怖いという感覚を理解した</li>
+  <li>東方にとても詳しいのではないので、公式設定との兼ね合いが不安</li>
+</ul>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="movie" /><summary type="html"><![CDATA[ニコニコ動画にて動画を投稿しました。]]></summary></entry><entry><title type="html">Jekyll のインストール（WSL・Linux の場合）</title><link href="https://skrbcr.github.io/blog/manage/install_jekyll_linux" rel="alternate" type="text/html" title="Jekyll のインストール（WSL・Linux の場合）" /><published>2023-11-26T00:00:00+09:00</published><updated>2023-11-26T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/manage/install_jekyll_linux</id><content type="html" xml:base="https://skrbcr.github.io/blog/manage/install_jekyll_linux"><![CDATA[<p><a href="https://skrbcr.github.io/blog/manage/setup_pages">以前の記事</a>の Linux 版です。</p>
 
 <h2 id="実行環境">実行環境</h2>
 
@@ -706,31 +816,4 @@
       <p>同じ画像を複数枚撮って重ね合わせることで、ノイズの低減を行う編集手法。物理実験での複数回の測定みたいなものだと思っています。 <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="astron" /><summary type="html"><![CDATA[Nikon Z50; F3.5, 20秒×12枚（240秒）, ISO 1600天の川とさそり座（右）いて座も写っています]]></summary></entry><entry><title type="html">円筒まわりの定常流</title><link href="https://skrbcr.github.io/blog/physics/cylinder_flow" rel="alternate" type="text/html" title="円筒まわりの定常流" /><published>2022-07-22T00:00:00+09:00</published><updated>2022-07-22T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/physics/cylinder_flow</id><content type="html" xml:base="https://skrbcr.github.io/blog/physics/cylinder_flow"><![CDATA[<h2 id="調べること">調べること</h2>
-<p>流体力学の講義で複素速度ポテンシャルを学習した。具体例として、一様流のなかに円筒を置いた場合の流れを計算した。そこで、コンピュータで流れを計算・描画してみることにした。コード（Python）は<a href="https://github.com/skrbcr/blog/blob/main/docs/assets/2022-07-22-cylinder_flow/cylinder.py">こちら</a>。</p>
-
-<p>内容の薄い記事だが、作りかけで放置状態だったのでとりあえず文章をまとめて公開することにした。</p>
-
-<h2 id="一様流中に置かれた円筒周りの流れ">一様流中に置かれた円筒周りの流れ</h2>
-<p>二次元平面上に一様な流れを考える。流れ（左図）や各点での流体の速度（右図。左図よりも2倍拡大してあることに注意）を図示すると、下図のようになる：</p>
-<center><img src="/blog/assets/2022-07-22-cylinder_flow/uniform_flow_stream.svg" style="width: 50%" /><img src="/blog/assets/2022-07-22-cylinder_flow/uniform_flow_quiver.svg" style="width: 50%" /></center>
-<p>この一様流の中に、中身の詰まった円を入れてみる。あるいは、円筒を置いてみる。流れは直感通り、次のようになる：</p>
-<center><img src="/blog/assets/2022-07-22-cylinder_flow/norm_stream.svg" style="width: 50%" /><img src="/blog/assets/2022-07-22-cylinder_flow/norm_quiver.svg" style="width: 50%" /></center>
-<p>左の図からは、流体が円筒（円）を避けるようにして流れていることがわかる。右の図からは、円筒表面では流速が $0$ になる淀み点 $(-1, 0), (1, 0)$ と一様流の速さ（例えば $(2.0, 2.0)$ あたり）よりも大きくなる点 $(0, -1), (0, 1)$ があることがわかる。</p>
-
-<h2 id="循環を加える">循環を加える</h2>
-<p>前節の流れに下図のような渦糸（循環）を加えてみる。</p>
-<center><img src="/blog/assets/2022-07-22-cylinder_flow/rot_stream.svg" style="width: 50%" /><img src="/blog/assets/2022-07-22-cylinder_flow/rot_quiver.svg" style="width: 50%" /></center>
-<p>このとき、流れの様子は、循環の大きさにより変化する。</p>
-
-<h3 id="循環が小さい場合">循環が小さい場合</h3>
-<center><img src="/blog/assets/2022-07-22-cylinder_flow/rot_weak_stream.svg" style="width: 50%" /><img src="/blog/assets/2022-07-22-cylinder_flow/rot_weak_quiver.svg" style="width: 50%" /></center>
-<p>循環流と一様流の向きが同じとなる上側では流速が速くなり、下側では遅くなる。ここまでは直感的な結果が得られている。</p>
-
-<h3 id="循環が特別な大きさの場合">循環が特別な大きさの場合</h3>
-<center><img src="/blog/assets/2022-07-22-cylinder_flow/rot_med_stream.svg" style="width: 50%" /><img src="/blog/assets/2022-07-22-cylinder_flow/rot_med_quiver.svg" style="width: 50%" /></center>
-<p>循環の流速を上げていくと、やがて円筒下部に特徴的な流れが出現する。左側の流れと右側の流れがぶつかり合う点ができる。具体的な循環の大きさは、流速を $U$、円筒の半径を $a$ とすると $\Gamma = 4\pi Ua$。</p>
-
-<h3 id="循環が大きい場合">循環が大きい場合</h3>
-<center><img src="/blog/assets/2022-07-22-cylinder_flow/rot_strong_stream.svg" style="width: 50%" /><img src="/blog/assets/2022-07-22-cylinder_flow/rot_strong_quiver.svg" style="width: 50%" /></center>
-<p>さらに循環の流速を上げると円筒下部の淀み点は円筒から離れた位置に移動する。直感的には分かりずらい流れが発生している。</p>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="physics" /><summary type="html"><![CDATA[調べること 流体力学の講義で複素速度ポテンシャルを学習した。具体例として、一様流のなかに円筒を置いた場合の流れを計算した。そこで、コンピュータで流れを計算・描画してみることにした。コード（Python）はこちら。 内容の薄い記事だが、作りかけで放置状態だったのでとりあえず文章をまとめて公開することにした。 一様流中に置かれた円筒周りの流れ 二次元平面上に一様な流れを考える。流れ（左図）や各点での流体の速度（右図。左図よりも2倍拡大してあることに注意）を図示すると、下図のようになる： この一様流の中に、中身の詰まった円を入れてみる。あるいは、円筒を置いてみる。流れは直感通り、次のようになる： 左の図からは、流体が円筒（円）を避けるようにして流れていることがわかる。右の図からは、円筒表面では流速が $0$ になる淀み点 $(-1, 0), (1, 0)$ と一様流の速さ（例えば $(2.0, 2.0)$ あたり）よりも大きくなる点 $(0, -1), (0, 1)$ があることがわかる。 循環を加える 前節の流れに下図のような渦糸（循環）を加えてみる。 このとき、流れの様子は、循環の大きさにより変化する。 循環が小さい場合 循環流と一様流の向きが同じとなる上側では流速が速くなり、下側では遅くなる。ここまでは直感的な結果が得られている。 循環が特別な大きさの場合 循環の流速を上げていくと、やがて円筒下部に特徴的な流れが出現する。左側の流れと右側の流れがぶつかり合う点ができる。具体的な循環の大きさは、流速を $U$、円筒の半径を $a$ とすると $\Gamma = 4\pi Ua$。 循環が大きい場合 さらに循環の流速を上げると円筒下部の淀み点は円筒から離れた位置に移動する。直感的には分かりずらい流れが発生している。]]></summary></entry></feed>
+</div>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="astron" /><summary type="html"><![CDATA[Nikon Z50; F3.5, 20秒×12枚（240秒）, ISO 1600天の川とさそり座（右）いて座も写っています]]></summary></entry></feed>
