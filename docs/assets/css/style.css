@@ -1,23 +1,54 @@
-body { font-family: Source Han Sans; }
+body {
+  font-family: Source Han Sans;
+}
 
-.post-content h2 { padding-left: 0.8rem; border-left: 8px solid #000000; font-size: 26px; }
+.post-content h2 {
+  padding-left: 0.8rem;
+  border-left: 8px solid #000000;
+  font-size: 26px;
+}
+.post-content h3 {
+  padding-left: 1rem;
+  border-bottom: 1px dashed #999999;
+  font-size: 24px;
+}
+.post-content img {
+  max-width: 80%;
+  margin: auto;
+  display: block;
+}
 
-.post-content h3 { padding-left: 1rem; border-bottom: 1px dashed #999999; font-size: 24px; }
+hr.separator {
+  width: 50%;
+}
 
-.post-content img { max-width: 80%; margin: auto; display: block; }
+time.dt-published {
+  margin-right: 1em;
+}
 
-hr.separator { width: 50%; }
+.pagination {
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: center;
+}
 
-time.dt-published { margin-right: 1em; }
-
-.pagination { margin-left: 25%; margin-right: 25%; text-align: center; }
-
-.katex-display { overflow: auto hidden; padding: 0em 0.2em; }
-
-.katex-display .katex > .katex-html { display: table; width: 100%; border-collapse: separate; border-spacing: 1em 0; }
-
-.katex-display .katex > .katex-html .base { display: table-cell; text-align: center; }
-
-.katex-display .katex > .katex-html .tag { display: table-cell; text-align: right; }
+.katex-display {
+  overflow: auto hidden;
+  padding: 0em 0.2em;
+}
+.katex-display .katex > .katex-html {
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 1em 0;
+}
+.katex-display .katex > .katex-html .base {
+  display: table-cell;
+  text-align: center;
+}
+.katex-display .katex > .katex-html .tag {
+  display: table-cell;
+  text-align: right;
+}
 
 /*# sourceMappingURL=style.css.map */
