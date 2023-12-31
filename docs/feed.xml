@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://skrbcr.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://skrbcr.github.io/blog/" rel="alternate" type="text/html" hreflang="ja" /><updated>2023-12-30T23:18:19+09:00</updated><id>https://skrbcr.github.io/blog/feed.xml</id><title type="html">今月の物置</title><subtitle>物理＋プログラミング＋その他</subtitle><author><name>今月の新刊（@skrbcr）</name></author><entry><title type="html">rbenv を用いて Ruby をインストール</title><link href="https://skrbcr.github.io/blog/programming/install_ruby_by_rbenv" rel="alternate" type="text/html" title="rbenv を用いて Ruby をインストール" /><published>2023-12-30T00:00:00+09:00</published><updated>2023-12-30T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/programming/install_ruby_by_rbenv</id><content type="html" xml:base="https://skrbcr.github.io/blog/programming/install_ruby_by_rbenv"><![CDATA[<p>Ruby の最新版が必要になり調べていたところ、Ruby 環境を管理する rbenv を知ったのでインストールした。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" hreflang="ja" /><updated>2023-12-31T15:35:42+09:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">今月の物置</title><subtitle>物理＋プログラミング＋その他</subtitle><author><name>今月の新刊（@skrbcr）</name></author><entry><title type="html">rbenv を用いて Ruby をインストール</title><link href="http://localhost:4000/blog/programming/install_ruby_by_rbenv" rel="alternate" type="text/html" title="rbenv を用いて Ruby をインストール" /><published>2023-12-30T00:00:00+09:00</published><updated>2023-12-30T00:00:00+09:00</updated><id>http://localhost:4000/blog/programming/install_ruby_by_rbenv</id><content type="html" xml:base="http://localhost:4000/blog/programming/install_ruby_by_rbenv"><![CDATA[<p>Ruby の最新版が必要になり調べていたところ、Ruby 環境を管理する rbenv を知ったのでインストールした。</p>
 
 <h2 id="実行環境">実行環境</h2>
 
@@ -38,6 +38,7 @@
 <ol>
   <li>rbenv のインストール</li>
   <li>Ruby のインストール</li>
+  <li>プロジェクトのセットアップ</li>
 </ol>
 
 <h2 id="rbenv-のインストール">rbenv のインストール</h2>
@@ -68,6 +69,7 @@
 </code></pre></div></div>
 
 <h2 id="ruby-のインストール">Ruby のインストール</h2>
+<h3 id="ruby">Ruby</h3>
 <p>ruby-build をインストールすることで <code class="language-plaintext highlighter-rouge">rbenv install</code> が使えるようになる。</p>
 
 <p>安定版のリストを確認：</p>
@@ -84,6 +86,33 @@
 <span class="nv">$ </span>rbenv global 3.3.0  <span class="c"># デフォルトを設定</span>
 </code></pre></div></div>
 
+<h3 id="bundler">Bundler</h3>
+<p>パッケージ管理を行う Bundler をインストールする：</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>rbenv <span class="nb">exec </span>gem <span class="nb">install </span>bundler
+<span class="nv">$ </span>rbenv <span class="nb">exec </span>bundle <span class="nt">--version</span>
+</code></pre></div></div>
+
+<h2 id="プロジェクトのセットアップ">プロジェクトのセットアップ</h2>
+
+<p>システムに Bundler がインストールされていない場合は <code class="language-plaintext highlighter-rouge">bundle</code> コマンドに <code class="language-plaintext highlighter-rouge">rbenv exec</code> を付ける必要はないらしい。</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>rbenv <span class="nb">exec </span>bundle init
+<span class="c"># システムに Bundler がインストールされて「いない」場合は下でも可：</span>
+<span class="nv">$ </span>bundle init
+</code></pre></div></div>
+
+<p>Gemfile が生成されるので、必要なパッケージを書いてインストール。まずはインストール場所を指定しておく（一度だけ実行すればよい）：</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># gem はこのプロジェクトのみにインストール。vendor/bundle ディレクトリが生成される</span>
+<span class="nv">$ </span>rbenv <span class="nb">exec </span>bundle config <span class="nb">set </span>path <span class="s1">'vendor/bundle'</span>
+</code></pre></div></div>
+
+<p>gem をインストールする：</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>rbenv <span class="nb">exec </span>bundle <span class="nb">install</span>
+</code></pre></div></div>
+
+<p>ネットでは <code class="language-plaintext highlighter-rouge">rbenv exec bundle install --path=vendor/bundle</code> コマンドが紹介されていた。しかし、これを実行すると上の通りに改めよと警告される。将来的に <code class="language-plaintext highlighter-rouge">--path</code> フラグは使えなくなるようだ。</p>
+
 <h2 id="rbenv-のアップデート">rbenv のアップデート</h2>
 <p>rbenv のアップデート方法についてもまとめる。</p>
 
@@ -98,7 +127,7 @@
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git clone https://github.com/rbenv/ruby-build.git <span class="s2">"</span><span class="si">$(</span>rbenv root<span class="si">)</span><span class="s2">"</span>/plugins/ruby-build
 </code></pre></div>    </div>
   </li>
-</ul>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="programming" /><summary type="html"><![CDATA[Ruby の最新版が必要になり調べていたところ、Ruby 環境を管理する rbenv を知ったのでインストールした。]]></summary></entry><entry><title type="html">動画投稿：【東方MMD】発売! パチュリーの匂い缶詰</title><link href="https://skrbcr.github.io/blog/movie/movie_patchouli_and_patchouli" rel="alternate" type="text/html" title="動画投稿：【東方MMD】発売! パチュリーの匂い缶詰" /><published>2023-11-29T00:00:00+09:00</published><updated>2023-11-29T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/movie/movie_patchouli_and_patchouli</id><content type="html" xml:base="https://skrbcr.github.io/blog/movie/movie_patchouli_and_patchouli"><![CDATA[<p>ニコニコ動画にて<a href="https://www.nicovideo.jp/watch/sm43083830">動画</a>を投稿しました。</p>
+</ul>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="programming" /><summary type="html"><![CDATA[Ruby の最新版が必要になり調べていたところ、Ruby 環境を管理する rbenv を知ったのでインストールした。]]></summary></entry><entry><title type="html">動画投稿：【東方MMD】発売! パチュリーの匂い缶詰</title><link href="http://localhost:4000/blog/movie/movie_patchouli_and_patchouli" rel="alternate" type="text/html" title="動画投稿：【東方MMD】発売! パチュリーの匂い缶詰" /><published>2023-11-29T00:00:00+09:00</published><updated>2023-11-29T00:00:00+09:00</updated><id>http://localhost:4000/blog/movie/movie_patchouli_and_patchouli</id><content type="html" xml:base="http://localhost:4000/blog/movie/movie_patchouli_and_patchouli"><![CDATA[<p>ニコニコ動画にて<a href="https://www.nicovideo.jp/watch/sm43083830">動画</a>を投稿しました。</p>
 
 <h2 id="使用作品目録">使用作品目録</h2>
 <p>使わせていただいた素材作品の紹介です。</p>
@@ -208,7 +237,7 @@
 <ul>
   <li>二番煎じが怖いという感覚を理解した</li>
   <li>東方にとても詳しいのではないので、公式設定との兼ね合いが不安</li>
-</ul>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="movie" /><summary type="html"><![CDATA[ニコニコ動画にて動画を投稿しました。]]></summary></entry><entry><title type="html">Jekyll のインストール（WSL・Linux の場合）</title><link href="https://skrbcr.github.io/blog/manage/install_jekyll_linux" rel="alternate" type="text/html" title="Jekyll のインストール（WSL・Linux の場合）" /><published>2023-11-26T00:00:00+09:00</published><updated>2023-11-26T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/manage/install_jekyll_linux</id><content type="html" xml:base="https://skrbcr.github.io/blog/manage/install_jekyll_linux"><![CDATA[<p><a href="https://skrbcr.github.io/blog/manage/setup_pages">以前の記事</a>の Linux 版です。</p>
+</ul>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="movie" /><summary type="html"><![CDATA[ニコニコ動画にて動画を投稿しました。]]></summary></entry><entry><title type="html">Jekyll のインストール（WSL・Linux の場合）</title><link href="http://localhost:4000/blog/manage/install_jekyll_linux" rel="alternate" type="text/html" title="Jekyll のインストール（WSL・Linux の場合）" /><published>2023-11-26T00:00:00+09:00</published><updated>2023-11-26T00:00:00+09:00</updated><id>http://localhost:4000/blog/manage/install_jekyll_linux</id><content type="html" xml:base="http://localhost:4000/blog/manage/install_jekyll_linux"><![CDATA[<p><a href="https://skrbcr.github.io/blog/manage/setup_pages">以前の記事</a>の Linux 版です。</p>
 
 <h2 id="実行環境">実行環境</h2>
 
@@ -273,7 +302,7 @@
 <span class="nv">$ </span>jekyll <span class="nt">--version</span>
 </code></pre></div></div>
 
-<p>以下、プロジェクトの作成からは <a href="https://skrbcr.github.io/blog/manage/setup_pages#jekyll-で新しいプロジェクトの作成設定">Windowsのとき</a>と同じ。</p>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="manage" /><summary type="html"><![CDATA[以前の記事の Linux 版です。]]></summary></entry><entry><title type="html">連想記憶モデル（Hopfield network）の実装</title><link href="https://skrbcr.github.io/blog/physics/associative_memory" rel="alternate" type="text/html" title="連想記憶モデル（Hopfield network）の実装" /><published>2023-11-22T00:00:00+09:00</published><updated>2023-11-22T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/physics/associative_memory</id><content type="html" xml:base="https://skrbcr.github.io/blog/physics/associative_memory"><![CDATA[<p>（一応 physics ジャンルの投稿です）</p>
+<p>以下、プロジェクトの作成からは <a href="https://skrbcr.github.io/blog/manage/setup_pages#jekyll-で新しいプロジェクトの作成設定">Windowsのとき</a>と同じ。</p>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="manage" /><summary type="html"><![CDATA[以前の記事の Linux 版です。]]></summary></entry><entry><title type="html">連想記憶モデル（Hopfield network）の実装</title><link href="http://localhost:4000/blog/physics/associative_memory" rel="alternate" type="text/html" title="連想記憶モデル（Hopfield network）の実装" /><published>2023-11-22T00:00:00+09:00</published><updated>2023-11-22T00:00:00+09:00</updated><id>http://localhost:4000/blog/physics/associative_memory</id><content type="html" xml:base="http://localhost:4000/blog/physics/associative_memory"><![CDATA[<p>（一応 physics ジャンルの投稿です）</p>
 
 <p>（細かい話に興味ない人は「原理」の節を飛ばしてください）</p>
 
@@ -469,7 +498,7 @@
       <p>電子版は<a href="https://sites.google.com/view/nishimori/open_access_books">著者の先生のHP のページ</a>より無料DL できます <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="physics" /><summary type="html"><![CDATA[（一応 physics ジャンルの投稿です）]]></summary></entry><entry><title type="html">AtCoder 緑色になりました</title><link href="https://skrbcr.github.io/blog/programming/atcoder_green" rel="alternate" type="text/html" title="AtCoder 緑色になりました" /><published>2023-10-20T00:00:00+09:00</published><updated>2023-10-20T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/programming/atcoder_green</id><content type="html" xml:base="https://skrbcr.github.io/blog/programming/atcoder_green"><![CDATA[<p><a href="https://skrbcr.github.io/blog/programming/atcoder_brown">前回</a>のあらすじ：茶色くなりました</p>
+</div>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="physics" /><summary type="html"><![CDATA[（一応 physics ジャンルの投稿です）]]></summary></entry><entry><title type="html">AtCoder 緑色になりました</title><link href="http://localhost:4000/blog/programming/atcoder_green" rel="alternate" type="text/html" title="AtCoder 緑色になりました" /><published>2023-10-20T00:00:00+09:00</published><updated>2023-10-20T00:00:00+09:00</updated><id>http://localhost:4000/blog/programming/atcoder_green</id><content type="html" xml:base="http://localhost:4000/blog/programming/atcoder_green"><![CDATA[<p><a href="https://skrbcr.github.io/blog/programming/atcoder_brown">前回</a>のあらすじ：茶色くなりました</p>
 
 <h2 id="入緑">入緑</h2>
 <p>AtCoder のランクが緑になりました。わーい。緑くなるまでの経緯を書きます。</p>
@@ -519,7 +548,7 @@
       <p>夏休みなので時間が多いのです <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="programming" /><summary type="html"><![CDATA[前回のあらすじ：茶色くなりました]]></summary></entry><entry><title type="html">AtCoder 茶色になりました</title><link href="https://skrbcr.github.io/blog/programming/atcoder_brown" rel="alternate" type="text/html" title="AtCoder 茶色になりました" /><published>2023-08-16T00:00:00+09:00</published><updated>2023-08-16T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/programming/atcoder_brown</id><content type="html" xml:base="https://skrbcr.github.io/blog/programming/atcoder_brown"><![CDATA[<h2 id="入茶">入茶</h2>
+</div>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="programming" /><summary type="html"><![CDATA[前回のあらすじ：茶色くなりました]]></summary></entry><entry><title type="html">AtCoder 茶色になりました</title><link href="http://localhost:4000/blog/programming/atcoder_brown" rel="alternate" type="text/html" title="AtCoder 茶色になりました" /><published>2023-08-16T00:00:00+09:00</published><updated>2023-08-16T00:00:00+09:00</updated><id>http://localhost:4000/blog/programming/atcoder_brown</id><content type="html" xml:base="http://localhost:4000/blog/programming/atcoder_brown"><![CDATA[<h2 id="入茶">入茶</h2>
 <p>しばらく前に<a href="https://skrbcr.github.io/blog/programing/begin_atcoder">AtCoder を始め</a>、先日ランクが茶色になりました。入茶までにしたことや、現在の私のプログラミング能力について書きます。</p>
 
 <p><img src="/blog/assets/2023-08-13-atcoder_brown/graph.png" alt="レートグラフ" title="レートグラフ" /></p>
@@ -584,7 +613,7 @@
       <p>ちなみに私は紙のノート派です <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="programming" /><summary type="html"><![CDATA[入茶 しばらく前にAtCoder を始め、先日ランクが茶色になりました。入茶までにしたことや、現在の私のプログラミング能力について書きます。]]></summary></entry><entry><title type="html">AtCoder はじめました</title><link href="https://skrbcr.github.io/blog/programming/begin_atcoder" rel="alternate" type="text/html" title="AtCoder はじめました" /><published>2023-07-30T00:00:00+09:00</published><updated>2023-07-30T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/programming/begin_atcoder</id><content type="html" xml:base="https://skrbcr.github.io/blog/programming/begin_atcoder"><![CDATA[<h2 id="atcoder-はじめました">AtCoder はじめました</h2>
+</div>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="programming" /><summary type="html"><![CDATA[入茶 しばらく前にAtCoder を始め、先日ランクが茶色になりました。入茶までにしたことや、現在の私のプログラミング能力について書きます。]]></summary></entry><entry><title type="html">AtCoder はじめました</title><link href="http://localhost:4000/blog/programming/begin_atcoder" rel="alternate" type="text/html" title="AtCoder はじめました" /><published>2023-07-30T00:00:00+09:00</published><updated>2023-07-30T00:00:00+09:00</updated><id>http://localhost:4000/blog/programming/begin_atcoder</id><content type="html" xml:base="http://localhost:4000/blog/programming/begin_atcoder"><![CDATA[<h2 id="atcoder-はじめました">AtCoder はじめました</h2>
 <p>AtCoder に<a href="https://atcoder.jp/users/skrbcr">アカウント</a>を作ってコンテストに参加してみました。</p>
 
 <h3 id="はじめた経緯">はじめた経緯</h3>
@@ -617,7 +646,7 @@
 <p>AtCoder Beginners Contest 310 に出ました。30分でB問題まで解けましたが、C問題がどうしても TLE。解説を読んで「そんなすごいものがあるのか！」と感動し、アルゴリズムや C++ の勉強を（人生で初めて）真面目にしようと思いました。</p>
 
 <h3 id="目標">目標</h3>
-<p>目標はレッドコーダーですが、現実的でないので茶色を目指します。あとは、ABC を本番で4完してみたいですね。夏休みの後半は暇なはずなので、この2つの夏休み中の達成を目標にします！</p>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="programming" /><summary type="html"><![CDATA[AtCoder はじめました AtCoder にアカウントを作ってコンテストに参加してみました。]]></summary></entry><entry><title type="html">伊豆（亀石） 天体撮影 2022夏</title><link href="https://skrbcr.github.io/blog/astron/izu_kameishi" rel="alternate" type="text/html" title="伊豆（亀石） 天体撮影 2022夏" /><published>2022-10-30T00:00:00+09:00</published><updated>2022-10-30T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/astron/izu_kameishi</id><content type="html" xml:base="https://skrbcr.github.io/blog/astron/izu_kameishi"><![CDATA[<center><img src="/blog/assets/2022-10-30-izu_kameishi/andromeda.jpg" alt="アンドロメダ銀河" style="width: 90%;" />
+<p>目標はレッドコーダーですが、現実的でないので茶色を目指します。あとは、ABC を本番で4完してみたいですね。夏休みの後半は暇なはずなので、この2つの夏休み中の達成を目標にします！</p>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="programming" /><summary type="html"><![CDATA[AtCoder はじめました AtCoder にアカウントを作ってコンテストに参加してみました。]]></summary></entry><entry><title type="html">伊豆（亀石） 天体撮影 2022夏</title><link href="http://localhost:4000/blog/astron/izu_kameishi" rel="alternate" type="text/html" title="伊豆（亀石） 天体撮影 2022夏" /><published>2022-10-30T00:00:00+09:00</published><updated>2022-10-30T00:00:00+09:00</updated><id>http://localhost:4000/blog/astron/izu_kameishi</id><content type="html" xml:base="http://localhost:4000/blog/astron/izu_kameishi"><![CDATA[<center><img src="/blog/assets/2022-10-30-izu_kameishi/andromeda.jpg" alt="アンドロメダ銀河" style="width: 90%;" />
 <p>Nikon Z50; Vixen FL55SS鏡筒使用, 180 秒 × 9 枚（1620 秒）, ISO 3200</p>
 <p>アンドロメダ銀河（M31）<br />
 中央のバルジのみならず、円盤も写っている。とはいえ円盤はぼんやり程度<br />
@@ -644,7 +673,7 @@
 天体写真というよりも双眼鏡で覗いた感じ。スタックしてもこの程度でした</p>
 <hr style="width: 50%" /></center>
 
-<p>撮影技術・加工技術は何ら進歩していないのにこの違い！　露光時間をもっと増やせばもっと良い写真が撮れそうです（多分）。</p>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="astron" /><summary type="html"><![CDATA[Nikon Z50; Vixen FL55SS鏡筒使用, 180 秒 × 9 枚（1620 秒）, ISO 3200 アンドロメダ銀河（M31） 中央のバルジのみならず、円盤も写っている。とはいえ円盤はぼんやり程度 二つの伴銀河（M32, M110）はばっちり]]></summary></entry><entry><title type="html">城ヶ島 天体撮影 2022夏 その2</title><link href="https://skrbcr.github.io/blog/astron/jogashima2" rel="alternate" type="text/html" title="城ヶ島 天体撮影 2022夏 その2" /><published>2022-09-07T00:00:00+09:00</published><updated>2022-09-07T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/astron/jogashima2</id><content type="html" xml:base="https://skrbcr.github.io/blog/astron/jogashima2"><![CDATA[<h2 id="まえがき">まえがき</h2>
+<p>撮影技術・加工技術は何ら進歩していないのにこの違い！　露光時間をもっと増やせばもっと良い写真が撮れそうです（多分）。</p>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="astron" /><summary type="html"><![CDATA[Nikon Z50; Vixen FL55SS鏡筒使用, 180 秒 × 9 枚（1620 秒）, ISO 3200 アンドロメダ銀河（M31） 中央のバルジのみならず、円盤も写っている。とはいえ円盤はぼんやり程度 二つの伴銀河（M32, M110）はばっちり]]></summary></entry><entry><title type="html">城ヶ島 天体撮影 2022夏 その2</title><link href="http://localhost:4000/blog/astron/jogashima2" rel="alternate" type="text/html" title="城ヶ島 天体撮影 2022夏 その2" /><published>2022-09-07T00:00:00+09:00</published><updated>2022-09-07T00:00:00+09:00</updated><id>http://localhost:4000/blog/astron/jogashima2</id><content type="html" xml:base="http://localhost:4000/blog/astron/jogashima2"><![CDATA[<h2 id="まえがき">まえがき</h2>
 <p>8月下旬に <a href="jogasima">前回</a> と同じ城ヶ島の撮影地点にて天体撮影を行いました。今回は前回と違い、ポータブルでない赤道儀（Vixen MD-6SP）を使用しました。この赤道儀は随分古く、父が学生時代に使っていて長らく物置に眠っていたものです。そういう訳で上手く動作しないのではないかと心配でしたが、全くの杞憂でまだまだ現役で使えました。</p>
 
 <p>また、前回の撮影では圧倒的に露出不足だったので、今回は露出に気を配って撮影しました。</p>
@@ -668,7 +697,7 @@
 <hr style="width: 50%" /></center>
 
 <h2 id="あとがき">あとがき</h2>
-<p>適正露出についての知識を得て、前回よりも綺麗な画像を得ることができました（ただし、アップした画像はいずれもサイズを落とすために縮小しています・・・）。M8・M20はよく撮れたと勝手に思っています。アンドロメダ銀河については総露出時間を更に伸ばして枚数を重ねることで、より鮮明な画像が得られるのではないかと期待しています。とはいえ、基本的な技術で向上できる部分は沢山あるので、引き続きそういった知識の習得をしたいと思います。</p>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="astron" /><summary type="html"><![CDATA[まえがき 8月下旬に 前回 と同じ城ヶ島の撮影地点にて天体撮影を行いました。今回は前回と違い、ポータブルでない赤道儀（Vixen MD-6SP）を使用しました。この赤道儀は随分古く、父が学生時代に使っていて長らく物置に眠っていたものです。そういう訳で上手く動作しないのではないかと心配でしたが、全くの杞憂でまだまだ現役で使えました。]]></summary></entry><entry><title type="html">月の軌道</title><link href="https://skrbcr.github.io/blog/physics/moon_orbit" rel="alternate" type="text/html" title="月の軌道" /><published>2022-08-29T00:00:00+09:00</published><updated>2022-08-29T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/physics/moon_orbit</id><content type="html" xml:base="https://skrbcr.github.io/blog/physics/moon_orbit"><![CDATA[<h2 id="調べること">調べること</h2>
+<p>適正露出についての知識を得て、前回よりも綺麗な画像を得ることができました（ただし、アップした画像はいずれもサイズを落とすために縮小しています・・・）。M8・M20はよく撮れたと勝手に思っています。アンドロメダ銀河については総露出時間を更に伸ばして枚数を重ねることで、より鮮明な画像が得られるのではないかと期待しています。とはいえ、基本的な技術で向上できる部分は沢山あるので、引き続きそういった知識の習得をしたいと思います。</p>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="astron" /><summary type="html"><![CDATA[まえがき 8月下旬に 前回 と同じ城ヶ島の撮影地点にて天体撮影を行いました。今回は前回と違い、ポータブルでない赤道儀（Vixen MD-6SP）を使用しました。この赤道儀は随分古く、父が学生時代に使っていて長らく物置に眠っていたものです。そういう訳で上手く動作しないのではないかと心配でしたが、全くの杞憂でまだまだ現役で使えました。]]></summary></entry><entry><title type="html">月の軌道</title><link href="http://localhost:4000/blog/physics/moon_orbit" rel="alternate" type="text/html" title="月の軌道" /><published>2022-08-29T00:00:00+09:00</published><updated>2022-08-29T00:00:00+09:00</updated><id>http://localhost:4000/blog/physics/moon_orbit</id><content type="html" xml:base="http://localhost:4000/blog/physics/moon_orbit"><![CDATA[<h2 id="調べること">調べること</h2>
 <p>月の軌道を、地球や太陽との万有引力を考えて計算する。以下、煩雑な記号が乱れ飛びます。<a href="#result">結果までジャンプ</a>。</p>
 
 <h3 id="問題設定">問題設定</h3>

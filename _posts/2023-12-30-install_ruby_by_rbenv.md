@@ -2,6 +2,7 @@
 layout: post
 title: "rbenv を用いて Ruby をインストール"
 date: 2023-12-30
+update: 2023-12-31
 categories: programming
 ---
 
@@ -21,6 +22,7 @@ Ruby の最新版が必要になり調べていたところ、Ruby 環境を管�
 
 1. rbenv のインストール
 2. Ruby のインストール
+3. プロジェクトのセットアップ
 
 ## rbenv のインストール
 [GitHub の README](https://github.com/rbenv/rbenv) に従う。自分は Arch Linux を使っているので以下の通り
@@ -54,6 +56,7 @@ $ git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby
 ```
 
 ## Ruby のインストール
+### Ruby
 ruby-build をインストールすることで `rbenv install` が使えるようになる。
 
 安定版のリストを確認：
@@ -72,6 +75,37 @@ $ rbenv local 3.3.0  # プロジェクトのディレクトリで実行すると
 # もしくは
 $ rbenv global 3.3.0  # デフォルトを設定
 ```
+
+### Bundler
+パッケージ管理を行う Bundler をインストールする：
+```bash
+$ rbenv exec gem install bundler
+$ rbenv exec bundle --version
+```
+
+## プロジェクトのセットアップ
+
+システムに Bundler がインストールされていない場合は `bundle` コマンドに `rbenv exec` を付ける必要はないらしい。
+
+```bash
+$ rbenv exec bundle init
+# システムに Bundler がインストールされて「いない」場合は下でも可：
+$ bundle init
+```
+
+Gemfile が生成されるので、必要なパッケージを書いてインストール。まずはインストール場所を指定しておく（一度だけ実行すればよい）：
+
+```bash
+# gem はこのプロジェクトのみにインストール。vendor/bundle ディレクトリが生成される
+$ rbenv exec bundle config set path 'vendor/bundle'
+```
+
+gem をインストールする：
+```bash
+$ rbenv exec bundle install
+```
+
+ネットでは `rbenv exec bundle install --path=vendor/bundle` コマンドが紹介されていた。しかし、これを実行すると上の通りに改めよと警告される。将来的に `--path` フラグは使えなくなるようだ。
 
 ## rbenv のアップデート
 rbenv のアップデート方法についてもまとめる。
