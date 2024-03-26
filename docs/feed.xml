@@ -1,4 +1,101 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://skrbcr.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://skrbcr.github.io/blog/" rel="alternate" type="text/html" hreflang="ja" /><updated>2023-12-31T15:39:30+09:00</updated><id>https://skrbcr.github.io/blog/feed.xml</id><title type="html">今月の物置</title><subtitle>物理＋プログラミング＋その他</subtitle><author><name>今月の新刊（@skrbcr）</name></author><entry><title type="html">rbenv を用いて Ruby をインストール</title><link href="https://skrbcr.github.io/blog/programming/install_ruby_by_rbenv" rel="alternate" type="text/html" title="rbenv を用いて Ruby をインストール" /><published>2023-12-30T00:00:00+09:00</published><updated>2023-12-30T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/programming/install_ruby_by_rbenv</id><content type="html" xml:base="https://skrbcr.github.io/blog/programming/install_ruby_by_rbenv"><![CDATA[<p>Ruby の最新版が必要になり調べていたところ、Ruby 環境を管理する rbenv を知ったのでインストールした。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://skrbcr.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://skrbcr.github.io/blog/" rel="alternate" type="text/html" hreflang="ja" /><updated>2024-03-26T14:11:09+09:00</updated><id>https://skrbcr.github.io/blog/feed.xml</id><title type="html">今月の物置</title><subtitle>物理＋プログラミング＋その他</subtitle><author><name>今月の新刊（@skrbcr）</name></author><entry><title type="html">動画投稿：【東方MMD】開設！　紅魔館データセンター</title><link href="https://skrbcr.github.io/blog/movie/movie_komakan_data_center" rel="alternate" type="text/html" title="動画投稿：【東方MMD】開設！　紅魔館データセンター" /><published>2024-03-26T00:00:00+09:00</published><updated>2024-03-26T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/movie/movie_komakan_data_center</id><content type="html" xml:base="https://skrbcr.github.io/blog/movie/movie_komakan_data_center"><![CDATA[<p>ニコニコ動画にて<a href="https://www.nicovideo.jp/watch/sm43578229">動画</a>を投稿しました。</p>
+
+<h2 id="使用作品目録">使用作品目録</h2>
+<p>使わせていただいた素材作品の紹介です。</p>
+
+<h2 id="モデル">モデル</h2>
+<h3 id="キャラクター">キャラクター</h3>
+<ul>
+  <li>レミリア・スカーレット：Kanata / anek / eto / キングM / Cresato / DeviantArt - YamiSweet / Montecore / 雪萱</li>
+  <li>十六夜咲夜 Ver.2.20 Rev.G Type-E(ダンス_上着A_膝丈スカート_パンプス)：アールビット</li>
+  <li>フランドール・スカーレット：Kanata / anek / eto / キングM / Cresato / DeviantArt - YamiSweet / Montecore / 雪萱</li>
+  <li>パチュリー・ノーレッジ Ver.2.00 Rev.B Type-C(フル_おさげ_ケープ_ロンスカ_ブーツA_パンプス_あずき, フル_ポニテB_ミニスカ_ハイヒール_あずき)：アールビット</li>
+  <li>紅美鈴 Ver2.10_Type-C(フル_ロングヘア_半袖_膝丈_パンプス)：アールビット</li>
+  <li>小悪魔 アールビット式りとばな風改変+翼等変更モデル(こあ)：アールビット / モンテコア / HVP / nya / ココア / iRon0129 / 切な顔P / りとばな / 小悪魔らぼらとりー / remii / あい</li>
+  <li>河城にとり ver0.95（河城にとり・おかっぱ・メガネ・短パン）：鯖缶</li>
+  <li>妖精（東方Project） ver4.11-1：志賀内サクシャ</li>
+</ul>
+
+<h3 id="ステージ">ステージ</h3>
+<ul>
+  <li>紅魔館の部屋セット Ver3.00_Rev.B：アールビット</li>
+  <li>紅魔館, 紅魔館 図書館：フレスベルク</li>
+</ul>
+
+<h3 id="静物">静物</h3>
+<ul>
+  <li>食器付きキャビネット（食器棚b1）：とりそば</li>
+  <li>ソファと椅子v1.1（Sofa_1）：とりそば</li>
+  <li>Classic Wood Table：Biser Borislavov（"Classic Wood Table" (https://skfb.ly/ovOPB) by Biser Borislavov is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).）</li>
+  <li>テーブルランプ（スタンドランプ_c）：とりそば</li>
+  <li>アンティーク家具いろいろIII：とりそば</li>
+  <li>サービングカート / デザートプレート2 / ショートケーキ / スーパーコンピューター / パソコンディスプレイ / 鼻風船 / どうみても本棚：今月の新刊</li>
+  <li>ティーカップ・ポットのセット：Phase ten（fromNu）</li>
+  <li>天蓋つきベッド：メカクラゲ</li>
+  <li>めくれる掛け＆敷き布団N2：ニーナ</li>
+  <li>"Fine Persian Esfahan Carpet" (https://skfb.ly/opVD7) by mfb64 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).</li>
+  <li>"Persian Malayer Carpet" (https://skfb.ly/opVHO) by mfb64 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).</li>
+  <li>CATの938Mぽいホイールローダー：ねこま</li>
+  <li>"Chevrolet Jumbo Truck" (https://skfb.ly/6WVRC) by Medhatelo is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).</li>
+  <li>本の山：AMN</li>
+  <li>イベント用テーブル / たんこぶset：ぐず</li>
+  <li>インテリア用古書セット：とりそば</li>
+  <li>魔導書：アールビット</li>
+  <li>出現する魔法陣：切な顔P</li>
+</ul>
+
+<h3 id="アクセサリー">アクセサリー</h3>
+<ul>
+  <li>++skies; incskies_024_8k / incskies_015_8k：aokcub</li>
+  <li>スカイドームいろいろ詰め合わせ：額田倫太郎</li>
+</ul>
+
+<h2 id="エフェクト">エフェクト</h2>
+<ul>
+  <li>AutoLuminous：そぼろ / かんな</li>
+  <li>ExcellentShadow：そぼろ</li>
+  <li>o_Diffusion：おたもん</li>
+  <li>ParticleEx：ビームマンP</li>
+  <li>水面エフェクトver5.0：ビームマンP</li>
+</ul>
+
+<h2 id="bgm">BGM</h2>
+<ul>
+  <li>ラクトガール　～ 少女密室　紅紫のティーポット（nc167808）：とぼそ</li>
+  <li>Locked in her Embrace（nc272097）：しおーる</li>
+  <li>無い本なんて、あるわけない【ヴワル魔法図書館 パロディ】（nc196770）：みるふぃ</li>
+  <li>明から明スイッチ：OtoLogic</li>
+  <li>Grieg: Peer Gynt Suite No. 1, Op. 46 - I. Morning Mood：Musopen</li>
+  <li>ヴェルディ：『レクイエム』から「怒りの日」/ チャイコフスキー：大序曲『1812年』 / チャイコフスキー：幻想序曲『ロメオとジュリエット』：クラシック名曲サウンドライブラリー</li>
+</ul>
+
+<h2 id="se">SE</h2>
+<ul>
+  <li>掃除機の電源を入れる / 木のドアをノック1 / ドアを開ける3 / 大爆発1：効果音ラボ</li>
+  <li>工事のドリル（drill_concrete）：小森 平</li>
+  <li>Phase02-1：OtoLogic</li>
+</ul>
+
+<h2 id="フォント">フォント</h2>
+<ul>
+  <li>Source Han Serif / Source Han Sans：Adobe</li>
+  <li>HG行書体：リコー</li>
+  <li>ラノベPOP V2：https://flopdesign.booth.pm/items/2328262</li>
+</ul>
+
+<h2 id="ツール">ツール</h2>
+<ul>
+  <li>MikuMikuDance：樋口優</li>
+  <li>MikuMikuEffect：舞力介入P</li>
+  <li>YukkuriMovieMaker4：饅頭遣い</li>
+  <li>DaVinci Resolve</li>
+  <li>AquesTalk：アクエスト</li>
+  <li>AviUtl：ＫＥＮくん</li>
+  <li>拡張 x264 出力(GUI) Ex：rigaya</li>
+</ul>
+
+<h2 id="ひとり反省会">ひとり反省会</h2>
+<p>【ToDo!】</p>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="movie" /><summary type="html"><![CDATA[ニコニコ動画にて動画を投稿しました。]]></summary></entry><entry><title type="html">rbenv を用いて Ruby をインストール</title><link href="https://skrbcr.github.io/blog/programming/install_ruby_by_rbenv" rel="alternate" type="text/html" title="rbenv を用いて Ruby をインストール" /><published>2023-12-30T00:00:00+09:00</published><updated>2023-12-30T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/programming/install_ruby_by_rbenv</id><content type="html" xml:base="https://skrbcr.github.io/blog/programming/install_ruby_by_rbenv"><![CDATA[<p>Ruby の最新版が必要になり調べていたところ、Ruby 環境を管理する rbenv を知ったのでインストールした。</p>
 
 <h2 id="実行環境">実行環境</h2>
 
@@ -697,155 +794,4 @@
 <hr style="width: 50%" /></center>
 
 <h2 id="あとがき">あとがき</h2>
-<p>適正露出についての知識を得て、前回よりも綺麗な画像を得ることができました（ただし、アップした画像はいずれもサイズを落とすために縮小しています・・・）。M8・M20はよく撮れたと勝手に思っています。アンドロメダ銀河については総露出時間を更に伸ばして枚数を重ねることで、より鮮明な画像が得られるのではないかと期待しています。とはいえ、基本的な技術で向上できる部分は沢山あるので、引き続きそういった知識の習得をしたいと思います。</p>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="astron" /><summary type="html"><![CDATA[まえがき 8月下旬に 前回 と同じ城ヶ島の撮影地点にて天体撮影を行いました。今回は前回と違い、ポータブルでない赤道儀（Vixen MD-6SP）を使用しました。この赤道儀は随分古く、父が学生時代に使っていて長らく物置に眠っていたものです。そういう訳で上手く動作しないのではないかと心配でしたが、全くの杞憂でまだまだ現役で使えました。]]></summary></entry><entry><title type="html">月の軌道</title><link href="https://skrbcr.github.io/blog/physics/moon_orbit" rel="alternate" type="text/html" title="月の軌道" /><published>2022-08-29T00:00:00+09:00</published><updated>2022-08-29T00:00:00+09:00</updated><id>https://skrbcr.github.io/blog/physics/moon_orbit</id><content type="html" xml:base="https://skrbcr.github.io/blog/physics/moon_orbit"><![CDATA[<h2 id="調べること">調べること</h2>
-<p>月の軌道を、地球や太陽との万有引力を考えて計算する。以下、煩雑な記号が乱れ飛びます。<a href="#result">結果までジャンプ</a>。</p>
-
-<h3 id="問題設定">問題設定</h3>
-<p>座標系の原点に太陽があるとし、太陽は動かないとする（太陽は地球や月に比べて十分に重いのでこう近似できる）。地球や月は、互いの万有引力や太陽からの重力を受けて運動している。</p>
-
-<p>必要ないくつかの物理量を以下の通りおく：</p>
-<ul>
-  <li>万有引力定数 $G = 6.6726\times 10^{-11}~\text{m}^3\text{kg}^{-1}\text{s}^{-2} = 8.647\times 10^{-13}~\text{km}^3\text{kg}^{-1}\text{h}^{-1}$</li>
-  <li>地球質量 $m = 5.97\times 10^{24}~\text{kg}$</li>
-  <li>太陽質量 $M = 1.99\times 10^{30}~\text{kg}$</li>
-  <li>月・地球質量比 $\mu = 0.0123002$</li>
-  <li>月・地球距離 $R_{\textrm{me}} = 3.84\times 10^{5}~\text{km}$</li>
-  <li>月周期 $T_{\text{moon}} = 27.3214~\text{day} = 655.7136~\text{h}$</li>
-  <li>太陽-月・地球距離 $R_{\text{es}} = 1.4959787\times 10^8~\text{km}$</li>
-  <li>地球周期 $T_{\text{earth}} = 365~\text{day} = 8760~\text{h}$</li>
-</ul>
-
-<p>便宜上、単位を $\text{km},~\text{kg},~\text{h(=hour)}$ で統一した。</p>
-
-<h3 id="初期条件の設定">初期条件の設定</h3>
-
-<center>
-<img src="/blog/assets/2022-08-29-moon_orbit/setup.svg" style="width: 70%" />
-<p>はじめ、月・地球・太陽はこのような配置で速度を持っているとする</p>
-<hr class="separator" />
-</center>
-
-<p>最初、月・地球・太陽は上図の関係にあるとして、初期条件を次のように設定する：</p>
-<ul>
-  <li>月：位置 $(x,~y) = (0,~R_{\text{es}} - R_{\text{me}})$、速度 $(u,~v) = (0,~v_{\textrm{moon}})$</li>
-  <li>地球：位置 $(x,~y) = (0,~R_{\text{es}})$、速度 $(u,~v) = (0,~v_{\textrm{earth}})$</li>
-  <li>太陽：位置 $(x,~y) = (0,~0)$、速度 $(u,~v) = (0,~0)$</li>
-</ul>
-
-<p>$v_{\textrm{moon}}$ と $v_{\textrm{earth}}$ を決める。まず、月・地球系の重心から各天体への距離は両者の質量比より分かるので、重心に対する両者の速さが分かる：</p>
-
-\[\begin{gather}
-    v^{'}_{\textrm{moon}} = \frac{2\pi\frac{1/\mu}{1 + 1/\mu}R_{\text{me}}}{T_{\text{moon}}} \\
-    v^{'}_{\textrm{earth}} = \frac{2\pi\frac{1}{1 + 1/\mu}R_{\text{me}}}{T_{\text{moon}}}
-\end{gather}\]
-
-<center>
-<img src="/blog/assets/2022-08-29-moon_orbit/condition.svg" style="width: 70%" />
-<p>重心からの各天体の距離は質量比より簡単に求まる。<br />両天体は重心周りに周期 $T_{\text{moon}}$ で回転することから、速さも求まる</p>
-<hr class="separator" />
-</center>
-
-<p>つづいて、月・地球系の重心の速さも簡単に計算できる：</p>
-
-\[\begin{equation}
-    v_{\text{moon and earth}} = \frac{2\pi R_{\text{es}}}{T_{\text{earth}}}
-\end{equation}\]
-
-<p>以上より</p>
-
-\[\begin{align}
-    v_{\textrm{moon}} = v_{\text{moon and earth}} - v^{'}_{\textrm{moon}} = \frac{2\pi R_{\text{es}}}{T_{\text{earth}}} - \frac{2\pi\frac{1/\mu}{1 + 1/\mu}R_{\text{me}}}{T_{\text{moon}}} \\
-    v_{\textrm{earth}} = v_{\text{moon and earth}} + v^{'}_{\textrm{earth}} = \frac{2\pi R_{\text{es}}}{T_{\text{earth}}} + \frac{2\pi\frac{1}{1 + 1/\mu}R_{\text{me}}}{T_{\text{moon}}}
-\end{align}\]
-
-<p>ごちゃごちゃとしているが、月と地球、それらの重心に対して円軌道の半径と周期から速さを求めただけである。</p>
-
-<h2 id="計算方法">計算方法</h2>
-<h3 id="解くべき式">解くべき式</h3>
-<p>月と地球に対して運動方程式を立てる。3体の間に働く万有引力を考えれば良い：</p>
-
-\[\begin{align}
-    \text{Moon:}~&amp; \mu m \ddot{x_\textrm{moon}} = - \frac{Gm\mu m}{((x_\textrm{moon} - x_\textrm{earth})^2 + (y_\textrm{moon} - y_\textrm{earth})^2){}^{3/2}}(x_\textrm{moon} - x_\textrm{earth}) - \frac{GM\mu m}{(x_\textrm{moon}{}^2 + y_\textrm{moon}{}^2)^{3/2}}x_\textrm{moon} \\
-    &amp; \mu m \ddot{y_\textrm{moon}} = - \frac{Gm\mu m}{((x_\textrm{moon} - x_\textrm{earth})^2 + (y_\textrm{moon} - y_\textrm{earth})^2){}^{3/2}}(y_\textrm{moon} - y_\textrm{earth}) - \frac{GM\mu m}{(x_\textrm{moon}{}^2 + y_\textrm{moon}{}^2)^{3/2}}y_\textrm{moon} \\
-    \text{Earth:}~&amp; m \ddot{x_\textrm{earth}} = - \frac{Gm\mu m}{((x_\textrm{moon} - x_\textrm{earth})^2 + (y_\textrm{moon} - y_\textrm{earth})^2){}^{3/2}}(x_\textrm{earth} - x_\textrm{moon}) - \frac{GMm}{(x_\textrm{earth}{}^2 + y_\textrm{earth}{}^2)^{3/2}}x_\textrm{earth} \\
-    &amp; m \ddot{y_\textrm{earth}} = - \frac{Gm\mu m}{((x_\textrm{moon} - x_\textrm{earth})^2 + (y_\textrm{moon} - y_\textrm{earth})^2){}^{3/2}}(y_\textrm{earth} - y_\textrm{moon}) - \frac{GMm}{(x_\textrm{earth}{}^2 + y_\textrm{earth}{}^2)^{3/2}}y_\textrm{earth}
-\end{align}\]
-
-<p>天体間の距離は上で示した定数を用いてもよいかも知れない。</p>
-
-<h3 id="プログラム">プログラム</h3>
-<p>C++言語で計算を行い、Pythonでグラフアニメーションを作成した。</p>
-
-<p>まず、C++。微分方程式の数値計算には Boost ライブラリの <code class="language-plaintext highlighter-rouge">boost/numeric/odeint.hpp</code> を用いた。簡単に数値解が計算でき非常に便利。使い方は解説ページ<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>やドキュメント<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>を参考にした。参考までに、実装の重要な部分を紹介。便利さが分かると思う。ソースコード全体は<a href="https://github.com/skrbcr/blog/blob/main/docs/assets/2022-08-29-moon_orbit/main.cpp">こちら</a>。</p>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">ThreeBody</span> <span class="p">{</span>
-<span class="nl">private:</span>
-    <span class="kt">double</span> <span class="n">M</span><span class="p">;</span>       <span class="c1">// 恒星質量</span>
-    <span class="kt">double</span> <span class="n">m1</span><span class="p">;</span>      <span class="c1">// 惑星質量</span>
-    <span class="kt">double</span> <span class="n">m2</span><span class="p">;</span>      <span class="c1">// 衛星質量</span>
-
-<span class="nl">public:</span>
-    <span class="c1">// 月と地球に対して、位置が2変数ずつ、速度も2変数ずつの計8変数が必要。</span>
-    <span class="k">using</span> <span class="n">state</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <span class="mi">8</span><span class="o">&gt;</span><span class="p">;</span>
-    <span class="n">ThreeBody</span><span class="p">(</span><span class="kt">double</span> <span class="n">M</span><span class="p">,</span> <span class="kt">double</span> <span class="n">m1</span><span class="p">,</span> <span class="kt">double</span> <span class="n">m2</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">this</span><span class="o">-&gt;</span><span class="n">M</span> <span class="o">=</span> <span class="n">M</span><span class="p">;</span>
-        <span class="k">this</span><span class="o">-&gt;</span><span class="n">m1</span> <span class="o">=</span> <span class="n">m1</span><span class="p">;</span>
-        <span class="k">this</span><span class="o">-&gt;</span><span class="n">m2</span> <span class="o">=</span> <span class="n">m2</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="kt">void</span> <span class="nf">operator</span><span class="p">()(</span><span class="k">const</span> <span class="n">state</span><span class="o">&amp;</span> <span class="n">x</span><span class="p">,</span> <span class="n">state</span><span class="o">&amp;</span> <span class="n">dx</span><span class="p">,</span> <span class="kt">double</span> <span class="n">t</span><span class="p">)</span> <span class="p">{</span>
-        <span class="kt">double</span> <span class="n">r_me</span> <span class="o">=</span> <span class="n">pow</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="mf">2.</span><span class="p">)</span> <span class="o">+</span> <span class="n">pow</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">x</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="mf">2.</span><span class="p">);</span>
-        <span class="kt">double</span> <span class="n">r_es</span> <span class="o">=</span> <span class="n">pow</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mf">2.</span><span class="p">)</span> <span class="o">+</span> <span class="n">pow</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mf">2.</span><span class="p">);</span>
-        <span class="kt">double</span> <span class="n">r_ms</span> <span class="o">=</span> <span class="n">pow</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="mf">2.</span><span class="p">)</span> <span class="o">+</span> <span class="n">pow</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="mf">2.</span><span class="p">);</span>
-        <span class="c1">// 位置座標の微分＝速度 dx1 / dt = u1</span>
-        <span class="n">dx</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="mi">4</span><span class="p">];</span>
-        <span class="n">dx</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="mi">5</span><span class="p">];</span>
-        <span class="n">dx</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="mi">6</span><span class="p">];</span>
-        <span class="n">dx</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="mi">7</span><span class="p">];</span>
-        <span class="c1">// 速度の微分＝加速度 運動方程式を実装</span>
-        <span class="n">dx</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span> <span class="n">G</span> <span class="o">*</span> <span class="n">m2</span> <span class="o">/</span> <span class="n">pow</span><span class="p">(</span><span class="n">r_me</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span> <span class="o">-</span> <span class="n">G</span> <span class="o">*</span> <span class="n">M</span> <span class="o">/</span> <span class="n">pow</span><span class="p">(</span><span class="n">r_es</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">)</span> <span class="o">*</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
-        <span class="n">dx</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span> <span class="n">G</span> <span class="o">*</span> <span class="n">m2</span> <span class="o">/</span> <span class="n">pow</span><span class="p">(</span><span class="n">r_me</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">x</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span> <span class="o">-</span> <span class="n">G</span> <span class="o">*</span> <span class="n">M</span> <span class="o">/</span> <span class="n">pow</span><span class="p">(</span><span class="n">r_es</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">)</span> <span class="o">*</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
-        <span class="n">dx</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span> <span class="n">G</span> <span class="o">*</span> <span class="n">m1</span> <span class="o">/</span> <span class="n">pow</span><span class="p">(</span><span class="n">r_me</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">-</span> <span class="n">G</span> <span class="o">*</span> <span class="n">M</span> <span class="o">/</span> <span class="n">pow</span><span class="p">(</span><span class="n">r_ms</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">)</span> <span class="o">*</span> <span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
-        <span class="n">dx</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span> <span class="n">G</span> <span class="o">*</span> <span class="n">m1</span> <span class="o">/</span> <span class="n">pow</span><span class="p">(</span><span class="n">r_me</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">-</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">-</span> <span class="n">G</span> <span class="o">*</span> <span class="n">M</span> <span class="o">/</span> <span class="n">pow</span><span class="p">(</span><span class="n">r_ms</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">)</span> <span class="o">*</span> <span class="n">x</span><span class="p">[</span><span class="mi">3</span><span class="p">];</span>
-    <span class="p">}</span>
-<span class="p">};</span>
-</code></pre></div></div>
-
-<p>計算ができれば、あとは Python でグラフにするだけ。ソースコードは<a href="https://github.com/skrbcr/blog/blob/main/docs/assets/2022-08-29-moon_orbit/animation.py">こちら</a>。</p>
-
-<h2 id="result">シミュレーション結果</h2>
-<p>月が赤丸、地球が青丸、真ん中の黄色い丸が太陽。</p>
-<center>
-    <video src="/blog/assets/2022-08-29-moon_orbit/mes.mp4" controls="" style="width: 70%;"></video>
-</center>
-
-<p>分かりにくいので、月の軌道を大袈裟にしてみると</p>
-<center>
-    <video src="/blog/assets/2022-08-29-moon_orbit/mes2.mp4" controls="" style="width: 70%;"></video>
-</center>
-
-<p>月は地球の（ほぼ）円軌道を縫うようにして進むことが分かる。地球の周りを回っているから、下図のようにコイルのような環状の軌道を描くのかと思いきや、寧ろ地球と一緒に太陽の周りを回っている印象である。太陽から地球と月を観測したら共に太陽の周りを回っているかのように錯覚しそうだ。そうはいっても、もちろん月は主に地球の重力に捕われているのであって、太陽から受ける重力の方が小さい（およそ半分）。</p>
-
-<center>
-<img src="/blog/assets/2022-08-29-moon_orbit/orbit1.svg" style="width: 45%" />
-<img src="/blog/assets/2022-08-29-moon_orbit/orbit2.svg" style="width: 45%" />
-<p>左のような軌道を描きそうだが、右の方が実際に近いことが分かった</p>
-<hr class="separator" />
-</center>
-
-<p>地球を常に中心においたグラフのアニメーションも見ておく。やはり月は地球の周りを回っている。それは間違いないようだ。</p>
-<center>
-    <video src="/blog/assets/2022-08-29-moon_orbit/me.mp4" controls="" style="width: 70%;"></video>
-</center>
-
-<h2 id="まとめなど">まとめなど</h2>
-<p>地球の周りを回転する月の、太陽から見た軌道を調べた。太陽から見た月は、地球に寄り添うようにして太陽の周りを回っているように見えることが分かった。</p>
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:1" role="doc-endnote">
-      <p><a href="https://qiita.com/hmito/items/483445ac0d42fb4428a5">C++で常微分方程式：boost::odeint入門 ― Qiita</a>：一通りのことが分かりやすく解説されている <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-    <li id="fn:2" role="doc-endnote">
-      <p><a href="https://www.boost.org/doc/libs/1_80_0/libs/numeric/odeint/doc/html/index.html">Chapter 1. Boost.Numeric.Odeint（ドキュメント）</a>：分量が膨大ですが公式ドキュメント <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-  </ol>
-</div>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="physics" /><summary type="html"><![CDATA[調べること 月の軌道を、地球や太陽との万有引力を考えて計算する。以下、煩雑な記号が乱れ飛びます。結果までジャンプ。]]></summary></entry></feed>
+<p>適正露出についての知識を得て、前回よりも綺麗な画像を得ることができました（ただし、アップした画像はいずれもサイズを落とすために縮小しています・・・）。M8・M20はよく撮れたと勝手に思っています。アンドロメダ銀河については総露出時間を更に伸ばして枚数を重ねることで、より鮮明な画像が得られるのではないかと期待しています。とはいえ、基本的な技術で向上できる部分は沢山あるので、引き続きそういった知識の習得をしたいと思います。</p>]]></content><author><name>今月の新刊（@skrbcr）</name></author><category term="astron" /><summary type="html"><![CDATA[まえがき 8月下旬に 前回 と同じ城ヶ島の撮影地点にて天体撮影を行いました。今回は前回と違い、ポータブルでない赤道儀（Vixen MD-6SP）を使用しました。この赤道儀は随分古く、父が学生時代に使っていて長らく物置に眠っていたものです。そういう訳で上手く動作しないのではないかと心配でしたが、全くの杞憂でまだまだ現役で使えました。]]></summary></entry></feed>
