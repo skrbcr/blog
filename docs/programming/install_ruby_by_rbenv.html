@@ -99,7 +99,7 @@
       投稿日:
       <time class="dt-published" datetime="2023-12-30T00:00:00+09:00" itemprop="datePublished">2023年12月30日
       </time>最終更新日:
-        <time class="dt-published" datetime="2023-12-30T00:00:00+09:00" itemprop="datePublished">2023年12月31日
+        <time class="dt-published" datetime="2023-12-30T00:00:00+09:00" itemprop="datePublished">2024年08月12日
         </time></p>
   </header>
 
@@ -148,9 +148,19 @@
 </ol>
 
 <h2 id="rbenv-のインストール">rbenv のインストール</h2>
+
 <p><a href="https://github.com/rbenv/rbenv">GitHub の README</a> に従う。自分は Arch Linux を使っているので以下の通り</p>
 
 <h3 id="aur-パッケージから-rbenv-をダウンロードインストール">AUR パッケージから rbenv をダウンロード・インストール</h3>
+
+<p><strong>AUR ヘルパーからインストールする場合</strong></p>
+
+<p>例えば</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>yay <span class="nt">-S</span> rbenv
+</code></pre></div></div>
+
+<p><strong>makepkg を利用する場合</strong></p>
+
 <p><a href="https://aur.archlinux.org/packages/rbenv">AUR のサイト</a> で Git の URL を入手。上の方の <code class="language-plaintext highlighter-rouge">Git Clone URL</code> がそれ。クローンする：</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git clone https://aur.archlinux.org/rbenv.git
 </code></pre></div></div>
@@ -163,11 +173,13 @@
 <p>参考文献：<a href="https://wiki.archlinux.jp/index.php/Arch_User_Repository">Arch User Repository</a></p>
 
 <h3 id="rbenv-の初期作業">rbenv の初期作業</h3>
+
 <p>次のコマンドを実行して表示される指示に従う：</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>rbenv init
 </code></pre></div></div>
 
 <h3 id="ruby-build-のインストール">ruby-build のインストール</h3>
+
 <p>rbenv のプラグインである ruby-build もインストールする。</p>
 
 <p>まずは <a href="https://github.com/rbenv/ruby-build/wiki#suggested-build-environment">Suggested build environment</a> にある requirement を満たしておく。そしてインストール：</p>
@@ -176,6 +188,7 @@
 
 <h2 id="ruby-のインストール">Ruby のインストール</h2>
 <h3 id="ruby">Ruby</h3>
+
 <p>ruby-build をインストールすることで <code class="language-plaintext highlighter-rouge">rbenv install</code> が使えるようになる。</p>
 
 <p>安定版のリストを確認：</p>
@@ -220,7 +233,8 @@
 <p>ネットでは <code class="language-plaintext highlighter-rouge">rbenv exec bundle install --path=vendor/bundle</code> コマンドが紹介されていた。しかし、これを実行すると上の通りに改めよと警告される。将来的に <code class="language-plaintext highlighter-rouge">--path</code> フラグは使えなくなるようだ。</p>
 
 <h2 id="rbenv-のアップデート">rbenv のアップデート</h2>
-<p>rbenv のアップデート方法についてもまとめる。</p>
+
+<p>AUR ヘルパーを使えば気にする必要はない。Git からクローンして makepkg でインストールした場合の rbenv のアップデート方法についてもまとめる。</p>
 
 <ul>
   <li>rbenv 自体は rbenv の レポジトリを pull し、再度インストールすればよい：

@@ -2,7 +2,7 @@
 layout: post
 title: "rbenv を用いて Ruby をインストール"
 date: 2023-12-30
-update: 2023-12-31
+update: 2024-08-12
 categories: programming
 ---
 
@@ -25,9 +25,20 @@ Ruby の最新版が必要になり調べていたところ、Ruby 環境を管�
 3. プロジェクトのセットアップ
 
 ## rbenv のインストール
+
 [GitHub の README](https://github.com/rbenv/rbenv) に従う。自分は Arch Linux を使っているので以下の通り
 
 ### AUR パッケージから rbenv をダウンロード・インストール
+
+**AUR ヘルパーからインストールする場合**
+
+例えば
+```bash
+$ yay -S rbenv
+```
+
+**makepkg を利用する場合**
+
 [AUR のサイト](https://aur.archlinux.org/packages/rbenv) で Git の URL を入手。上の方の `Git Clone URL` がそれ。クローンする：
 ```bash
 $ git clone https://aur.archlinux.org/rbenv.git
@@ -42,12 +53,14 @@ $ makepkg -sirc
 参考文献：[Arch User Repository](https://wiki.archlinux.jp/index.php/Arch_User_Repository)
 
 ### rbenv の初期作業
+
 次のコマンドを実行して表示される指示に従う：
 ```bash
 $ rbenv init
 ```
 
 ### ruby-build のインストール
+
 rbenv のプラグインである ruby-build もインストールする。
 
 まずは [Suggested build environment](https://github.com/rbenv/ruby-build/wiki#suggested-build-environment) にある requirement を満たしておく。そしてインストール：
@@ -57,6 +70,7 @@ $ git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby
 
 ## Ruby のインストール
 ### Ruby
+
 ruby-build をインストールすることで `rbenv install` が使えるようになる。
 
 安定版のリストを確認：
@@ -108,7 +122,8 @@ $ rbenv exec bundle install
 ネットでは `rbenv exec bundle install --path=vendor/bundle` コマンドが紹介されていた。しかし、これを実行すると上の通りに改めよと警告される。将来的に `--path` フラグは使えなくなるようだ。
 
 ## rbenv のアップデート
-rbenv のアップデート方法についてもまとめる。
+
+AUR ヘルパーを使えば気にする必要はない。Git からクローンして makepkg でインストールした場合の rbenv のアップデート方法についてもまとめる。
 
 - rbenv 自体は rbenv の レポジトリを pull し、再度インストールすればよい：
 ```bash
