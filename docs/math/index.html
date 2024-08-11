@@ -10,16 +10,32 @@
 <meta property="og:locale" content="ja" />
 <meta name="description" content="物理＋プログラミング＋その他" />
 <meta property="og:description" content="物理＋プログラミング＋その他" />
-<link rel="canonical" href="https://skrbcr.github.io/blog/math/" />
-<meta property="og:url" content="https://skrbcr.github.io/blog/math/" />
+<link rel="canonical" href="http://localhost:4000/blog/math/" />
+<meta property="og:url" content="http://localhost:4000/blog/math/" />
 <meta property="og:site_name" content="今月の物置" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="数学" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"今月の新刊（@skrbcr）"},"description":"物理＋プログラミング＋その他","headline":"数学","url":"https://skrbcr.github.io/blog/math/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"今月の新刊（@skrbcr）"},"description":"物理＋プログラミング＋その他","headline":"数学","url":"http://localhost:4000/blog/math/"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/blog/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://skrbcr.github.io/blog/feed.xml" title="今月の物置" /><!--アイコン-->
+<link rel="stylesheet" href="/blog/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/blog/feed.xml" title="今月の物置" /><!--CSS-->
+<link rel="stylesheet" href="/blog/assets/css/style.css">
+<!--dark mode-->
+<script>
+    (function (global) {
+	if (localStorage.getItem('dark-mode')) {
+    	    global.document.documentElement.classList.add('dark-mode');
+	    localStorage.addItem('dark-mode');
+    	}
+	else {
+	    localStorage.removeItem('dark-mode');
+	}
+    })(globalThis);
+</script>
+<script src="/blog/assets/js/dark-mode.js" defer></script>
+
+<!--アイコン-->
 <link rel="shortcut icon" href="/blog/assets/favicon/favicon.png" type="image/x-icon">
 
 <!--KaTeX-->
@@ -51,8 +67,10 @@
     });
 </script>
 
-<!--CSS-->
-<link rel="stylesheet" href="/blog/assets/css/style.css"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<!--FontAwesome-->
+<script src="https://kit.fontawesome.com/8570ab9dba.js" crossorigin="anonymous"></script>
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>数学 | 今月の物置</title>
 <meta name="generator" content="Jekyll v4.3.3" />
 <meta property="og:title" content="数学" />
@@ -60,14 +78,14 @@
 <meta property="og:locale" content="ja" />
 <meta name="description" content="物理＋プログラミング＋その他" />
 <meta property="og:description" content="物理＋プログラミング＋その他" />
-<link rel="canonical" href="https://skrbcr.github.io/blog/math/" />
-<meta property="og:url" content="https://skrbcr.github.io/blog/math/" />
+<link rel="canonical" href="http://localhost:4000/blog/math/" />
+<meta property="og:url" content="http://localhost:4000/blog/math/" />
 <meta property="og:site_name" content="今月の物置" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="数学" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"今月の新刊（@skrbcr）"},"description":"物理＋プログラミング＋その他","headline":"数学","url":"https://skrbcr.github.io/blog/math/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"今月の新刊（@skrbcr）"},"description":"物理＋プログラミング＋その他","headline":"数学","url":"http://localhost:4000/blog/math/"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -84,6 +102,7 @@
         </label>
 
         <div class="trigger"><a class="page-link" href="/blog/about/">このサイトについて</a><a class="page-link" href="/blog/categoris/">カテゴリー</a><a class="page-link" href="https://skrbcr.github.io">今月の新刊</a>
+          <button id="dark-mode-toggle"><i class="fa-solid fa-moon"></i></button>
         </div>
       </nav></div>
 </header>

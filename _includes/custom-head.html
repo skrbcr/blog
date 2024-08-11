@@ -1,3 +1,19 @@
+<!--CSS-->
+<link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+<!--dark mode-->
+<script>
+    (function (global) {
+	if (localStorage.getItem('dark-mode')) {
+    	    global.document.documentElement.classList.add('dark-mode');
+	    localStorage.addItem('dark-mode');
+    	}
+	else {
+	    localStorage.removeItem('dark-mode');
+	}
+    })(globalThis);
+</script>
+<script src="{{ '/assets/js/dark-mode.js' | relative_url }}" defer></script>
+
 <!--アイコン-->
 <link rel="shortcut icon" href="{{ "/assets/favicon/favicon.png" | relative_url }}" type="image/x-icon">
 
@@ -30,5 +46,6 @@
     });
 </script>
 
-<!--CSS-->
-<link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+<!--FontAwesome-->
+<script src="https://kit.fontawesome.com/8570ab9dba.js" crossorigin="anonymous"></script>
+
