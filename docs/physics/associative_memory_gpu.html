@@ -3,21 +3,22 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>ブログ管理 | 今月の物置</title>
+<title>GPU を用いた連想記憶モデル（Hopfield network）の実装 | 今月の物置</title>
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="ブログ管理" />
+<meta property="og:title" content="GPU を用いた連想記憶モデル（Hopfield network）の実装" />
 <meta name="author" content="今月の新刊（@skrbcr）" />
 <meta property="og:locale" content="ja" />
-<meta name="description" content="物理＋プログラミング＋その他" />
-<meta property="og:description" content="物理＋プログラミング＋その他" />
-<link rel="canonical" href="http://localhost:4000/blog/manage/" />
-<meta property="og:url" content="http://localhost:4000/blog/manage/" />
+<meta name="description" content="概要" />
+<meta property="og:description" content="概要" />
+<link rel="canonical" href="http://localhost:4000/blog/physics/associative_memory_gpu" />
+<meta property="og:url" content="http://localhost:4000/blog/physics/associative_memory_gpu" />
 <meta property="og:site_name" content="今月の物置" />
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-09-13T00:00:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="ブログ管理" />
+<meta property="twitter:title" content="GPU を用いた連想記憶モデル（Hopfield network）の実装" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"今月の新刊（@skrbcr）"},"description":"物理＋プログラミング＋その他","headline":"ブログ管理","url":"http://localhost:4000/blog/manage/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"今月の新刊（@skrbcr）"},"dateModified":"2024-09-13T00:00:00+09:00","datePublished":"2024-09-13T00:00:00+09:00","description":"概要","headline":"GPU を用いた連想記憶モデル（Hopfield network）の実装","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/physics/associative_memory_gpu"},"url":"http://localhost:4000/blog/physics/associative_memory_gpu"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/blog/feed.xml" title="今月の物置" /><!--CSS-->
 <link rel="stylesheet" href="/blog/assets/css/style.css">
@@ -71,21 +72,22 @@
 <script src="https://kit.fontawesome.com/8570ab9dba.js" crossorigin="anonymous"></script>
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>ブログ管理 | 今月の物置</title>
+<title>GPU を用いた連想記憶モデル（Hopfield network）の実装 | 今月の物置</title>
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="ブログ管理" />
+<meta property="og:title" content="GPU を用いた連想記憶モデル（Hopfield network）の実装" />
 <meta name="author" content="今月の新刊（@skrbcr）" />
 <meta property="og:locale" content="ja" />
-<meta name="description" content="物理＋プログラミング＋その他" />
-<meta property="og:description" content="物理＋プログラミング＋その他" />
-<link rel="canonical" href="http://localhost:4000/blog/manage/" />
-<meta property="og:url" content="http://localhost:4000/blog/manage/" />
+<meta name="description" content="概要" />
+<meta property="og:description" content="概要" />
+<link rel="canonical" href="http://localhost:4000/blog/physics/associative_memory_gpu" />
+<meta property="og:url" content="http://localhost:4000/blog/physics/associative_memory_gpu" />
 <meta property="og:site_name" content="今月の物置" />
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-09-13T00:00:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="ブログ管理" />
+<meta property="twitter:title" content="GPU を用いた連想記憶モデル（Hopfield network）の実装" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"今月の新刊（@skrbcr）"},"description":"物理＋プログラミング＋その他","headline":"ブログ管理","url":"http://localhost:4000/blog/manage/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"今月の新刊（@skrbcr）"},"dateModified":"2024-09-13T00:00:00+09:00","datePublished":"2024-09-13T00:00:00+09:00","description":"概要","headline":"GPU を用いた連想記憶モデル（Hopfield network）の実装","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/physics/associative_memory_gpu"},"url":"http://localhost:4000/blog/physics/associative_memory_gpu"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -108,40 +110,32 @@
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <h2 class="post-list-heading">ブログ管理 カテゴリーの記事（1ページ目）</h2>
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-<ul class="post-list"><li><span class="post-meta">2023年11月26日</span>
-        <h3>
-          <a class="post-link" href="/blog/manage/install_jekyll_linux">
-            Jekyll のインストール（WSL・Linux の場合）
-          </a>
-        </h3></li><li><span class="post-meta">2022年05月05日</span>
-        <h3>
-          <a class="post-link" href="/blog/manage/create_new_post">
-            Jekyll を用いて GitHub Pages に記事を投稿する
-          </a>
-        </h3></li><li><span class="post-meta">2022年03月08日</span>
-        <h3>
-          <a class="post-link" href="/blog/manage/introduce_katex">
-            KaTeXの導入・使用
-          </a>
-        </h3></li><li><span class="post-meta">2022年01月16日</span>
-        <h3>
-          <a class="post-link" href="/blog/manage/setup_pages">
-            Jekyll のインストールから GitHub Pages での公開まで
-          </a>
-        </h3></li></ul><div class="pagination">
-  <hr>
-  
-    <span class="previous">前ページ</span>
-  
-  <span class="page_number ">
-    (1 / 1)
-  </span>
-  
-    <span class="next ">次ページ</span>
-  
-</div>
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">GPU を用いた連想記憶モデル（Hopfield network）の実装</h1>
+    <p class="post-meta">
+      投稿日:
+      <time class="dt-published" datetime="2024-09-13T00:00:00+09:00" itemprop="datePublished">2024年09月13日
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h2 id="概要">概要</h2>
+
+<p><a href="https://skrbcr.github.io/blog/physics/associative_memory">以前</a>、古典的なニューラルネットワーク「連想記憶モデル（Hopfield network）」の実装を紹介した。
+今次、外付けGPU（Nvidia GeForce RTX 4060）を搭載したパソコンを導入したため、計算に GPU を使用する実装を行った。
+CPU 実装より大幅に速く実行できることを確認し、前回は行わなかったいくつかの実験を行った。</p>
+
+<h2 id="実装">実装</h2>
+
+<p>今回は Python を用いた。
+GPU 計算には、<a href="https://cupy.dev/">CuPy</a> を使用した。
+これは Python のパッケージで、NumPy や SciPy の使用感で GPU 計算を利用することができる。</p>
+
+
+  </div><a class="u-url" href="/blog/physics/associative_memory_gpu" hidden></a>
+</article>
 
       </div>
     </main><footer class="site-footer h-card">
