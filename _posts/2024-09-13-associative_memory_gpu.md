@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "GPU を用いた連想記憶モデル（Hopfield network）の実装"
-date: 2024-09-13
+date: 2024-10-30
 categories: physics
 ---
 
